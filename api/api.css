@@ -1,125 +1,66 @@
-/**** API Documentation ****/
-
-.api-docs {
-	font: 10pt/1.2 Verdana,DejaVu Sans,Geneva,sans-serif;
-	margin: 1em;
-}
+/* Styling of API data elements */
 
 .api-preliminary {
-	font-style: italic;
+	font-style : italic;
 }
 
 .api-deprecated {
-	text-decoration: line-through;
+	text-decoration : line-through;
 }
 
-.api-docs h1, .api-docs h2, .api-docs h3,
-.api-docs h4, .api-docs h5, .api-docs h6 {
-	font-family: sans-serif;
+.api-value-type {
+	color : green;
 }
 
-.api-docs ul {
-	padding: 10px 0px 10px 25px;
-}
-
-.api-docs ul li {
-	font-size: 12px;
-}
-
-.api-docs .api-hierarchy {
-	float:right;
-	margin: 1em;
-}
-
-.api-docs table {
-	border-radius: 7px;
-	background-color: #F6F6F6;
-	border: 1px solid #E6E6E6;
-	border-collapse: separate;
-	padding: 5px;
-	border-spacing: 0px;
-	empty-cells: show;
-	word-wrap: break-word;
-	font-size: 11px;
-}
-
-.api-docs .api-Enum table {
-	float: left;
-	margin: 1em;
-}
-
-.api-docs td {
-	vertical-align: top;
-	padding: 3px;
-}
-
-.api-docs .right-align {
-	text-align: right;
-}
-
-.api-docs .left-align {
-	text-align: left;
-}
-
-.api-value-type a {
-	color: green;
+.api-class-name {
+	color : green;
 }
 
 .api-member-name {
-	font-weight: bold;
-}
-
-.api-enum-item-value:after {
-	content: ' : ';
+	font-weight : bold;
+	color       : rgb(65,85,65);
 }
 
 .api-class-icon {
-	background-image: url('icon-explorer.png');
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: text-bottom;
-	margin-right: 2px;
-	/* background-position sets icon offset */
+	display          : inline-block;
+	vertical-align   : text-bottom;
+	height           : 16px;
+	width            : 16px;
+	margin-right     : 2px;
+	background-image : url('icon-explorer.png');
 }
+/* background-position sets icon offset */
 
 .api-member-icon {
-	background-image: url('icon-objectbrowser.png');
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: text-bottom;
-	margin-right: 2px;
-	/* background-position sets icon offset */
+	display          : inline-block;
+	vertical-align   : text-bottom;
+	height           : 16px;
+	width            : 16px;
+	margin-right     : 2px;
+	background-image : url('icon-objectbrowser.png');
 }
+/* background-position sets icon offset */
 
 .api-enum-icon {
-	background-image: url('icon-objectbrowser.png');
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: text-bottom;
-	margin-right: 2px;
-	background-position: -144px;
+	display             : inline-block;
+	vertical-align      : text-bottom;
+	height              : 16px;
+	width               : 16px;
+	margin-right        : 2px;
+	background-image    : url('icon-objectbrowser.png');
+	background-position : -144px;
 }
 
 .api-enum-item-icon {
-	background-image: url('icon-objectbrowser.png');
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: text-bottom;
-	margin-right: 2px;
-	background-position: -160px;
-}
-
-.api-docs table .col-label {
-	width: 0;
-	white-space: nowrap;
+	display             : inline-block;
+	vertical-align      : text-bottom;
+	height              : 16px;
+	width               : 16px;
+	margin-right        : 2px;
+	background-image    : url('icon-objectbrowser.png');
+	background-position : -160px;
 }
 
 .api-argument {
-	white-space: nowrap;
+	white-space : nowrap;
 }
-
-/**** End API Documentation ****/
