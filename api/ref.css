@@ -64,6 +64,18 @@ a {
 	font-weight : bold;
 }
 
+#nav-hierarchy {
+	float       : right;
+	margin      : 8px 0px;
+	font-size   : 50%;
+	font-weight : normal;
+}
+
+#nav-hierarchy .api-member-icon {
+	margin-right : 0px;
+	margin-left  : 4px;
+}
+
 table .api-class-icon,
 table .api-member-icon,
 table .api-enum-icon,
