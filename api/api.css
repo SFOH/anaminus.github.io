@@ -9,11 +9,7 @@
 }
 
 .api-value-type {
-	color : green;
-}
-
-.api-class-name {
-	color : green;
+	color : rgb(110, 165, 10);
 }
 
 .api-member-name {

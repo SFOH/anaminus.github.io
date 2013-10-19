@@ -6,7 +6,7 @@ body {
 }
 
 a {
-	color : green;
+	color : rgb(110, 165, 10);
 }
 
 #footer {
@@ -38,7 +38,7 @@ a {
 
 #api-docs h1 {
 	margin                  : -16px -16px 0px;
-	padding                 : 4px;
+	padding                 : 4px 8px;
 	background-color        : rgb(246,246,246);
 	color                   : rgb(77,100,77);
 	border-bottom           : 1px solid rgb(218,218,218);
@@ -49,7 +49,7 @@ a {
 
 #api-docs h1 .api-class-icon {
 	vertical-align : middle;
-	margin         : 8px;
+	margin         : 0px 8px 0px 2px;
 }
 
 table .api-class-icon,
