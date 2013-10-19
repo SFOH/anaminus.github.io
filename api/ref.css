@@ -48,8 +48,15 @@ a {
 }
 
 #api-docs h1 .api-class-icon {
-	vertical-align: middle;
-	margin: 8px;
+	vertical-align : middle;
+	margin         : 8px;
+}
+
+table .api-class-icon,
+table .api-member-icon,
+table .api-enum-icon,
+table .api-enum-item-icon {
+	margin-right : 0px;
 }
 
 #api-docs ul li {

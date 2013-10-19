@@ -32,13 +32,6 @@
 	margin-right   : 4px;
 }
 
-table .api-class-icon,
-table .api-member-icon,
-table .api-enum-icon,
-table .api-enum-item-icon {
-	margin-right : 0px;
-}
-
 .api-class-icon {
 	background-image : url('icon-explorer.png');
 }
