@@ -98,6 +98,7 @@ table .api-enum-item-icon {
 }
 
 table.member-list th {
+	font-size  : 110%;
 	text-align : left;
 }
 
