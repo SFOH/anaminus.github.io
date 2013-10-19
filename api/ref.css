@@ -28,7 +28,7 @@ a {
 #api-docs {
 	display          : inline-block;
 	width            : 880px;
-	padding          : 0px 16px;
+	padding          : 16px;
 	background-color : rgb(255,255,255);
 	color            : rgb(65,85,65);
 	text-align       : left;
@@ -37,8 +37,8 @@ a {
 }
 
 #api-docs h1 {
-	margin                  : 0px -16px;
-	padding                 : 0.1em 16px;
+	margin                  : -16px -16px 0px;
+	padding                 : 4px;
 	background-color        : rgb(246,246,246);
 	color                   : rgb(77,100,77);
 	border-bottom           : 1px solid rgb(218,218,218);
@@ -47,14 +47,21 @@ a {
 	/*	text-shadow          : 1px 1px 2px rgb(132,132,132); */
 }
 
+#api-docs h1 .api-class-icon {
+	vertical-align: middle;
+	margin: 8px;
+}
+
 #api-docs ul li {
 	padding   : 3px 0px;
 	font-size : 12px;
 }
 
 #hierarchy {
-	float  : right;
-	margin : 1em;
+	float        : right;
+	margin       : 1em;
+	padding-left : 8px;
+	border-left  : 1px solid rgb(230,230,230);
 }
 
 #api-docs table {

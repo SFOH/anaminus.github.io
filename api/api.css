@@ -21,42 +21,40 @@
 	color       : rgb(65,85,65);
 }
 
+.api-class-icon,
+.api-member-icon,
+.api-enum-icon,
+.api-enum-item-icon {
+	display        : inline-block;
+	vertical-align : text-bottom;
+	height         : 16px;
+	width          : 16px;
+	margin-right   : 4px;
+}
+
+table .api-class-icon,
+table .api-member-icon,
+table .api-enum-icon,
+table .api-enum-item-icon {
+	margin-right : 0px;
+}
+
 .api-class-icon {
-	display          : inline-block;
-	vertical-align   : text-bottom;
-	height           : 16px;
-	width            : 16px;
-	margin-right     : 2px;
 	background-image : url('icon-explorer.png');
 }
 /* background-position sets icon offset */
 
 .api-member-icon {
-	display          : inline-block;
-	vertical-align   : text-bottom;
-	height           : 16px;
-	width            : 16px;
-	margin-right     : 2px;
 	background-image : url('icon-objectbrowser.png');
 }
 /* background-position sets icon offset */
 
 .api-enum-icon {
-	display             : inline-block;
-	vertical-align      : text-bottom;
-	height              : 16px;
-	width               : 16px;
-	margin-right        : 2px;
 	background-image    : url('icon-objectbrowser.png');
 	background-position : -144px;
 }
 
 .api-enum-item-icon {
-	display             : inline-block;
-	vertical-align      : text-bottom;
-	height              : 16px;
-	width               : 16px;
-	margin-right        : 2px;
 	background-image    : url('icon-objectbrowser.png');
 	background-position : -160px;
 }
