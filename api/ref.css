@@ -59,6 +59,14 @@ table .api-enum-item-icon {
 	margin-right : 0px;
 }
 
+#api-docs .hierarchy-list {
+	list-style-type : disc;
+}
+
+#api-docs > .hierarchy-list {
+	padding-left : 1em;
+}
+
 #api-docs ul li {
 	padding-top : 6px;
 	font-size   : 12px;
