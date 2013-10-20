@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	var searchInput = $("#search-input");
+	$('#ref-box h1').append('<span id="search-form"><label>Search: </label></span>')
+	var searchInput = $('<input id="search-input" type="text" placeholder="Class or Member"></input>').appendTo('#search-form > label');
 	var boxContent = $("#box-content");
 
 	var fuse;
