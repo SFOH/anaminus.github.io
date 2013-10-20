@@ -36,22 +36,31 @@ a {
 	border-radius    : 10px;
 }
 
-#ref-box h1 {
+#header {
 	margin                  : -16px -16px 0px;
 	padding                 : 4px 8px;
 	background-color        : rgb(246,246,246);
-	font-size               : 200%;
-	font-weight             : bold;
 	color                   : rgb(77,100,77);
 	border-bottom           : 1px solid rgb(218,218,218);
 	border-top-right-radius : 10px;
 	border-top-left-radius  : 10px;
-	/*	text-shadow          : 1px 1px 2px rgb(132,132,132); */
 }
 
-#ref-box h1 .api-class-icon {
-	vertical-align : middle;
+#header .api-class-icon {
+	vertical-align : baseline;
 	margin         : 0px 8px 0px 2px;
+}
+
+#nav-hierarchy,
+#search-form {
+	float  : right;
+	margin : 4px 0px 0px 8px;
+}
+
+#ref-box h1 {
+	display     : inline;
+	font-size   : 200%;
+	font-weight : bold;
 }
 
 #api-docs h2 {
@@ -64,16 +73,8 @@ a {
 	font-weight : bold;
 }
 
-#nav-hierarchy,
-#search-form {
-	float       : right;
-	margin      : 4px 0px 0px 8px;
-	font-size   : 50%;
-	font-weight : normal;
-}
-
 #search-results > ul {
-	padding-left: 1em;
+	padding-left : 1em;
 }
 
 #nav-hierarchy .api-member-icon {
