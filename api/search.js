@@ -35,7 +35,7 @@ $(document).ready(function() {
 			var results = fuse.search(text);
 			var max = results.length > 50 ? 50 : results.length;
 			for (i = 0; i < max; i++) {
-				resultContainer.append('<li><a href="' + results[i].url + '">' + results[i].name + '</a></li>');
+				resultContainer.append('<li><a href="' + results[i].url + '"><span class="' + results[i].iconClass + '" style="background-position:' + results[i].iconOffset + 'px center"></span>' + results[i].name + '</a></li>');
 				if (i == 0) {
 					firstResult = results[i].url;
 				}
