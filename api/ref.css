@@ -72,6 +72,10 @@ a {
 	font-weight : normal;
 }
 
+#search-results > ul {
+	padding-left: 1em;
+}
+
 #nav-hierarchy .api-member-icon {
 	margin-right : 0px;
 	margin-left  : 4px;
