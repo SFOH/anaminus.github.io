@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var fuse;
 	$.getJSON('/api/search-db.json', function(data) {
 		fuse = new Fuse(data, {
-			keys: ['s'],
+			keys: ['c', 'm'],
 			threshold: 0.3
 		})
 	})
@@ -35,10 +35,13 @@ $(document).ready(function() {
 			var results = fuse.search(text);
 			var max = results.length > 50 ? 50 : results.length;
 			for (i = 0; i < max; i++) {
-				var iconClass = results[i].t == 1 ? 'api-member-icon' : 'api-class-icon'
-				resultContainer.append('<li><a href="' + results[i].u + '"><span class="' + iconClass + '" style="background-position:' + results[i].i * -16 + 'px center"></span>' + results[i].s + '</a></li>');
+				var result = results[i]
+				var member = result.m
+				var url = '/api/class/' + result.c + '.html' + (member ? '#member' + member : '')
+				var icon = member ? 'api-member-icon' : 'api-class-icon'
+				resultContainer.append('<li><a href="' + url + '"><span class="' + icon + '" style="background-position:' + result.i * -16 + 'px center"></span>' + result.c + (member ? '.' + member : '') + '</a></li>');
 				if (i == 0) {
-					firstResult = results[i].u;
+					firstResult = url;
 				}
 			}
 		}
