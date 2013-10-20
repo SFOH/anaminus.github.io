@@ -35,7 +35,8 @@ $(document).ready(function(){
 			boxContent.css('display','none')
 
 			var results = fuse.search(text)
-			for (i = 0; i < results.length; i++){
+			var max = results.length > 50 ? 50 : results.length
+			for (i = 0; i < max; i++){
 				resultContainer.append('<li><a href="'+results[i].url+'">'+results[i].name+'</a></li>')
 			}
 		}
