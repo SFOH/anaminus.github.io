@@ -15,661 +15,661 @@
 		<div id="ref-box">
 			<div id="header">
 				<span class="api-class-icon" style="background-position:-0px"></span><h1>BasePart</h1>
-				<a id="nav-hierarchy" href="/api">Back to hierarchy<span class="api-member-icon" style="background-position:-48px"></span></a>
+				<span id="header-items">
+					<a id="return-link" href="/api">Back to hierarchy<span class="api-member-icon" style="background-position:-48px"></span></a>
+				</span>
 			</div>
 			<div id="box-content">
-				<div id="api-docs">
-					<div id="hierarchy">
-						<div id="superclasses">
-							<p><b>Inherits:</b></p>
+				<div id="hierarchy-nav">
+					<div id="superclasses">
+						<p><b>Inherits:</b></p>
+						<ul>
+							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/PVInstance.html">PVInstance</a></li>
+							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/Instance.html">Instance</a></li>
+						</ul>
+					</div>
+					<div id="subclasses">
+						<p><b>Inherited by:</b></p>
+						<ul>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/CornerWedgePart.html">CornerWedgePart</a></li>
+							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/FormFactorPart.html">FormFactorPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/ParallelRampPart.html">ParallelRampPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/PrismPart.html">PrismPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/PyramidPart.html">PyramidPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/RightAngleRampPart.html">RightAngleRampPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-1040px"></span><a class="api-class-name" href="/api/class/Terrain.html">Terrain</a></li>
+							<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/TrussPart.html">TrussPart</a></li>
+							<li><span class="api-class-icon" style="background-position:-560px"></span><a class="api-class-name" href="/api/class/VehicleSeat.html">VehicleSeat</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="info">
+					<div id="summary">
+						
+						<p>The <strong>BasePart</strong> is a structural class that represents a physical object. When
+						it is in the <a href="Workspace.html">Workspace</a>, it will move and interact with other
+						BaseParts.</p>
+						
+						
+					</div>
+					<p><b>Tags: </b>
+						<span class="api-tag">notbrowsable</span>
+					</p>
+					<div id="members">
+						<h2>Members</h2>
+						<div id="sectionProperties">
+							<h3>Properties</h3>
+							<table class="member-list">
+								<tr>
+									<th class="col-icon"></th>
+									<th class="col-name">Property</th>
+									<th class="col-value-type">Type</th>
+									<th class="col-tags">Tags</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberAnchored">Anchored</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBackParamA">BackParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBackParamB">BackParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBackSurface">BackSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBackSurfaceInput">BackSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBottomParamA">BottomParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBottomParamB">BottomParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBottomSurface">BottomSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBottomSurfaceInput">BottomSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBrickColor">BrickColor</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeBrickColor">BrickColor</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberCFrame">CFrame</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeCoordinateFrame">CoordinateFrame</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberCanCollide">CanCollide</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberElasticity">Elasticity</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberFriction">Friction</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberFrontParamA">FrontParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberFrontParamB">FrontParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberFrontSurface">FrontSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberFrontSurfaceInput">FrontSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberLeftParamA">LeftParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberLeftParamB">LeftParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberLeftSurface">LeftSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberLeftSurfaceInput">LeftSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberLocked">Locked</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberMaterial">Material</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeMaterial">Material</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberPosition">Position</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberReceiveAge">ReceiveAge</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+									<td class="col-tags"><span class="api-tag">hidden</span>, <span class="api-tag">readonly</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberReflectance">Reflectance</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberResizeIncrement">ResizeIncrement</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeint">int</a></td>
+									<td class="col-tags"><span class="api-tag">readonly</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberResizeableFaces">ResizeableFaces</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeFaces">Faces</a></td>
+									<td class="col-tags"><span class="api-tag">readonly</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRightParamA">RightParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRightParamB">RightParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRightSurface">RightSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRightSurfaceInput">RightSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRotVelocity">RotVelocity</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberRotation">Rotation</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberSize">Size</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberSpecificGravity">SpecificGravity</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+									<td class="col-tags"><span class="api-tag">readonly</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTopParamA">TopParamA</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTopParamB">TopParamB</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTopSurface">TopSurface</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTopSurfaceInput">TopSurfaceInput</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTransparency">Transparency</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberVelocity">Velocity</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberColor">Color</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeColor3">Color3</a></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberbrickColor">brickColor</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeBrickColor">BrickColor</a></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+							</table>
 							<ul>
-								<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/PVInstance.html">PVInstance</a></li>
-								<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/Instance.html">Instance</a></li>
+								<li>1 property inherited from <a class="api-class-name" href="/api/class/PVInstance.html#sectionProperties">PVInstance</a></li>
+								<li>8 properties inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionProperties">Instance</a></li>
 							</ul>
 						</div>
-						<div id="subclasses">
-							<p><b>Inherited by:</b></p>
+						<div id="sectionFunctions">
+							<h3>Functions</h3>
+							<table class="member-list">
+								<tr>
+									<th class="col-return-type">Returns</th>
+									<th class="col-icon"></th>
+									<th class="col-name">Function</th>
+									<th class="col-tags">Tags</th>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberBreakJoints">BreakJoints</a> <span class="api-arguments">( )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typeObjects">Objects</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberGetConnectedParts">GetConnectedParts</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">recursive</span> = <span class="api-value">false</span></span> )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typefloat">float</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberGetMass">GetMass</a> <span class="api-arguments">( )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberIsGrounded">IsGrounded</a> <span class="api-arguments">( )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberMakeJoints">MakeJoints</a> <span class="api-arguments">( )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberResize">Resize</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeNormalId">NormalId</a> <span class="api-argument-name">normalId</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">deltaAmount</span></span> )</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberbreakJoints">breakJoints</a> <span class="api-arguments">( )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typefloat">float</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="membergetMass">getMass</a> <span class="api-arguments">( )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="membermakeJoints">makeJoints</a> <span class="api-arguments">( )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberresize">resize</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeNormalId">NormalId</a> <span class="api-argument-name">normalId</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">deltaAmount</span></span> )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+							</table>
 							<ul>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/CornerWedgePart.html">CornerWedgePart</a></li>
-								<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/FormFactorPart.html">FormFactorPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/ParallelRampPart.html">ParallelRampPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/PrismPart.html">PrismPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/PyramidPart.html">PyramidPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/RightAngleRampPart.html">RightAngleRampPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-1040px"></span><a class="api-class-name" href="/api/class/Terrain.html">Terrain</a></li>
-								<li><span class="api-class-icon" style="background-position:-16px"></span><a class="api-class-name" href="/api/class/TrussPart.html">TrussPart</a></li>
-								<li><span class="api-class-icon" style="background-position:-560px"></span><a class="api-class-name" href="/api/class/VehicleSeat.html">VehicleSeat</a></li>
+								<li>19 functions inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionFunctions">Instance</a></li>
+							</ul>
+						</div>
+						<div id="sectionYieldFunctions">
+							<h3>YieldFunctions</h3>
+							<ul>
+								<li>1 yieldfunction inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionYieldFunctions">Instance</a></li>
+							</ul>
+						</div>
+						<div id="sectionEvents">
+							<h3>Events</h3>
+							<table class="member-list">
+								<tr>
+									<th class="col-icon"></th>
+									<th class="col-name">Event</th>
+									<th class="col-tags">Tags</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberStoppedTouching">StoppedTouching</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTouchEnded">TouchEnded</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name" id="memberTouched">Touched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberLocalSimulationTouched">LocalSimulationTouched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">part</span></span> )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="memberOutfitChanged">OutfitChanged</a> <span class="api-arguments">( )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" id="membertouched">touched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
+									<td class="col-tags"><span class="api-tag">deprecated</span></td>
+								</tr>
+							</table>
+							<ul>
+								<li>7 events inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionEvents">Instance</a></li>
 							</ul>
 						</div>
 					</div>
-					<div id="info">
-						<div id="summary">
-							
-							<p>The <strong>BasePart</strong> is a structural class that represents a physical object. When
-							it is in the <a href="Workspace.html">Workspace</a>, it will move and interact with other
-							BaseParts.</p>
-							
-							
-						</div>
-						<p><b>Tags: </b>
-							<span class="api-tag">notbrowsable</span>
-						</p>
-						<div id="sectionMembers">
-							<h2>Members</h2>
-							<div id="sectionProperties">
-								<h3>Properties</h3>
-								<table id="Property-list" class="member-list">
-									<tr>
-										<th class="col-icon"></th>
-										<th class="col-name">Property</th>
-										<th class="col-value-type">Type</th>
-										<th class="col-tags">Tags</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberAnchored">Anchored</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBackParamA">BackParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBackParamB">BackParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBackSurface">BackSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBackSurfaceInput">BackSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBottomParamA">BottomParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBottomParamB">BottomParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBottomSurface">BottomSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBottomSurfaceInput">BottomSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBrickColor">BrickColor</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeBrickColor">BrickColor</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberCFrame">CFrame</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeCoordinateFrame">CoordinateFrame</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberCanCollide">CanCollide</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberElasticity">Elasticity</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberFriction">Friction</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberFrontParamA">FrontParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberFrontParamB">FrontParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberFrontSurface">FrontSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberFrontSurfaceInput">FrontSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberLeftParamA">LeftParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberLeftParamB">LeftParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberLeftSurface">LeftSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberLeftSurfaceInput">LeftSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberLocked">Locked</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberMaterial">Material</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeMaterial">Material</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberPosition">Position</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberReceiveAge">ReceiveAge</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-										<td class="col-tags"><span class="api-tag">hidden</span>, <span class="api-tag">readonly</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberReflectance">Reflectance</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberResizeIncrement">ResizeIncrement</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeint">int</a></td>
-										<td class="col-tags"><span class="api-tag">readonly</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberResizeableFaces">ResizeableFaces</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeFaces">Faces</a></td>
-										<td class="col-tags"><span class="api-tag">readonly</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRightParamA">RightParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRightParamB">RightParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRightSurface">RightSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRightSurfaceInput">RightSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRotVelocity">RotVelocity</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberRotation">Rotation</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberSize">Size</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberSpecificGravity">SpecificGravity</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-										<td class="col-tags"><span class="api-tag">readonly</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTopParamA">TopParamA</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTopParamB">TopParamB</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTopSurface">TopSurface</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeSurfaceType">SurfaceType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTopSurfaceInput">TopSurfaceInput</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeInputType">InputType</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTransparency">Transparency</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typefloat">float</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberVelocity">Velocity</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeVector3">Vector3</a></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberColor">Color</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeColor3">Color3</a></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberbrickColor">brickColor</a></td>
-										<td class="col-value-type"><a class="api-value-type" href="#typeBrickColor">BrickColor</a></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-								</table>
-								<ul>
-									<li>1 property inherited from <a class="api-class-name" href="/api/class/PVInstance.html#sectionProperties">PVInstance</a></li>
-									<li>8 properties inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionProperties">Instance</a></li>
-								</ul>
-							</div>
-							<div id="sectionFunctions">
-								<h3>Functions</h3>
-								<table id="Function-list" class="member-list">
-									<tr>
-										<th class="col-return-type">Returns</th>
-										<th class="col-icon"></th>
-										<th class="col-name">Function</th>
-										<th class="col-tags">Tags</th>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberBreakJoints">BreakJoints</a> <span class="api-arguments">( )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typeObjects">Objects</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberGetConnectedParts">GetConnectedParts</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">recursive</span> = <span class="api-value">false</span></span> )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typefloat">float</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberGetMass">GetMass</a> <span class="api-arguments">( )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberIsGrounded">IsGrounded</a> <span class="api-arguments">( )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberMakeJoints">MakeJoints</a> <span class="api-arguments">( )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberResize">Resize</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeNormalId">NormalId</a> <span class="api-argument-name">normalId</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">deltaAmount</span></span> )</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberbreakJoints">breakJoints</a> <span class="api-arguments">( )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typefloat">float</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="membergetMass">getMass</a> <span class="api-arguments">( )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typevoid">void</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="membermakeJoints">makeJoints</a> <span class="api-arguments">( )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-return-type"><a class="api-value-type" href="#typebool">bool</a></td>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberresize">resize</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeNormalId">NormalId</a> <span class="api-argument-name">normalId</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">deltaAmount</span></span> )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-								</table>
-								<ul>
-									<li>19 functions inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionFunctions">Instance</a></li>
-								</ul>
-							</div>
-							<div id="sectionYieldFunctions">
-								<h3>YieldFunctions</h3>
-								<ul>
-									<li>1 yieldfunction inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionYieldFunctions">Instance</a></li>
-								</ul>
-							</div>
-							<div id="sectionEvents">
-								<h3>Events</h3>
-								<table id="Event-list" class="member-list">
-									<tr>
-										<th class="col-icon"></th>
-										<th class="col-name">Event</th>
-										<th class="col-tags">Tags</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberStoppedTouching">StoppedTouching</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTouchEnded">TouchEnded</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name" id="memberTouched">Touched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberLocalSimulationTouched">LocalSimulationTouched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">part</span></span> )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="memberOutfitChanged">OutfitChanged</a> <span class="api-arguments">( )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-member-icon" style="background-position:-176px"></span></td>
-										<td class="col-name"><a class="api-member-name api-deprecated" id="membertouched">touched</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">otherPart</span></span> )</span></td>
-										<td class="col-tags"><span class="api-tag">deprecated</span></td>
-									</tr>
-								</table>
-								<ul>
-									<li>7 events inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionEvents">Instance</a></li>
-								</ul>
-							</div>
-						</div>
-						<div id="sectionEnums">
-							<h2>Enums</h2>
-							<div class="Enum-list">
-								<table id="typeInputType" class="enum-item-list">
-									<tr>
-										<th class="col-icon"><span class="api-enum-icon"></span></th>
-										<th class="col-name" colspan="2">InputType</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">0</span></td>
-										<td class="col-name"><span class="api-enum-item-name">NoInput</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1</span></td>
-										<td class="col-name"><span class="api-enum-item-name">LeftTread</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">2</span></td>
-										<td class="col-name"><span class="api-enum-item-name">RightTread</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">3</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Steer</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">4</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Throtle</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">6</span></td>
-										<td class="col-name"><span class="api-enum-item-name">UpDown</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">7</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Action1</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">8</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Action2</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">9</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Action3</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">10</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Action4</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">11</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Action5</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">12</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Constant</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">13</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Sin</span></td>
-									</tr>
-								</table>
-								<table id="typeMaterial" class="enum-item-list">
-									<tr>
-										<th class="col-icon"><span class="api-enum-icon"></span></th>
-										<th class="col-name" colspan="2">Material</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">256</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Plastic</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">512</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Wood</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">784</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Marble</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">800</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Slate</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">816</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Concrete</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">832</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Granite</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">848</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Brick</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">864</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Pebble</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1040</span></td>
-										<td class="col-name"><span class="api-enum-item-name">CorrodedMetal</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1056</span></td>
-										<td class="col-name"><span class="api-enum-item-name">DiamondPlate</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1072</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Foil</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1280</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Grass</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1296</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Sand</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1312</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Fabric</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1536</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Ice</span></td>
-									</tr>
-								</table>
-								<table id="typeNormalId" class="enum-item-list">
-									<tr>
-										<th class="col-icon"><span class="api-enum-icon"></span></th>
-										<th class="col-name" colspan="2">NormalId</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">0</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Right</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Top</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">2</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Back</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">3</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Left</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">4</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Bottom</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">5</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Front</span></td>
-									</tr>
-								</table>
-								<table id="typeSurfaceType" class="enum-item-list">
-									<tr>
-										<th class="col-icon"><span class="api-enum-icon"></span></th>
-										<th class="col-name" colspan="2">SurfaceType</th>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">0</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Smooth</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">1</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Glue</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">2</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Weld</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">3</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Studs</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">4</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Inlet</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">5</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Universal</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">6</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Hinge</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">7</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Motor</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">8</span></td>
-										<td class="col-name"><span class="api-enum-item-name">SteppingMotor</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">9</span></td>
-										<td class="col-name"><span class="api-enum-item-name">Unjoinable</span></td>
-									</tr>
-									<tr>
-										<td class="col-icon"><span class="api-enum-item-icon"></span></td>
-										<td class="col-value"><span class="api-enum-item-value">10</span></td>
-										<td class="col-name"><span class="api-enum-item-name">SmoothNoOutlines</span></td>
-									</tr>
-								</table>
-							</div>
+					<div id="sectionEnums">
+						<h2>Enums</h2>
+						<div class="enum-list">
+							<table id="typeInputType" class="enum-item-list">
+								<tr>
+									<th class="col-icon"><span class="api-enum-icon"></span></th>
+									<th class="col-name" colspan="2">InputType</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">0</span></td>
+									<td class="col-name"><span class="api-enum-item-name">NoInput</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1</span></td>
+									<td class="col-name"><span class="api-enum-item-name">LeftTread</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">2</span></td>
+									<td class="col-name"><span class="api-enum-item-name">RightTread</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">3</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Steer</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">4</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Throtle</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">6</span></td>
+									<td class="col-name"><span class="api-enum-item-name">UpDown</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">7</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Action1</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">8</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Action2</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">9</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Action3</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">10</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Action4</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">11</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Action5</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">12</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Constant</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">13</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Sin</span></td>
+								</tr>
+							</table>
+							<table id="typeMaterial" class="enum-item-list">
+								<tr>
+									<th class="col-icon"><span class="api-enum-icon"></span></th>
+									<th class="col-name" colspan="2">Material</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">256</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Plastic</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">512</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Wood</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">784</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Marble</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">800</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Slate</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">816</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Concrete</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">832</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Granite</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">848</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Brick</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">864</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Pebble</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1040</span></td>
+									<td class="col-name"><span class="api-enum-item-name">CorrodedMetal</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1056</span></td>
+									<td class="col-name"><span class="api-enum-item-name">DiamondPlate</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1072</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Foil</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1280</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Grass</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1296</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Sand</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1312</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Fabric</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1536</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Ice</span></td>
+								</tr>
+							</table>
+							<table id="typeNormalId" class="enum-item-list">
+								<tr>
+									<th class="col-icon"><span class="api-enum-icon"></span></th>
+									<th class="col-name" colspan="2">NormalId</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">0</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Right</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Top</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">2</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Back</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">3</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Left</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">4</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Bottom</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">5</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Front</span></td>
+								</tr>
+							</table>
+							<table id="typeSurfaceType" class="enum-item-list">
+								<tr>
+									<th class="col-icon"><span class="api-enum-icon"></span></th>
+									<th class="col-name" colspan="2">SurfaceType</th>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">0</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Smooth</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">1</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Glue</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">2</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Weld</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">3</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Studs</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">4</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Inlet</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">5</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Universal</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">6</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Hinge</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">7</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Motor</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">8</span></td>
+									<td class="col-name"><span class="api-enum-item-name">SteppingMotor</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">9</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Unjoinable</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
+									<td class="col-value"><span class="api-enum-item-value">10</span></td>
+									<td class="col-name"><span class="api-enum-item-name">SmoothNoOutlines</span></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div id="description">
