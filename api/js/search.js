@@ -78,6 +78,7 @@ $(document).ready(function() {
 		if (event.which == 13 && firstResult) {
 			var parseURL = document.createElement('a');
 			parseURL.href = firstResult;
+			// in case the user searches for an item on the current page
 			if (window.location.pathname == parseURL.pathname) {
 				searchResults.css('display', 'none');
 				boxContent.css('display', 'block');
