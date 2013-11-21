@@ -120,7 +120,7 @@
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-192px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberTouchLongPress">TouchLongPress</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberTouchLongPress">TouchLongPress</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">position</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">state</span></span> )</span></td>
 									<td class="col-tags"><span class="api-tag">RobloxScriptSecurity</span></td>
 								</tr>
 								<tr>
@@ -130,12 +130,17 @@
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-192px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberTouchPinch">TouchPinch</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span> )</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberTouchPan">TouchPan</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">totalTranslation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">numberOfTouches</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></td>
 									<td class="col-tags"><span class="api-tag">RobloxScriptSecurity</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-192px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberTouchRotate">TouchRotate</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span> )</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberTouchPinch">TouchPinch</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></td>
+									<td class="col-tags"><span class="api-tag">RobloxScriptSecurity</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-192px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberTouchRotate">TouchRotate</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></td>
 									<td class="col-tags"><span class="api-tag">RobloxScriptSecurity</span></td>
 								</tr>
 								<tr>
@@ -279,7 +284,7 @@
 							</p>
 						</div>
 						<div id="memberTouchLongPress">
-							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchLongPress <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></h3>
+							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchLongPress <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">position</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">state</span></span> )</span></h3>
 							<p><b>Tags: </b>
 								<span class="api-tag">RobloxScriptSecurity</span>
 							</p>
@@ -290,14 +295,20 @@
 								<span class="api-tag">RobloxScriptSecurity</span>
 							</p>
 						</div>
+						<div id="memberTouchPan">
+							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchPan <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">totalTranslation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">numberOfTouches</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></h3>
+							<p><b>Tags: </b>
+								<span class="api-tag">RobloxScriptSecurity</span>
+							</p>
+						</div>
 						<div id="memberTouchPinch">
-							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchPinch <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span> )</span></h3>
+							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchPinch <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></h3>
 							<p><b>Tags: </b>
 								<span class="api-tag">RobloxScriptSecurity</span>
 							</p>
 						</div>
 						<div id="memberTouchRotate">
-							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchRotate <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span> )</span></h3>
+							<h3><span class="api-member-icon" style="background-position:-192px"></span>UserInputService.TouchRotate <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span></h3>
 							<p><b>Tags: </b>
 								<span class="api-tag">RobloxScriptSecurity</span>
 							</p>
