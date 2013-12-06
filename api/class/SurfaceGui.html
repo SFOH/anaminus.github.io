@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Frame Reference</title>
+	<title>SurfaceGui Reference</title>
 	<link href="/api/css/api.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/api/css/ref.css" rel="stylesheet" type="text/css" media="all">
 	<script type="text/javascript" src="/api/js/jquery-1.10.2.min.js"></script>
@@ -14,7 +14,7 @@
 	<div id="ref-container">
 		<div id="ref-box">
 			<div id="header">
-				<span class="api-class-icon" style="background-position:-768px"></span><h1>Frame</h1>
+				<span class="api-class-icon" style="background-position:-1024px"></span><h1>SurfaceGui</h1>
 				<span id="header-items">
 					<a id="return-link" href="/api">Back to hierarchy<span class="api-member-icon" style="background-position:-48px"></span></a>
 				</span>
@@ -33,12 +33,31 @@
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberStyle">Style</a></td>
-									<td class="col-value-type"><a class="api-value-type" href="#typeFrameStyle">FrameStyle</a></td>
+									<td class="col-name"><a class="api-member-name" href="#memberActive">Active</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberAdornee">Adornee</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeObject">Object</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberCanvasSize">CanvasSize</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeVector2">Vector2</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberEnabled">Enabled</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typebool">bool</a></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberFace">Face</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="#typeNormalId">NormalId</a></td>
 								</tr>
 							</table>
 							<ul>
-								<li>16 properties inherited from <a class="api-class-name" href="/api/class/GuiObject.html#sectionProperties">GuiObject</a></li>
 								<li>2 properties inherited from <a class="api-class-name" href="/api/class/GuiBase2d.html#sectionProperties">GuiBase2d</a></li>
 								<li>8 properties inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionProperties">Instance</a></li>
 							</ul>
@@ -46,7 +65,6 @@
 						<div id="sectionFunctions">
 							<h3>Functions</h3>
 							<ul>
-								<li>3 functions inherited from <a class="api-class-name" href="/api/class/GuiObject.html#sectionFunctions">GuiObject</a></li>
 								<li>19 functions inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionFunctions">Instance</a></li>
 							</ul>
 						</div>
@@ -59,7 +77,6 @@
 						<div id="sectionEvents">
 							<h3>Events</h3>
 							<ul>
-								<li>16 events inherited from <a class="api-class-name" href="/api/class/GuiObject.html#sectionEvents">GuiObject</a></li>
 								<li>7 events inherited from <a class="api-class-name" href="/api/class/Instance.html#sectionEvents">Instance</a></li>
 							</ul>
 						</div>
@@ -67,48 +84,60 @@
 					<div id="sectionEnums">
 						<h2>Enums</h2>
 						<div class="enum-list">
-							<table id="typeFrameStyle" class="enum-item-list">
+							<table id="typeNormalId" class="enum-item-list">
 								<tr>
 									<th class="col-icon"><span class="api-enum-icon"></span></th>
-									<th class="col-name" colspan="2">FrameStyle</th>
+									<th class="col-name" colspan="2">NormalId</th>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">0</span></td>
-									<td class="col-name"><span class="api-enum-item-name">Custom</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Right</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">1</span></td>
-									<td class="col-name"><span class="api-enum-item-name">ChatBlue</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Top</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">2</span></td>
-									<td class="col-name"><span class="api-enum-item-name">RobloxSquare</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Back</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">3</span></td>
-									<td class="col-name"><span class="api-enum-item-name">RobloxRound</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Left</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">4</span></td>
-									<td class="col-name"><span class="api-enum-item-name">ChatGreen</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Bottom</span></td>
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-enum-item-icon"></span></td>
 									<td class="col-value"><span class="api-enum-item-value">5</span></td>
-									<td class="col-name"><span class="api-enum-item-name">ChatRed</span></td>
+									<td class="col-name"><span class="api-enum-item-name">Front</span></td>
 								</tr>
 							</table>
 						</div>
 					</div>
 					<div id="member-descriptions">
 						<h2>Property Descriptions</h2>
-						<div id="memberStyle">
-							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeFrameStyle">FrameStyle</a> Frame.Style</h3>
+						<div id="memberActive">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typebool">bool</a> SurfaceGui.Active</h3>
+						</div>
+						<div id="memberAdornee">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeObject">Object</a> SurfaceGui.Adornee</h3>
+						</div>
+						<div id="memberCanvasSize">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeVector2">Vector2</a> SurfaceGui.CanvasSize</h3>
+						</div>
+						<div id="memberEnabled">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typebool">bool</a> SurfaceGui.Enabled</h3>
+						</div>
+						<div id="memberFace">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeNormalId">NormalId</a> SurfaceGui.Face</h3>
 						</div>
 					</div>
 				</div>
@@ -116,16 +145,10 @@
 					<div id="superclasses">
 						<p><b>Inherits:</b></p>
 						<ul>
-							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a></li>
+							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/LayerCollector.html">LayerCollector</a></li>
 							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a></li>
 							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a></li>
 							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/Instance.html">Instance</a></li>
-						</ul>
-					</div>
-					<div id="subclasses">
-						<p><b>Inherited by:</b></p>
-						<ul>
-							<li><span class="api-class-icon" style="background-position:-0px"></span><a class="api-class-name" href="/api/class/NotificationObject.html">NotificationObject</a></li>
 						</ul>
 					</div>
 				</div>
