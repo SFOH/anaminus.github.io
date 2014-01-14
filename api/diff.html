@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" sizes="16x16" href="/api/img/favicon16.png"></link>
 
 	<title>Roblox API Differences</title>
 	<link href="/api/css/api.css" rel="stylesheet" type="text/css" media="all">
@@ -22,7 +23,194 @@
 			<div id="box-content">
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
-					<li><span class="diff-date">December 11, 2013</span> ( <span class="diff-version">0.131.0.41087</span> → <span class="diff-version">0.132.0.41338</span> )
+					<li><span class="diff-date">January 10, 2014</span> ( <span class="diff-version">0.132.0.41338</span> → <span class="diff-version">0.133.0.41991</span> )
+					<ul class="diff-list">
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/InputObject.html">InputObject</a>
+							<ul>
+								<li>Added Property <a href="/api/class/InputObject.html#memberKeyCode">InputObject.KeyCode</a></li>
+								<li>Added Property <a href="/api/class/InputObject.html#memberPosition">InputObject.Position</a></li>
+								<li>Added Property <a href="/api/class/InputObject.html#memberUserInputState">InputObject.UserInputState</a></li>
+								<li>Added Property <a href="/api/class/InputObject.html#memberUserInputType">InputObject.UserInputType</a></li>
+							</ul>
+						</li>
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/OneQuarterClusterPacketCacheBase.html">OneQuarterClusterPacketCacheBase</a>
+							<ul>
+							</ul>
+						</li>
+						<li>
+							Added Function <a href="/api/class/NetworkClient.html#memberSetGameSessionID">NetworkClient.SetGameSessionID</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/Player.html#memberGetGameSessionID">Player.GetGameSessionID</a>
+						</li>
+						<li>
+							Added Enum KeyCode
+							<ul>
+								<li>Added EnumItem KeyCode.Unknown</li>
+								<li>Added EnumItem KeyCode.Backspace</li>
+								<li>Added EnumItem KeyCode.Tab</li>
+								<li>Added EnumItem KeyCode.Clear</li>
+								<li>Added EnumItem KeyCode.Return</li>
+								<li>Added EnumItem KeyCode.Pause</li>
+								<li>Added EnumItem KeyCode.Escape</li>
+								<li>Added EnumItem KeyCode.Space</li>
+								<li>Added EnumItem KeyCode.QuotedDouble</li>
+								<li>Added EnumItem KeyCode.Hash</li>
+								<li>Added EnumItem KeyCode.Dollar</li>
+								<li>Added EnumItem KeyCode.Percent</li>
+								<li>Added EnumItem KeyCode.Ampersand</li>
+								<li>Added EnumItem KeyCode.Quote</li>
+								<li>Added EnumItem KeyCode.LeftParenthesis</li>
+								<li>Added EnumItem KeyCode.RightParenthesis</li>
+								<li>Added EnumItem KeyCode.Asterisk</li>
+								<li>Added EnumItem KeyCode.Plus</li>
+								<li>Added EnumItem KeyCode.Comma</li>
+								<li>Added EnumItem KeyCode.Minus</li>
+								<li>Added EnumItem KeyCode.Period</li>
+								<li>Added EnumItem KeyCode.Slash</li>
+								<li>Added EnumItem KeyCode.Zero</li>
+								<li>Added EnumItem KeyCode.One</li>
+								<li>Added EnumItem KeyCode.Two</li>
+								<li>Added EnumItem KeyCode.Three</li>
+								<li>Added EnumItem KeyCode.Four</li>
+								<li>Added EnumItem KeyCode.Five</li>
+								<li>Added EnumItem KeyCode.Six</li>
+								<li>Added EnumItem KeyCode.Seven</li>
+								<li>Added EnumItem KeyCode.Eight</li>
+								<li>Added EnumItem KeyCode.Nine</li>
+								<li>Added EnumItem KeyCode.Colon</li>
+								<li>Added EnumItem KeyCode.Semicolon</li>
+								<li>Added EnumItem KeyCode.LessThan</li>
+								<li>Added EnumItem KeyCode.Equals</li>
+								<li>Added EnumItem KeyCode.GreaterThan</li>
+								<li>Added EnumItem KeyCode.Question</li>
+								<li>Added EnumItem KeyCode.At</li>
+								<li>Added EnumItem KeyCode.LeftBracket</li>
+								<li>Added EnumItem KeyCode.BackSlash</li>
+								<li>Added EnumItem KeyCode.RightBracket</li>
+								<li>Added EnumItem KeyCode.Caret</li>
+								<li>Added EnumItem KeyCode.Underscore</li>
+								<li>Added EnumItem KeyCode.Backquote</li>
+								<li>Added EnumItem KeyCode.A</li>
+								<li>Added EnumItem KeyCode.B</li>
+								<li>Added EnumItem KeyCode.C</li>
+								<li>Added EnumItem KeyCode.D</li>
+								<li>Added EnumItem KeyCode.E</li>
+								<li>Added EnumItem KeyCode.F</li>
+								<li>Added EnumItem KeyCode.G</li>
+								<li>Added EnumItem KeyCode.H</li>
+								<li>Added EnumItem KeyCode.I</li>
+								<li>Added EnumItem KeyCode.J</li>
+								<li>Added EnumItem KeyCode.K</li>
+								<li>Added EnumItem KeyCode.L</li>
+								<li>Added EnumItem KeyCode.M</li>
+								<li>Added EnumItem KeyCode.N</li>
+								<li>Added EnumItem KeyCode.O</li>
+								<li>Added EnumItem KeyCode.P</li>
+								<li>Added EnumItem KeyCode.Q</li>
+								<li>Added EnumItem KeyCode.R</li>
+								<li>Added EnumItem KeyCode.S</li>
+								<li>Added EnumItem KeyCode.T</li>
+								<li>Added EnumItem KeyCode.U</li>
+								<li>Added EnumItem KeyCode.V</li>
+								<li>Added EnumItem KeyCode.W</li>
+								<li>Added EnumItem KeyCode.X</li>
+								<li>Added EnumItem KeyCode.Y</li>
+								<li>Added EnumItem KeyCode.Z</li>
+								<li>Added EnumItem KeyCode.LeftCurly</li>
+								<li>Added EnumItem KeyCode.Pipe</li>
+								<li>Added EnumItem KeyCode.RightCurly</li>
+								<li>Added EnumItem KeyCode.Tilde</li>
+								<li>Added EnumItem KeyCode.Delete</li>
+								<li>Added EnumItem KeyCode.KeypadZero</li>
+								<li>Added EnumItem KeyCode.KeypadOne</li>
+								<li>Added EnumItem KeyCode.KeypadTwo</li>
+								<li>Added EnumItem KeyCode.KeypadThree</li>
+								<li>Added EnumItem KeyCode.KeypadFour</li>
+								<li>Added EnumItem KeyCode.KeypadFive</li>
+								<li>Added EnumItem KeyCode.KeypadSix</li>
+								<li>Added EnumItem KeyCode.KeypadSeven</li>
+								<li>Added EnumItem KeyCode.KeypadEight</li>
+								<li>Added EnumItem KeyCode.KeypadNine</li>
+								<li>Added EnumItem KeyCode.KeypadPeriod</li>
+								<li>Added EnumItem KeyCode.KeypadDivide</li>
+								<li>Added EnumItem KeyCode.KeypadMultiply</li>
+								<li>Added EnumItem KeyCode.KeypadMinus</li>
+								<li>Added EnumItem KeyCode.KeypadPlus</li>
+								<li>Added EnumItem KeyCode.KeypadEnter</li>
+								<li>Added EnumItem KeyCode.KeypadEquals</li>
+								<li>Added EnumItem KeyCode.Up</li>
+								<li>Added EnumItem KeyCode.Down</li>
+								<li>Added EnumItem KeyCode.Right</li>
+								<li>Added EnumItem KeyCode.Left</li>
+								<li>Added EnumItem KeyCode.Insert</li>
+								<li>Added EnumItem KeyCode.Home</li>
+								<li>Added EnumItem KeyCode.End</li>
+								<li>Added EnumItem KeyCode.PageUp</li>
+								<li>Added EnumItem KeyCode.PageDown</li>
+							</ul>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/GuiObject.html#memberInputBegan">GuiObject.InputBegan</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/GuiObject.html#memberInputChanged">GuiObject.InputChanged</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/GuiObject.html#memberInputEnded">GuiObject.InputEnded</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed security of Event <a href="/api/class/GuiObject.html#memberTouchTap">GuiObject.TouchTap</a> from RobloxScript to None
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberInputBegan">UserInputService.InputBegan</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberInputChanged">UserInputService.InputChanged</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberInputEnded">UserInputService.InputEnded</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">input</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">input</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberTouchEnded">UserInputService.TouchEnded</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">touch</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">touch</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberTouchMoved">UserInputService.TouchMoved</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">touch</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">touch</span></span></li>
+							</ol>
+						</li>
+						<li>
+							Changed arguments of <a href="/api/class/UserInputService.html#memberTouchStarted">UserInputService.TouchStarted</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeInputObject">InputObject</a> <span class="api-argument-name">touch</span></span> )</span>
+							<ol class="diff-arg-list">
+								<li>Replaced 1st argument with <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">touch</span></span></li>
+							</ol>
+						</li>
+					</ul>
+					<li><span class="diff-date">December 12, 2013</span> ( <span class="diff-version">0.131.0.41087</span> → <span class="diff-version">0.132.0.41338</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/DataStoreService.html">DataStoreService</a>
@@ -232,7 +420,7 @@
 							Removed YieldFunction <a href="/api/class/App.html#memberCreatePlace">App.CreatePlace</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">November 21, 2013</span> ( <span class="diff-version">0.129.0.40334</span> → <span class="diff-version">0.130.0.40578</span> )
+					<li><span class="diff-date">November 26, 2013</span> ( <span class="diff-version">0.128.0.40233</span> → <span class="diff-version">0.130.0.40915</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/AnimationController.html">AnimationController</a>
@@ -353,7 +541,7 @@
 							Removed Function <a href="/api/class/UniverseService.html#memberGetGlobalDataStore">UniverseService.GetGlobalDataStore</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">November 10, 2013</span> ( <span class="diff-version">0.127.0.39583</span> → <span class="diff-version">0.128.0.40233</span> )
+					<li><span class="diff-date">November 14, 2013</span> ( <span class="diff-version">0.127.0.39583</span> → <span class="diff-version">0.129.0.40334</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/GlobalDataStore.html">GlobalDataStore</a>
@@ -417,13 +605,13 @@
 							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchEnded">UserInputService.TouchEnded</a> from Roblox to RobloxScript
 						</li>
 						<li>
-							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchLongPress">UserInputService.TouchLongPress</a> from Roblox to RobloxScript
-						</li>
-						<li>
 							Changed arguments of <a href="/api/class/UserInputService.html#memberTouchLongPress">UserInputService.TouchLongPress</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeVector2">Vector2</a> <span class="api-argument-name">position</span></span> )</span>
 							<ol class="diff-arg-list">
 								<li>Inserted <span class="api-argument"><a class="api-value-type" href="#typeUserInputState">UserInputState</a> <span class="api-argument-name">state</span></span> as 2nd argument</li>
 							</ol>
+						</li>
+						<li>
+							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchLongPress">UserInputService.TouchLongPress</a> from Roblox to RobloxScript
 						</li>
 						<li>
 							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchMoved">UserInputService.TouchMoved</a> from Roblox to RobloxScript
@@ -438,13 +626,13 @@
 							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchStarted">UserInputService.TouchStarted</a> from Roblox to RobloxScript
 						</li>
 						<li>
+							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchSwipe">UserInputService.TouchSwipe</a> from Roblox to RobloxScript
+						</li>
+						<li>
 							Changed arguments of <a href="/api/class/UserInputService.html#memberTouchSwipe">UserInputService.TouchSwipe</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeSwipeDirection">SwipeDirection</a> <span class="api-argument-name">swipeDirection</span></span> )</span>
 							<ol class="diff-arg-list">
 								<li>Inserted <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">numberOfTouches</span></span> as 2nd argument</li>
 							</ol>
-						</li>
-						<li>
-							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchSwipe">UserInputService.TouchSwipe</a> from Roblox to RobloxScript
 						</li>
 						<li>
 							Changed security of Event <a href="/api/class/UserInputService.html#memberTouchTap">UserInputService.TouchTap</a> from Roblox to RobloxScript
@@ -459,7 +647,7 @@
 							Removed Function <a href="/api/class/PluginManager.html#memberGetStudioUserId">PluginManager.GetStudioUserId</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">November 01, 2013</span> ( <span class="diff-version">0.126.0.39503</span> → <span class="diff-version">0.127.0.39583</span> )
+					<li><span class="diff-date">October 31, 2013</span> ( <span class="diff-version">0.126.0.39503</span> → <span class="diff-version">0.127.0.39583</span> )
 					<ul class="diff-list">
 						<li>
 							Added Function <a href="/api/class/PluginManager.html#memberGetStudioUserId">PluginManager.GetStudioUserId</a>
@@ -480,7 +668,7 @@
 							Changed security of Function <a href="/api/class/TextBox.html#memberCaptureFocus">TextBox.CaptureFocus</a> from RobloxScript to None
 						</li>
 					</ul>
-					<li><span class="diff-date">October 27, 2013</span> ( <span class="diff-version">0.125.0.39134</span> → <span class="diff-version">0.126.0.39503</span> )
+					<li><span class="diff-date">October 24, 2013</span> ( <span class="diff-version">0.125.0.39134</span> → <span class="diff-version">0.126.0.39503</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/RunningAverageTimeIntervalItem.html">RunningAverageTimeIntervalItem</a>
@@ -509,7 +697,7 @@
 							Added EnumItem Material.Sand
 						</li>
 					</ul>
-					<li><span class="diff-date">October 20, 2013</span> ( <span class="diff-version">0.124.0.38869</span> → <span class="diff-version">0.125.0.39134</span> )
+					<li><span class="diff-date">October 17, 2013</span> ( <span class="diff-version">0.124.0.38869</span> → <span class="diff-version">0.125.0.39134</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/NetworkSettings.html#memberDataGCRate">NetworkSettings.DataGCRate</a>
@@ -560,7 +748,7 @@
 							Removed Property <a href="/api/class/Player.html#memberMaxSimulationRadius">Player.MaxSimulationRadius</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">October 11, 2013</span> ( <span class="diff-version">0.123.0.38618</span> → <span class="diff-version">0.124.0.38869</span> )
+					<li><span class="diff-date">October 10, 2013</span> ( <span class="diff-version">0.123.0.38618</span> → <span class="diff-version">0.124.0.38869</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/DebuggerManager.html">DebuggerManager</a>
@@ -616,7 +804,7 @@
 							Removed Property <a href="/api/class/StarterGui.html#memberPlayerListGuiEnabled">StarterGui.PlayerListGuiEnabled</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">October 04, 2013</span> ( <span class="diff-version">0.122.0.38287</span> → <span class="diff-version">0.123.0.38618</span> )
+					<li><span class="diff-date">October 02, 2013</span> ( <span class="diff-version">0.122.0.38287</span> → <span class="diff-version">0.123.0.38618</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/RemoteEvent.html">RemoteEvent</a>
@@ -676,16 +864,19 @@
 							Added EnumItem Font.SourceSansBold
 						</li>
 					</ul>
-					<li><span class="diff-date">September 19, 2013</span> ( <span class="diff-version">0.119.0.37583</span> → <span class="diff-version">0.121.0.37958</span> )
+					<li><span class="diff-date">September 21, 2013</span> ( <span class="diff-version">0.120.0.37812</span> → <span class="diff-version">0.121.1.37958</span> )
+					<ul class="diff-list">
+						<li>
+							Added Function <a href="/api/class/Player.html#memberKick">Player.Kick</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">September 12, 2013</span> ( <span class="diff-version">0.119.0.37583</span> → <span class="diff-version">0.120.0.37812</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/DataModel.html#memberPlaceVersion">DataModel.PlaceVersion</a>
 						</li>
 						<li>
 							Added Function <a href="/api/class/DataModel.html#memberSetPlaceVersion">DataModel.SetPlaceVersion</a>
-						</li>
-						<li>
-							Added Function <a href="/api/class/Player.html#memberKick">Player.Kick</a>
 						</li>
 					</ul>
 					<li><span class="diff-date">September 05, 2013</span> ( <span class="diff-version">0.118.0.37235</span> → <span class="diff-version">0.119.0.37583</span> )
@@ -721,7 +912,7 @@
 							</ul>
 						</li>
 					</ul>
-					<li><span class="diff-date">August 31, 2013</span> ( <span class="diff-version">0.117.0.37187</span> → <span class="diff-version">0.118.0.37235</span> )
+					<li><span class="diff-date">August 29, 2013</span> ( <span class="diff-version">0.117.0.37187</span> → <span class="diff-version">0.118.0.37235</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/NetworkSettings.html#memberEnableHeavyCompression">NetworkSettings.EnableHeavyCompression</a>
@@ -795,7 +986,94 @@
 							</ul>
 						</li>
 					</ul>
-					<li><span class="diff-date">August 21, 2013</span> ( <span class="diff-version">0.105.0.34261</span> → <span class="diff-version">0.117.0.37187</span> )
+					<li><span class="diff-date">August 22, 2013</span> ( <span class="diff-version">0.116.0.37007</span> → <span class="diff-version">0.117.0.37187</span> )
+					<ul class="diff-list">
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/ReplicatedStorage.html">ReplicatedStorage</a>
+							<ul>
+							</ul>
+						</li>
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/ServerScriptService.html">ServerScriptService</a>
+							<ul>
+							</ul>
+						</li>
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/ServerStorage.html">ServerStorage</a>
+							<ul>
+							</ul>
+						</li>
+						<li>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberAreAssembliesShown">PhysicsSettings.AreAssembliesShown</a>
+						</li>
+						<li>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberAreJointCoordinatesShown">PhysicsSettings.AreJointCoordinatesShown</a>
+						</li>
+						<li>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberAreMechanismsShown">PhysicsSettings.AreMechanismsShown</a>
+						</li>
+						<li>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberIsTreeShown">PhysicsSettings.IsTreeShown</a>
+						</li>
+						<li>
+							Added EnumItem AnimationPriority.Core
+						</li>
+					</ul>
+					<li><span class="diff-date">August 17, 2013</span> ( <span class="diff-version">0.115.0.36630</span> → <span class="diff-version">0.116.0.37007</span> )
+					<ul class="diff-list">
+						<li>
+							Changed security of Function <a href="/api/class/GlobalSettings.html#memberGetFVariables">GlobalSettings.GetFVariables</a> from None to RobloxScript
+						</li>
+					</ul>
+					<li><span class="diff-date">August 15, 2013</span> ( <span class="diff-version">0.114.0.36086</span> → <span class="diff-version">0.115.0.36630</span> )
+					<ul class="diff-list">
+						<li>
+							Added Property <a href="/api/class/UserInputService.html#memberTouchControlsEnabled">UserInputService.TouchControlsEnabled</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/DataModel.html#memberSavePlace">DataModel.SavePlace</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/FastLogSettings.html#memberSetVariable">FastLogSettings.SetVariable</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/GlobalSettings.html#memberGetFVariable">GlobalSettings.GetFVariable</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/GlobalSettings.html#memberGetFVariables">GlobalSettings.GetFVariables</a>
+						</li>
+						<li>
+							Added Function <a href="/api/class/Workspace.html#memberGetNumAwakeParts">Workspace.GetNumAwakeParts</a>
+						</li>
+						<li>
+							Added Event <a href="/api/class/DataModel.html#memberSavePlaceFinished">DataModel.SavePlaceFinished</a>
+						</li>
+						<li>
+							Added EnumItem SurfaceType.SmoothNoOutlines
+						</li>
+						<li>
+							Removed Function <a href="/api/class/BasePart.html#memberGetJoints">BasePart.GetJoints</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/FastLogSettings.html#memberSetGroupEnable">FastLogSettings.SetGroupEnable</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/GlobalSettings.html#memberGetFFlags">GlobalSettings.GetFFlags</a>
+						</li>
+						<li>
+							Removed EnumItem SurfaceType.Blank
+						</li>
+					</ul>
+					<li><span class="diff-date">August 01, 2013</span> ( <span class="diff-version">0.113.0.36052</span> → <span class="diff-version">0.114.0.36086</span> )
+					<ul class="diff-list">
+						<li>
+							Added Property <a href="/api/class/Lighting.html#memberOutlines">Lighting.Outlines</a>
+						</li>
+						<li>
+							Added EnumItem SurfaceType.Blank
+						</li>
+					</ul>
+					<li><span class="diff-date">July 25, 2013</span> ( <span class="diff-version">0.112.0.35870</span> → <span class="diff-version">0.113.0.36052</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/App.html">App</a>
@@ -823,39 +1101,6 @@
 							</ul>
 						</li>
 						<li>
-							Added Class <a class="api-class-name" href="/api/class/ReplicatedStorage.html">ReplicatedStorage</a>
-							<ul>
-							</ul>
-						</li>
-						<li>
-							Added Class <a class="api-class-name" href="/api/class/ServerScriptService.html">ServerScriptService</a>
-							<ul>
-							</ul>
-						</li>
-						<li>
-							Added Class <a class="api-class-name" href="/api/class/ServerStorage.html">ServerStorage</a>
-							<ul>
-							</ul>
-						</li>
-						<li>
-							Added Property <a href="/api/class/BasePart.html#memberRotation">BasePart.Rotation</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/Lighting.html#memberOutlines">Lighting.Outlines</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/PhysicsSettings.html#memberAreAssembliesShown">PhysicsSettings.AreAssembliesShown</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/PhysicsSettings.html#memberAreJointCoordinatesShown">PhysicsSettings.AreJointCoordinatesShown</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/PhysicsSettings.html#memberAreMechanismsShown">PhysicsSettings.AreMechanismsShown</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/PhysicsSettings.html#memberIsTreeShown">PhysicsSettings.IsTreeShown</a>
-						</li>
-						<li>
 							Added Property <a href="/api/class/StarterGui.html#memberBackpackGuiEnabled">StarterGui.BackpackGuiEnabled</a>
 						</li>
 						<li>
@@ -868,10 +1113,10 @@
 							Added Property <a href="/api/class/StarterGui.html#memberResetPlayerGuiOnDeath">StarterGui.ResetPlayerGuiOnDeath</a>
 						</li>
 						<li>
-							Added Property <a href="/api/class/UserInputService.html#memberTouchControlsEnabled">UserInputService.TouchControlsEnabled</a>
+							Added Function <a href="/api/class/BasePart.html#memberGetConnectedParts">BasePart.GetConnectedParts</a>
 						</li>
 						<li>
-							Added Function <a href="/api/class/BasePart.html#memberGetConnectedParts">BasePart.GetConnectedParts</a>
+							Added Function <a href="/api/class/BasePart.html#memberGetJoints">BasePart.GetJoints</a>
 						</li>
 						<li>
 							Added Function <a href="/api/class/BasePart.html#memberIsGrounded">BasePart.IsGrounded</a>
@@ -886,28 +1131,10 @@
 							Added Function <a href="/api/class/Camera.html#memberSetCameraInputMode">Camera.SetCameraInputMode</a>
 						</li>
 						<li>
-							Added Function <a href="/api/class/DataModel.html#memberSavePlace">DataModel.SavePlace</a>
-						</li>
-						<li>
-							Added Function <a href="/api/class/FastLogSettings.html#memberSetVariable">FastLogSettings.SetVariable</a>
-						</li>
-						<li>
-							Added Function <a href="/api/class/GlobalSettings.html#memberGetFVariable">GlobalSettings.GetFVariable</a>
-						</li>
-						<li>
-							Added Function <a href="/api/class/GlobalSettings.html#memberGetFVariables">GlobalSettings.GetFVariables</a>
-						</li>
-						<li>
-							Added Function <a href="/api/class/Workspace.html#memberGetNumAwakeParts">Workspace.GetNumAwakeParts</a>
-						</li>
-						<li>
 							Added Event <a href="/api/class/BodyPosition.html#memberReachedTarget">BodyPosition.ReachedTarget</a>
 						</li>
 						<li>
 							Added Event <a href="/api/class/Camera.html#memberFirstPersonTransition">Camera.FirstPersonTransition</a>
-						</li>
-						<li>
-							Added Event <a href="/api/class/DataModel.html#memberSavePlaceFinished">DataModel.SavePlaceFinished</a>
 						</li>
 						<li>
 							Added Event <a href="/api/class/UserInputService.html#memberJumpRequest">UserInputService.JumpRequest</a>
@@ -982,12 +1209,36 @@
 								<li>Added EnumItem UserInputType.None</li>
 							</ul>
 						</li>
+					</ul>
+					<li><span class="diff-date">July 02, 2013</span> ( <span class="diff-version">0.109.0.35284</span> → <span class="diff-version">0.110.0.35357</span> )
+					<ul class="diff-list">
 						<li>
-							Added EnumItem AnimationPriority.Core
+							Added Property <a href="/api/class/BasePart.html#memberRotation">BasePart.Rotation</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">June 29, 2013</span> ( <span class="diff-version">0.108.0.34788</span> → <span class="diff-version">0.109.0.35284</span> )
+					<ul class="diff-list">
+						<li>
+							Removed Function <a href="/api/class/RenderHooksService.html#memberAddMaterialFilter">RenderHooksService.AddMaterialFilter</a>
 						</li>
 						<li>
-							Added EnumItem SurfaceType.SmoothNoOutlines
+							Removed Function <a href="/api/class/RenderHooksService.html#memberClearMaterialFilter">RenderHooksService.ClearMaterialFilter</a>
 						</li>
+						<li>
+							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketLimit">RenderHooksService.GetDrawCallBucketLimit</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketNum">RenderHooksService.GetDrawCallBucketNum</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketValue">RenderHooksService.GetDrawCallBucketValue</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/RenderHooksService.html#memberGetTriCount">RenderHooksService.GetTriCount</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">June 06, 2013</span> ( <span class="diff-version">0.105.0.34261</span> → <span class="diff-version">0.106.0.34414</span> )
+					<ul class="diff-list">
 						<li>
 							Removed Property <a href="/api/class/RenderSettings.html#memberAluminumQuality">RenderSettings.AluminumQuality</a>
 						</li>
@@ -1040,30 +1291,6 @@
 							Removed Property <a href="/api/class/RenderSettings.html#memberWoodQuality">RenderSettings.WoodQuality</a>
 						</li>
 						<li>
-							Removed Function <a href="/api/class/FastLogSettings.html#memberSetGroupEnable">FastLogSettings.SetGroupEnable</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/GlobalSettings.html#memberGetFFlags">GlobalSettings.GetFFlags</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberAddMaterialFilter">RenderHooksService.AddMaterialFilter</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberClearMaterialFilter">RenderHooksService.ClearMaterialFilter</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketLimit">RenderHooksService.GetDrawCallBucketLimit</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketNum">RenderHooksService.GetDrawCallBucketNum</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberGetDrawCallBucketValue">RenderHooksService.GetDrawCallBucketValue</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/RenderHooksService.html#memberGetTriCount">RenderHooksService.GetTriCount</a>
-						</li>
-						<li>
 							Removed Enum Bevels
 							<ul>
 								<li>Removed EnumItem Bevels.Automatic</li>
@@ -1090,7 +1317,7 @@
 							</ul>
 						</li>
 					</ul>
-					<li><span class="diff-date">May 28, 2013</span> ( <span class="diff-version">0.100.0.32485</span> → <span class="diff-version">0.105.0.34261</span> )
+					<li><span class="diff-date">May 02, 2013</span> ( <span class="diff-version">0.100.0.32485</span> → <span class="diff-version">0.101.0.33010</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/Light.html#memberEnabled">Light.Enabled</a>
@@ -1102,43 +1329,8 @@
 							Changed return type of <a href="/api/class/MarketplaceService.html#memberGetProductInfo">MarketplaceService.GetProductInfo</a> from <a class="api-value-type" href="#typestring">string</a> to <a class="api-value-type" href="#typeDictionary">Dictionary</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">May 02, 2013</span> ( <span class="diff-version">0.101.0.33010</span> → <span class="diff-version">0.100.0.32485</span> )
+					<li><span class="diff-date">April 18, 2013</span> ( <span class="diff-version">0.99.0.32143</span> → <span class="diff-version">0.100.0.32485</span> )
 					<ul class="diff-list">
-						<li>
-							Changed return type of <a href="/api/class/MarketplaceService.html#memberGetProductInfo">MarketplaceService.GetProductInfo</a> from <a class="api-value-type" href="#typeDictionary">Dictionary</a> to <a class="api-value-type" href="#typestring">string</a>
-						</li>
-						<li>
-							Removed Property <a href="/api/class/Light.html#memberEnabled">Light.Enabled</a>
-						</li>
-						<li>
-							Removed Property <a href="/api/class/Lighting.html#memberOutdoorAmbient">Lighting.OutdoorAmbient</a>
-						</li>
-					</ul>
-					<li><span class="diff-date">April 26, 2013</span> ( <span class="diff-version">0.96.0.31609</span> → <span class="diff-version">0.101.0.33010</span> )
-					<ul class="diff-list">
-						<li>
-							Added Class <a class="api-class-name" href="/api/class/ClusterPacketCache.html">ClusterPacketCache</a>
-							<ul>
-							</ul>
-						</li>
-						<li>
-							Added Property <a href="/api/class/DebugSettings.html#memberSIMD">DebugSettings.SIMD</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/Light.html#memberEnabled">Light.Enabled</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/Lighting.html#memberGlobalShadows">Lighting.GlobalShadows</a>
-						</li>
-						<li>
-							Added Property <a href="/api/class/Lighting.html#memberOutdoorAmbient">Lighting.OutdoorAmbient</a>
-						</li>
-						<li>
-							Changed return type of <a href="/api/class/MarketplaceService.html#memberGetProductInfo">MarketplaceService.GetProductInfo</a> from <a class="api-value-type" href="#typestring">string</a> to <a class="api-value-type" href="#typeDictionary">Dictionary</a>
-						</li>
-						<li>
-							Changed security of Event <a href="/api/class/NetworkReplicator.html#memberDisconnection">NetworkReplicator.Disconnection</a> from None to LocalUser
-						</li>
 						<li>
 							Removed Class <a class="api-class-name" href="/api/class/LoadingGui.html">LoadingGui</a>
 							<ul>
@@ -1149,7 +1341,27 @@
 							</ul>
 						</li>
 					</ul>
-					<li><span class="diff-date">March 14, 2013</span> ( <span class="diff-version">0.94.0.30953</span> → <span class="diff-version">0.95.0.31339</span> )
+					<li><span class="diff-date">April 04, 2013</span> ( <span class="diff-version">0.97.0.31945</span> → <span class="diff-version">0.98.0.31956</span> )
+					<ul class="diff-list">
+						<li>
+							Added Property <a href="/api/class/Lighting.html#memberGlobalShadows">Lighting.GlobalShadows</a>
+						</li>
+						<li>
+							Changed security of Event <a href="/api/class/NetworkReplicator.html#memberDisconnection">NetworkReplicator.Disconnection</a> from None to LocalUser
+						</li>
+					</ul>
+					<li><span class="diff-date">April 01, 2013</span> ( <span class="diff-version">0.96.0.31609</span> → <span class="diff-version">0.97.0.31945</span> )
+					<ul class="diff-list">
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/ClusterPacketCache.html">ClusterPacketCache</a>
+							<ul>
+							</ul>
+						</li>
+						<li>
+							Added Property <a href="/api/class/DebugSettings.html#memberSIMD">DebugSettings.SIMD</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">March 15, 2013</span> ( <span class="diff-version">0.94.0.30953</span> → <span class="diff-version">0.95.0.31339</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/Light.html">Light</a>
@@ -1187,7 +1399,7 @@
 							Added Event <a href="/api/class/TestService.html#memberServerCollectResult">TestService.ServerCollectResult</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">March 07, 2013</span> ( <span class="diff-version">0.93.0.30595</span> → <span class="diff-version">0.94.0.30953</span> )
+					<li><span class="diff-date">March 14, 2013</span> ( <span class="diff-version">0.93.0.30595</span> → <span class="diff-version">0.94.0.30953</span> )
 					<ul class="diff-list">
 						<li>
 							Added Function <a href="/api/class/Camera.html#memberInterpolate">Camera.Interpolate</a>
@@ -1196,11 +1408,23 @@
 							Added Event <a href="/api/class/Camera.html#memberInterpolationFinished">Camera.InterpolationFinished</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">March 03, 2013</span> ( <span class="diff-version">0.91.0.29925</span> → <span class="diff-version">0.93.0.30595</span> )
+					<li><span class="diff-date">February 28, 2013</span> ( <span class="diff-version">0.92.0.30298</span> → <span class="diff-version">0.93.0.30595</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/LoadingGui.html#memberShowDevelopmentGui">LoadingGui.ShowDevelopmentGui</a>
 						</li>
+						<li>
+							Added Event <a href="/api/class/LoadingGui.html#memberDefaultGuiDidFinish">LoadingGui.DefaultGuiDidFinish</a>
+						</li>
+						<li>
+							Removed Property <a href="/api/class/PhysicsSettings.html#memberFreeFallSolver">PhysicsSettings.FreeFallSolver</a>
+						</li>
+						<li>
+							Removed Property <a href="/api/class/PhysicsSettings.html#memberImpulseSolverForContacts">PhysicsSettings.ImpulseSolverForContacts</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">February 22, 2013</span> ( <span class="diff-version">0.91.0.29925</span> → <span class="diff-version">0.92.0.30298</span> )
+					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/PhysicsSettings.html#memberAreBodyTypesShown">PhysicsSettings.AreBodyTypesShown</a>
 						</li>
@@ -1208,10 +1432,13 @@
 							Added Property <a href="/api/class/PhysicsSettings.html#memberAreContactPointsShown">PhysicsSettings.AreContactPointsShown</a>
 						</li>
 						<li>
-							Added Event <a href="/api/class/LoadingGui.html#memberDefaultGuiDidFinish">LoadingGui.DefaultGuiDidFinish</a>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberFreeFallSolver">PhysicsSettings.FreeFallSolver</a>
+						</li>
+						<li>
+							Added Property <a href="/api/class/PhysicsSettings.html#memberImpulseSolverForContacts">PhysicsSettings.ImpulseSolverForContacts</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">February 22, 2013</span> ( <span class="diff-version">0.90.0.29610</span> → <span class="diff-version">0.91.0.29925</span> )
+					<li><span class="diff-date">February 14, 2013</span> ( <span class="diff-version">0.90.0.29610</span> → <span class="diff-version">0.91.0.29925</span> )
 					<ul class="diff-list">
 						<li>
 							Added Function <a href="/api/class/DataModel.html#memberAddStat">DataModel.AddStat</a>
@@ -1232,7 +1459,7 @@
 							Removed Function <a href="/api/class/GuiService.html#memberSetGlobalSizeOffsetPixel">GuiService.SetGlobalSizeOffsetPixel</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">February 08, 2013</span> ( <span class="diff-version">0.88.0.29066</span> → <span class="diff-version">0.90.0.29610</span> )
+					<li><span class="diff-date">February 14, 2013</span> ( <span class="diff-version">0.89.0.29394</span> → <span class="diff-version">0.90.0.29610</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/ContextActionService.html">ContextActionService</a>
@@ -1260,15 +1487,8 @@
 							Removed Event <a href="/api/class/Player.html#memberMouseDownOnPlayer">Player.MouseDownOnPlayer</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">January 22, 2013</span> ( <span class="diff-version">0.83.0.754</span> → <span class="diff-version">0.87.0.28843</span> )
+					<li><span class="diff-date">January 24, 2013</span> ( <span class="diff-version">0.86.0.28496</span> → <span class="diff-version">0.87.0.28843</span> )
 					<ul class="diff-list">
-						<li>
-							Added Class <a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a>
-							<ul>
-								<li>Added Property <a href="/api/class/GuiBase2d.html#memberAbsolutePosition">GuiBase2d.AbsolutePosition</a></li>
-								<li>Added Property <a href="/api/class/GuiBase2d.html#memberAbsoluteSize">GuiBase2d.AbsoluteSize</a></li>
-							</ul>
-						</li>
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/LayerCollector.html">LayerCollector</a>
 							<ul>
@@ -1278,19 +1498,53 @@
 							Changed superclass of <a class="api-class-name" href="/api/class/BillboardGui.html">BillboardGui</a> from (none) to <a class="api-class-name" href="/api/class/LayerCollector.html">LayerCollector</a>
 						</li>
 						<li>
+							Changed superclass of <a class="api-class-name" href="/api/class/ScreenGui.html">ScreenGui</a> from (none) to <a class="api-class-name" href="/api/class/LayerCollector.html">LayerCollector</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">January 17, 2013</span> ( <span class="diff-version">0.85.0.28075</span> → <span class="diff-version">0.86.0.28496</span> )
+					<ul class="diff-list">
+						<li>
+							Changed security of Function <a href="/api/class/MarketplaceService.html#memberSetPlayerOwnsAssetUrl">MarketplaceService.SetPlayerOwnsAssetUrl</a> from Roblox to LocalUser
+						</li>
+						<li>
+							Changed security of Function <a href="/api/class/MarketplaceService.html#memberSetProductInfoUrl">MarketplaceService.SetProductInfoUrl</a> from Roblox to LocalUser
+						</li>
+					</ul>
+					<li><span class="diff-date">January 10, 2013</span> ( <span class="diff-version">0.84.0.27882</span> → <span class="diff-version">0.85.0.28075</span> )
+					<ul class="diff-list">
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a>
+							<ul>
+								<li>Added Property <a href="/api/class/GuiBase2d.html#memberAbsolutePosition">GuiBase2d.AbsolutePosition</a></li>
+								<li>Added Property <a href="/api/class/GuiBase2d.html#memberAbsoluteSize">GuiBase2d.AbsoluteSize</a></li>
+							</ul>
+						</li>
+						<li>
+							Changed superclass of <a class="api-class-name" href="/api/class/BillboardGui.html">BillboardGui</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a>
+						</li>
+						<li>
 							Changed superclass of <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a>
 						</li>
 						<li>
 							Changed superclass of <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a>
 						</li>
 						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ScreenGui.html">ScreenGui</a> from (none) to <a class="api-class-name" href="/api/class/LayerCollector.html">LayerCollector</a>
+							Changed superclass of <a class="api-class-name" href="/api/class/ScreenGui.html">ScreenGui</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase2d.html">GuiBase2d</a>
 						</li>
 						<li>
-							Changed security of Function <a href="/api/class/MarketplaceService.html#memberSetPlayerOwnsAssetUrl">MarketplaceService.SetPlayerOwnsAssetUrl</a> from Roblox to LocalUser
+							Changed security of Property <a href="/api/class/Instance.html#memberRobloxLocked">Instance.RobloxLocked</a> from RobloxScript to LocalUser
 						</li>
 						<li>
-							Changed security of Function <a href="/api/class/MarketplaceService.html#memberSetProductInfoUrl">MarketplaceService.SetProductInfoUrl</a> from Roblox to LocalUser
+							Changed security of Function <a href="/api/class/DataModel.html#memberHttpGet">DataModel.HttpGet</a> from Roblox to RobloxScript
+						</li>
+						<li>
+							Changed security of Function <a href="/api/class/DataModel.html#memberHttpPost">DataModel.HttpPost</a> from Roblox to RobloxScript
+						</li>
+						<li>
+							Changed security of YieldFunction <a href="/api/class/DataModel.html#memberHttpGetAsync">DataModel.HttpGetAsync</a> from Roblox to RobloxScript
+						</li>
+						<li>
+							Changed security of YieldFunction <a href="/api/class/DataModel.html#memberHttpPostAsync">DataModel.HttpPostAsync</a> from Roblox to RobloxScript
 						</li>
 						<li>
 							Removed notbrowsable tag from Class <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a>
@@ -1302,7 +1556,25 @@
 							Removed Property <a href="/api/class/GuiBase.html#memberAbsoluteSize">GuiBase.AbsoluteSize</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">December 18, 2012</span> ( <span class="diff-version">0.80.0.734</span> → <span class="diff-version">0.83.0.754</span> )
+					<li><span class="diff-date">January 04, 2013</span> ( <span class="diff-version">0.83.0.754</span> → <span class="diff-version">0.84.0.27882</span> )
+					<ul class="diff-list">
+						<li>
+							Changed security of Property <a href="/api/class/Instance.html#memberRobloxLocked">Instance.RobloxLocked</a> from LocalUser to RobloxScript
+						</li>
+						<li>
+							Changed security of Function <a href="/api/class/DataModel.html#memberHttpGet">DataModel.HttpGet</a> from RobloxScript to Roblox
+						</li>
+						<li>
+							Changed security of Function <a href="/api/class/DataModel.html#memberHttpPost">DataModel.HttpPost</a> from RobloxScript to Roblox
+						</li>
+						<li>
+							Changed security of YieldFunction <a href="/api/class/DataModel.html#memberHttpGetAsync">DataModel.HttpGetAsync</a> from RobloxScript to Roblox
+						</li>
+						<li>
+							Changed security of YieldFunction <a href="/api/class/DataModel.html#memberHttpPostAsync">DataModel.HttpPostAsync</a> from RobloxScript to Roblox
+						</li>
+					</ul>
+					<li><span class="diff-date">December 20, 2012</span> ( <span class="diff-version">0.82.0.740</span> → <span class="diff-version">0.83.0.754</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/MarketplaceService.html">MarketplaceService</a>
@@ -1406,1030 +1678,8 @@
 						<li>
 							Added Event <a href="/api/class/DataModel.html#memberLoaded">DataModel.Loaded</a>
 						</li>
-						<li>
-							Added Enum AASamples
-							<ul>
-								<li>Added EnumItem AASamples.None</li>
-								<li>Added EnumItem AASamples.4</li>
-								<li>Added EnumItem AASamples.8</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ActionType
-							<ul>
-								<li>Added EnumItem ActionType.Nothing</li>
-								<li>Added EnumItem ActionType.Pause</li>
-								<li>Added EnumItem ActionType.Lose</li>
-								<li>Added EnumItem ActionType.Draw</li>
-								<li>Added EnumItem ActionType.Win</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum AnimationPriority
-							<ul>
-								<li>Added EnumItem AnimationPriority.Idle</li>
-								<li>Added EnumItem AnimationPriority.Movement</li>
-								<li>Added EnumItem AnimationPriority.Action</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Antialiasing
-							<ul>
-								<li>Added EnumItem Antialiasing.Automatic</li>
-								<li>Added EnumItem Antialiasing.On</li>
-								<li>Added EnumItem Antialiasing.Off</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Axis
-							<ul>
-								<li>Added EnumItem Axis.X</li>
-								<li>Added EnumItem Axis.Y</li>
-								<li>Added EnumItem Axis.Z</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Bevels
-							<ul>
-								<li>Added EnumItem Bevels.Automatic</li>
-								<li>Added EnumItem Bevels.On</li>
-								<li>Added EnumItem Bevels.Off</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum BinType
-							<ul>
-								<li>Added EnumItem BinType.Script</li>
-								<li>Added EnumItem BinType.GameTool</li>
-								<li>Added EnumItem BinType.Grab</li>
-								<li>Added EnumItem BinType.Clone</li>
-								<li>Added EnumItem BinType.Hammer</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum BodyPart
-							<ul>
-								<li>Added EnumItem BodyPart.Head</li>
-								<li>Added EnumItem BodyPart.Torso</li>
-								<li>Added EnumItem BodyPart.LeftArm</li>
-								<li>Added EnumItem BodyPart.RightArm</li>
-								<li>Added EnumItem BodyPart.LeftLeg</li>
-								<li>Added EnumItem BodyPart.RightLeg</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Button
-							<ul>
-								<li>Added EnumItem Button.Dismount</li>
-								<li>Added EnumItem Button.Jump</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ButtonStyle
-							<ul>
-								<li>Added EnumItem ButtonStyle.Custom</li>
-								<li>Added EnumItem ButtonStyle.RobloxButtonDefault</li>
-								<li>Added EnumItem ButtonStyle.RobloxButton</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CameraMode
-							<ul>
-								<li>Added EnumItem CameraMode.Classic</li>
-								<li>Added EnumItem CameraMode.LockFirstPerson</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CameraType
-							<ul>
-								<li>Added EnumItem CameraType.Fixed</li>
-								<li>Added EnumItem CameraType.Attach</li>
-								<li>Added EnumItem CameraType.Watch</li>
-								<li>Added EnumItem CameraType.Track</li>
-								<li>Added EnumItem CameraType.Follow</li>
-								<li>Added EnumItem CameraType.Custom</li>
-								<li>Added EnumItem CameraType.Scriptable</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CellBlock
-							<ul>
-								<li>Added EnumItem CellBlock.Solid</li>
-								<li>Added EnumItem CellBlock.VerticalWedge</li>
-								<li>Added EnumItem CellBlock.CornerWedge</li>
-								<li>Added EnumItem CellBlock.InverseCornerWedge</li>
-								<li>Added EnumItem CellBlock.HorizontalWedge</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CellMaterial
-							<ul>
-								<li>Added EnumItem CellMaterial.Empty</li>
-								<li>Added EnumItem CellMaterial.Grass</li>
-								<li>Added EnumItem CellMaterial.Sand</li>
-								<li>Added EnumItem CellMaterial.Brick</li>
-								<li>Added EnumItem CellMaterial.Granite</li>
-								<li>Added EnumItem CellMaterial.Asphalt</li>
-								<li>Added EnumItem CellMaterial.Iron</li>
-								<li>Added EnumItem CellMaterial.Aluminum</li>
-								<li>Added EnumItem CellMaterial.Gold</li>
-								<li>Added EnumItem CellMaterial.WoodPlank</li>
-								<li>Added EnumItem CellMaterial.WoodLog</li>
-								<li>Added EnumItem CellMaterial.Gravel</li>
-								<li>Added EnumItem CellMaterial.CinderBlock</li>
-								<li>Added EnumItem CellMaterial.MossyStone</li>
-								<li>Added EnumItem CellMaterial.Cement</li>
-								<li>Added EnumItem CellMaterial.RedPlastic</li>
-								<li>Added EnumItem CellMaterial.BluePlastic</li>
-								<li>Added EnumItem CellMaterial.Water</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CellOrientation
-							<ul>
-								<li>Added EnumItem CellOrientation.NegZ</li>
-								<li>Added EnumItem CellOrientation.X</li>
-								<li>Added EnumItem CellOrientation.Z</li>
-								<li>Added EnumItem CellOrientation.NegX</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CenterDialogType
-							<ul>
-								<li>Added EnumItem CenterDialogType.UnsolicitedDialog</li>
-								<li>Added EnumItem CenterDialogType.PlayerInitiatedDialog</li>
-								<li>Added EnumItem CenterDialogType.ModalDialog</li>
-								<li>Added EnumItem CenterDialogType.QuitDialog</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ChatColor
-							<ul>
-								<li>Added EnumItem ChatColor.Blue</li>
-								<li>Added EnumItem ChatColor.Green</li>
-								<li>Added EnumItem ChatColor.Red</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ChatMode
-							<ul>
-								<li>Added EnumItem ChatMode.Menu</li>
-								<li>Added EnumItem ChatMode.TextAndMenu</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ChatStyle
-							<ul>
-								<li>Added EnumItem ChatStyle.Classic</li>
-								<li>Added EnumItem ChatStyle.Bubble</li>
-								<li>Added EnumItem ChatStyle.ClassicAndBubble</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ConcurrencyModel
-							<ul>
-								<li>Added EnumItem ConcurrencyModel.Serial</li>
-								<li>Added EnumItem ConcurrencyModel.Safe</li>
-								<li>Added EnumItem ConcurrencyModel.Logical</li>
-								<li>Added EnumItem ConcurrencyModel.Empirical</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ControlMode
-							<ul>
-								<li>Added EnumItem ControlMode.Classic</li>
-								<li>Added EnumItem ControlMode.MouseLockSwitch</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum CreatorType
-							<ul>
-								<li>Added EnumItem CreatorType.User</li>
-								<li>Added EnumItem CreatorType.Group</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum D3DDEVTYPE
-							<ul>
-								<li>Added EnumItem D3DDEVTYPE.D3DDEVTYPE_HAL</li>
-								<li>Added EnumItem D3DDEVTYPE.D3DDEVTYPE_REF</li>
-								<li>Added EnumItem D3DDEVTYPE.D3DDEVTYPE_SW</li>
-								<li>Added EnumItem D3DDEVTYPE.D3DDEVTYPE_NULLREF</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum D3DFORMAT
-							<ul>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_UNKNOWN</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_R8G8B8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8R8G8B8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_X8R8G8B8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_R5G6B5</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_X1R5G5B5</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A1R5G5B5</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A4R4G4B4</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_R3G3B2</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8R3G3B2</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_X4R4G4B4</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A2B10G10R10</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8B8G8R8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_X8B8G8R8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_G16R16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A2R10G10B10</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A16B16G16R16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8P8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_P8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_L8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A8L8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A4L4</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_V8U8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_L6V5U5</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_X8L8V8U8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_Q8W8V8U8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_V16U16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A2W10V10U10</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D16_LOCKABLE</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D32</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D15S1</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D24S8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D24X8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D24X4S4</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_L16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D32F_LOCKABLE</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_D24FS8</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_VERTEXDATA</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_INDEX16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_INDEX32</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_Q16W16V16U16</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_R16F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_G16R16F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A16B16G16R16F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_R32F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_G32R32F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_A32B32G32R32F</li>
-								<li>Added EnumItem D3DFORMAT.D3DFMT_CxV8U8</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum DialogPurpose
-							<ul>
-								<li>Added EnumItem DialogPurpose.Quest</li>
-								<li>Added EnumItem DialogPurpose.Help</li>
-								<li>Added EnumItem DialogPurpose.Shop</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum DialogTone
-							<ul>
-								<li>Added EnumItem DialogTone.Neutral</li>
-								<li>Added EnumItem DialogTone.Friendly</li>
-								<li>Added EnumItem DialogTone.Enemy</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum EasingDirection
-							<ul>
-								<li>Added EnumItem EasingDirection.In</li>
-								<li>Added EnumItem EasingDirection.Out</li>
-								<li>Added EnumItem EasingDirection.InOut</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum EasingStyle
-							<ul>
-								<li>Added EnumItem EasingStyle.Linear</li>
-								<li>Added EnumItem EasingStyle.Sine</li>
-								<li>Added EnumItem EasingStyle.Back</li>
-								<li>Added EnumItem EasingStyle.Quad</li>
-								<li>Added EnumItem EasingStyle.Quart</li>
-								<li>Added EnumItem EasingStyle.Quint</li>
-								<li>Added EnumItem EasingStyle.Bounce</li>
-								<li>Added EnumItem EasingStyle.Elastic</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum EnviromentalPhysicsThrottle
-							<ul>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.DefaultAuto</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Disabled</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Always</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Skip2</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Skip4</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Skip8</li>
-								<li>Added EnumItem EnviromentalPhysicsThrottle.Skip16</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ErrorReporting
-							<ul>
-								<li>Added EnumItem ErrorReporting.DontReport</li>
-								<li>Added EnumItem ErrorReporting.Prompt</li>
-								<li>Added EnumItem ErrorReporting.Report</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ExplosionType
-							<ul>
-								<li>Added EnumItem ExplosionType.NoCraters</li>
-								<li>Added EnumItem ExplosionType.Craters</li>
-								<li>Added EnumItem ExplosionType.CratersAndDebris</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FilterResult
-							<ul>
-								<li>Added EnumItem FilterResult.Accepted</li>
-								<li>Added EnumItem FilterResult.Rejected</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Font
-							<ul>
-								<li>Added EnumItem Font.Legacy</li>
-								<li>Added EnumItem Font.Arial</li>
-								<li>Added EnumItem Font.ArialBold</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FontSize
-							<ul>
-								<li>Added EnumItem FontSize.Size8</li>
-								<li>Added EnumItem FontSize.Size9</li>
-								<li>Added EnumItem FontSize.Size10</li>
-								<li>Added EnumItem FontSize.Size11</li>
-								<li>Added EnumItem FontSize.Size12</li>
-								<li>Added EnumItem FontSize.Size14</li>
-								<li>Added EnumItem FontSize.Size18</li>
-								<li>Added EnumItem FontSize.Size24</li>
-								<li>Added EnumItem FontSize.Size36</li>
-								<li>Added EnumItem FontSize.Size48</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FormFactor
-							<ul>
-								<li>Added EnumItem FormFactor.Symmetric</li>
-								<li>Added EnumItem FormFactor.Brick</li>
-								<li>Added EnumItem FormFactor.Plate</li>
-								<li>Added EnumItem FormFactor.Custom</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FrameStyle
-							<ul>
-								<li>Added EnumItem FrameStyle.Custom</li>
-								<li>Added EnumItem FrameStyle.ChatBlue</li>
-								<li>Added EnumItem FrameStyle.RobloxSquare</li>
-								<li>Added EnumItem FrameStyle.RobloxRound</li>
-								<li>Added EnumItem FrameStyle.ChatGreen</li>
-								<li>Added EnumItem FrameStyle.ChatRed</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FramerateManagerMode
-							<ul>
-								<li>Added EnumItem FramerateManagerMode.Automatic</li>
-								<li>Added EnumItem FramerateManagerMode.On</li>
-								<li>Added EnumItem FramerateManagerMode.Off</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FriendRequestEvent
-							<ul>
-								<li>Added EnumItem FriendRequestEvent.Issue</li>
-								<li>Added EnumItem FriendRequestEvent.Revoke</li>
-								<li>Added EnumItem FriendRequestEvent.Accept</li>
-								<li>Added EnumItem FriendRequestEvent.Deny</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FriendStatus
-							<ul>
-								<li>Added EnumItem FriendStatus.Unknown</li>
-								<li>Added EnumItem FriendStatus.NotFriend</li>
-								<li>Added EnumItem FriendStatus.Friend</li>
-								<li>Added EnumItem FriendStatus.FriendRequestSent</li>
-								<li>Added EnumItem FriendStatus.FriendRequestReceived</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum FunctionalTestResult
-							<ul>
-								<li>Added EnumItem FunctionalTestResult.Passed</li>
-								<li>Added EnumItem FunctionalTestResult.Warning</li>
-								<li>Added EnumItem FunctionalTestResult.Error</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum GearGenreSetting
-							<ul>
-								<li>Added EnumItem GearGenreSetting.AllGenres</li>
-								<li>Added EnumItem GearGenreSetting.MatchingGenreOnly</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum GearType
-							<ul>
-								<li>Added EnumItem GearType.MeleeWeapons</li>
-								<li>Added EnumItem GearType.RangedWeapons</li>
-								<li>Added EnumItem GearType.Explosives</li>
-								<li>Added EnumItem GearType.PowerUps</li>
-								<li>Added EnumItem GearType.NavigationEnhancers</li>
-								<li>Added EnumItem GearType.MusicalInstruments</li>
-								<li>Added EnumItem GearType.SocialItems</li>
-								<li>Added EnumItem GearType.BuildingTools</li>
-								<li>Added EnumItem GearType.Transport</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Genre
-							<ul>
-								<li>Added EnumItem Genre.All</li>
-								<li>Added EnumItem Genre.TownAndCity</li>
-								<li>Added EnumItem Genre.Fantasy</li>
-								<li>Added EnumItem Genre.SciFi</li>
-								<li>Added EnumItem Genre.Ninja</li>
-								<li>Added EnumItem Genre.Scary</li>
-								<li>Added EnumItem Genre.Pirate</li>
-								<li>Added EnumItem Genre.Adventure</li>
-								<li>Added EnumItem Genre.Sports</li>
-								<li>Added EnumItem Genre.Funny</li>
-								<li>Added EnumItem Genre.WildWest</li>
-								<li>Added EnumItem Genre.War</li>
-								<li>Added EnumItem Genre.SkatePark</li>
-								<li>Added EnumItem Genre.Tutorial</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum GeometryQuality
-							<ul>
-								<li>Added EnumItem GeometryQuality.Automatic</li>
-								<li>Added EnumItem GeometryQuality.Low</li>
-								<li>Added EnumItem GeometryQuality.Medium</li>
-								<li>Added EnumItem GeometryQuality.High</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum GraphicsMode
-							<ul>
-								<li>Added EnumItem GraphicsMode.Automatic</li>
-								<li>Added EnumItem GraphicsMode.Direct3D</li>
-								<li>Added EnumItem GraphicsMode.OpenGL</li>
-								<li>Added EnumItem GraphicsMode.NoGraphics</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum HandlesStyle
-							<ul>
-								<li>Added EnumItem HandlesStyle.Resize</li>
-								<li>Added EnumItem HandlesStyle.Movement</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum InOut
-							<ul>
-								<li>Added EnumItem InOut.Edge</li>
-								<li>Added EnumItem InOut.Inset</li>
-								<li>Added EnumItem InOut.Center</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum InputType
-							<ul>
-								<li>Added EnumItem InputType.NoInput</li>
-								<li>Added EnumItem InputType.LeftTread</li>
-								<li>Added EnumItem InputType.RightTread</li>
-								<li>Added EnumItem InputType.Steer</li>
-								<li>Added EnumItem InputType.Throtle</li>
-								<li>Added EnumItem InputType.UpDown</li>
-								<li>Added EnumItem InputType.Action1</li>
-								<li>Added EnumItem InputType.Action2</li>
-								<li>Added EnumItem InputType.Action3</li>
-								<li>Added EnumItem InputType.Action4</li>
-								<li>Added EnumItem InputType.Action5</li>
-								<li>Added EnumItem InputType.Constant</li>
-								<li>Added EnumItem InputType.Sin</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum JointType
-							<ul>
-								<li>Added EnumItem JointType.Weld</li>
-								<li>Added EnumItem JointType.Snap</li>
-								<li>Added EnumItem JointType.Rotate</li>
-								<li>Added EnumItem JointType.RotateP</li>
-								<li>Added EnumItem JointType.RotateV</li>
-								<li>Added EnumItem JointType.Glue</li>
-								<li>Added EnumItem JointType.None</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum KeywordFilterType
-							<ul>
-								<li>Added EnumItem KeywordFilterType.Include</li>
-								<li>Added EnumItem KeywordFilterType.Exclude</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum LeftRight
-							<ul>
-								<li>Added EnumItem LeftRight.Left</li>
-								<li>Added EnumItem LeftRight.Center</li>
-								<li>Added EnumItem LeftRight.Right</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum LevelOfDetailSetting
-							<ul>
-								<li>Added EnumItem LevelOfDetailSetting.Low</li>
-								<li>Added EnumItem LevelOfDetailSetting.Medium</li>
-								<li>Added EnumItem LevelOfDetailSetting.High</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Material
-							<ul>
-								<li>Added EnumItem Material.Plastic</li>
-								<li>Added EnumItem Material.Wood</li>
-								<li>Added EnumItem Material.Slate</li>
-								<li>Added EnumItem Material.Concrete</li>
-								<li>Added EnumItem Material.CorrodedMetal</li>
-								<li>Added EnumItem Material.DiamondPlate</li>
-								<li>Added EnumItem Material.Foil</li>
-								<li>Added EnumItem Material.Grass</li>
-								<li>Added EnumItem Material.Ice</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum MaterialQuality
-							<ul>
-								<li>Added EnumItem MaterialQuality.Automatic</li>
-								<li>Added EnumItem MaterialQuality.Low</li>
-								<li>Added EnumItem MaterialQuality.Medium</li>
-								<li>Added EnumItem MaterialQuality.High</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum MembershipType
-							<ul>
-								<li>Added EnumItem MembershipType.None</li>
-								<li>Added EnumItem MembershipType.BuildersClub</li>
-								<li>Added EnumItem MembershipType.TurboBuildersClub</li>
-								<li>Added EnumItem MembershipType.OutrageousBuildersClub</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum MeshType
-							<ul>
-								<li>Added EnumItem MeshType.Head</li>
-								<li>Added EnumItem MeshType.Torso</li>
-								<li>Added EnumItem MeshType.Wedge</li>
-								<li>Added EnumItem MeshType.Sphere</li>
-								<li>Added EnumItem MeshType.Cylinder</li>
-								<li>Added EnumItem MeshType.FileMesh</li>
-								<li>Added EnumItem MeshType.Brick</li>
-								<li>Added EnumItem MeshType.Prism</li>
-								<li>Added EnumItem MeshType.Pyramid</li>
-								<li>Added EnumItem MeshType.ParallelRamp</li>
-								<li>Added EnumItem MeshType.RightAngleRamp</li>
-								<li>Added EnumItem MeshType.CornerWedge</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum MoveState
-							<ul>
-								<li>Added EnumItem MoveState.Stopped</li>
-								<li>Added EnumItem MoveState.Coasting</li>
-								<li>Added EnumItem MoveState.Pushing</li>
-								<li>Added EnumItem MoveState.Stopping</li>
-								<li>Added EnumItem MoveState.AirFree</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum NameOcclusion
-							<ul>
-								<li>Added EnumItem NameOcclusion.NoOcclusion</li>
-								<li>Added EnumItem NameOcclusion.EnemyOcclusion</li>
-								<li>Added EnumItem NameOcclusion.OccludeAll</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum NormalId
-							<ul>
-								<li>Added EnumItem NormalId.Right</li>
-								<li>Added EnumItem NormalId.Top</li>
-								<li>Added EnumItem NormalId.Back</li>
-								<li>Added EnumItem NormalId.Left</li>
-								<li>Added EnumItem NormalId.Bottom</li>
-								<li>Added EnumItem NormalId.Front</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PacketPriority
-							<ul>
-								<li>Added EnumItem PacketPriority.IMMEDIATE_PRIORITY</li>
-								<li>Added EnumItem PacketPriority.HIGH_PRIORITY</li>
-								<li>Added EnumItem PacketPriority.MEDIUM_PRIORITY</li>
-								<li>Added EnumItem PacketPriority.LOW_PRIORITY</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PacketReliability
-							<ul>
-								<li>Added EnumItem PacketReliability.UNRELIABLE</li>
-								<li>Added EnumItem PacketReliability.UNRELIABLE_SEQUENCED</li>
-								<li>Added EnumItem PacketReliability.RELIABLE</li>
-								<li>Added EnumItem PacketReliability.RELIABLE_ORDERED</li>
-								<li>Added EnumItem PacketReliability.RELIABLE_SEQUENCED</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PartType
-							<ul>
-								<li>Added EnumItem PartType.Ball</li>
-								<li>Added EnumItem PartType.Block</li>
-								<li>Added EnumItem PartType.Cylinder</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PhysicsReceiveMethod
-							<ul>
-								<li>Added EnumItem PhysicsReceiveMethod.Direct</li>
-								<li>Added EnumItem PhysicsReceiveMethod.Interpolation</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PhysicsSendMethod
-							<ul>
-								<li>Added EnumItem PhysicsSendMethod.ErrorComputation</li>
-								<li>Added EnumItem PhysicsSendMethod.ErrorComputation2</li>
-								<li>Added EnumItem PhysicsSendMethod.RoundRobin</li>
-								<li>Added EnumItem PhysicsSendMethod.TopNErrors</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PlayerChatType
-							<ul>
-								<li>Added EnumItem PlayerChatType.All</li>
-								<li>Added EnumItem PlayerChatType.Team</li>
-								<li>Added EnumItem PlayerChatType.Whisper</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PriorityMethod
-							<ul>
-								<li>Added EnumItem PriorityMethod.LastError</li>
-								<li>Added EnumItem PriorityMethod.AccumulatedError</li>
-								<li>Added EnumItem PriorityMethod.FIFO</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PrismSides
-							<ul>
-								<li>Added EnumItem PrismSides.3</li>
-								<li>Added EnumItem PrismSides.5</li>
-								<li>Added EnumItem PrismSides.6</li>
-								<li>Added EnumItem PrismSides.8</li>
-								<li>Added EnumItem PrismSides.10</li>
-								<li>Added EnumItem PrismSides.20</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PrivilegeType
-							<ul>
-								<li>Added EnumItem PrivilegeType.Banned</li>
-								<li>Added EnumItem PrivilegeType.Visitor</li>
-								<li>Added EnumItem PrivilegeType.Member</li>
-								<li>Added EnumItem PrivilegeType.Admin</li>
-								<li>Added EnumItem PrivilegeType.Owner</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum PyramidSides
-							<ul>
-								<li>Added EnumItem PyramidSides.3</li>
-								<li>Added EnumItem PyramidSides.4</li>
-								<li>Added EnumItem PyramidSides.5</li>
-								<li>Added EnumItem PyramidSides.6</li>
-								<li>Added EnumItem PyramidSides.8</li>
-								<li>Added EnumItem PyramidSides.10</li>
-								<li>Added EnumItem PyramidSides.20</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum QualityLevel
-							<ul>
-								<li>Added EnumItem QualityLevel.Automatic</li>
-								<li>Added EnumItem QualityLevel.Level01</li>
-								<li>Added EnumItem QualityLevel.Level02</li>
-								<li>Added EnumItem QualityLevel.Level03</li>
-								<li>Added EnumItem QualityLevel.Level04</li>
-								<li>Added EnumItem QualityLevel.Level05</li>
-								<li>Added EnumItem QualityLevel.Level06</li>
-								<li>Added EnumItem QualityLevel.Level07</li>
-								<li>Added EnumItem QualityLevel.Level08</li>
-								<li>Added EnumItem QualityLevel.Level09</li>
-								<li>Added EnumItem QualityLevel.Level10</li>
-								<li>Added EnumItem QualityLevel.Level11</li>
-								<li>Added EnumItem QualityLevel.Level12</li>
-								<li>Added EnumItem QualityLevel.Level13</li>
-								<li>Added EnumItem QualityLevel.Level14</li>
-								<li>Added EnumItem QualityLevel.Level15</li>
-								<li>Added EnumItem QualityLevel.Level16</li>
-								<li>Added EnumItem QualityLevel.Level17</li>
-								<li>Added EnumItem QualityLevel.Level18</li>
-								<li>Added EnumItem QualityLevel.Level19</li>
-								<li>Added EnumItem QualityLevel.Level20</li>
-								<li>Added EnumItem QualityLevel.Level21</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Resolution
-							<ul>
-								<li>Added EnumItem Resolution.Automatic</li>
-								<li>Added EnumItem Resolution.720x526</li>
-								<li>Added EnumItem Resolution.800x600</li>
-								<li>Added EnumItem Resolution.1024x600</li>
-								<li>Added EnumItem Resolution.1024x768</li>
-								<li>Added EnumItem Resolution.1280x720</li>
-								<li>Added EnumItem Resolution.1280x768</li>
-								<li>Added EnumItem Resolution.1152x864</li>
-								<li>Added EnumItem Resolution.1280x800</li>
-								<li>Added EnumItem Resolution.1360x768</li>
-								<li>Added EnumItem Resolution.1280x960</li>
-								<li>Added EnumItem Resolution.1280x1024</li>
-								<li>Added EnumItem Resolution.1440x900</li>
-								<li>Added EnumItem Resolution.1600x900</li>
-								<li>Added EnumItem Resolution.1600x1024</li>
-								<li>Added EnumItem Resolution.1600x1200</li>
-								<li>Added EnumItem Resolution.1680x1050</li>
-								<li>Added EnumItem Resolution.1920x1080</li>
-								<li>Added EnumItem Resolution.1920x1200</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ReverbType
-							<ul>
-								<li>Added EnumItem ReverbType.NoReverb</li>
-								<li>Added EnumItem ReverbType.GenericReverb</li>
-								<li>Added EnumItem ReverbType.PaddedCell</li>
-								<li>Added EnumItem ReverbType.Room</li>
-								<li>Added EnumItem ReverbType.Bathroom</li>
-								<li>Added EnumItem ReverbType.LivingRoom</li>
-								<li>Added EnumItem ReverbType.StoneRoom</li>
-								<li>Added EnumItem ReverbType.Auditorium</li>
-								<li>Added EnumItem ReverbType.ConcertHall</li>
-								<li>Added EnumItem ReverbType.Cave</li>
-								<li>Added EnumItem ReverbType.Arena</li>
-								<li>Added EnumItem ReverbType.Hangar</li>
-								<li>Added EnumItem ReverbType.CarpettedHallway</li>
-								<li>Added EnumItem ReverbType.Hallway</li>
-								<li>Added EnumItem ReverbType.StoneCorridor</li>
-								<li>Added EnumItem ReverbType.Alley</li>
-								<li>Added EnumItem ReverbType.Forest</li>
-								<li>Added EnumItem ReverbType.City</li>
-								<li>Added EnumItem ReverbType.Mountains</li>
-								<li>Added EnumItem ReverbType.Quarry</li>
-								<li>Added EnumItem ReverbType.Plain</li>
-								<li>Added EnumItem ReverbType.ParkingLot</li>
-								<li>Added EnumItem ReverbType.SewerPipe</li>
-								<li>Added EnumItem ReverbType.UnderWater</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum RuntimeUndoBehavior
-							<ul>
-								<li>Added EnumItem RuntimeUndoBehavior.Aggregate</li>
-								<li>Added EnumItem RuntimeUndoBehavior.Snapshot</li>
-								<li>Added EnumItem RuntimeUndoBehavior.Hybrid</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SavedQualitySetting
-							<ul>
-								<li>Added EnumItem SavedQualitySetting.Automatic</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel1</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel2</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel3</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel4</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel5</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel6</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel7</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel8</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel9</li>
-								<li>Added EnumItem SavedQualitySetting.QualityLevel10</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Shadow
-							<ul>
-								<li>Added EnumItem Shadow.Automatic</li>
-								<li>Added EnumItem Shadow.All</li>
-								<li>Added EnumItem Shadow.Off</li>
-								<li>Added EnumItem Shadow.CharacterOnly</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SizeConstraint
-							<ul>
-								<li>Added EnumItem SizeConstraint.RelativeXY</li>
-								<li>Added EnumItem SizeConstraint.RelativeXX</li>
-								<li>Added EnumItem SizeConstraint.RelativeYY</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SleepAdjustMethod
-							<ul>
-								<li>Added EnumItem SleepAdjustMethod.None</li>
-								<li>Added EnumItem SleepAdjustMethod.LastSample</li>
-								<li>Added EnumItem SleepAdjustMethod.AverageInterval</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SoundType
-							<ul>
-								<li>Added EnumItem SoundType.NoSound</li>
-								<li>Added EnumItem SoundType.Boing</li>
-								<li>Added EnumItem SoundType.Bomb</li>
-								<li>Added EnumItem SoundType.Break</li>
-								<li>Added EnumItem SoundType.Click</li>
-								<li>Added EnumItem SoundType.Clock</li>
-								<li>Added EnumItem SoundType.Slingshot</li>
-								<li>Added EnumItem SoundType.Page</li>
-								<li>Added EnumItem SoundType.Ping</li>
-								<li>Added EnumItem SoundType.Snap</li>
-								<li>Added EnumItem SoundType.Splat</li>
-								<li>Added EnumItem SoundType.Step</li>
-								<li>Added EnumItem SoundType.StepOn</li>
-								<li>Added EnumItem SoundType.Swoosh</li>
-								<li>Added EnumItem SoundType.Victory</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SpecialKey
-							<ul>
-								<li>Added EnumItem SpecialKey.Insert</li>
-								<li>Added EnumItem SpecialKey.Home</li>
-								<li>Added EnumItem SpecialKey.End</li>
-								<li>Added EnumItem SpecialKey.PageUp</li>
-								<li>Added EnumItem SpecialKey.PageDown</li>
-								<li>Added EnumItem SpecialKey.ChatHotkey</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Status
-							<ul>
-								<li>Added EnumItem Status.Poison</li>
-								<li>Added EnumItem Status.Confusion</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Stuff
-							<ul>
-								<li>Added EnumItem Stuff.Heads</li>
-								<li>Added EnumItem Stuff.Faces</li>
-								<li>Added EnumItem Stuff.Hats</li>
-								<li>Added EnumItem Stuff.TShirts</li>
-								<li>Added EnumItem Stuff.Shirts</li>
-								<li>Added EnumItem Stuff.Pants</li>
-								<li>Added EnumItem Stuff.Gears</li>
-								<li>Added EnumItem Stuff.Torsos</li>
-								<li>Added EnumItem Stuff.LeftArms</li>
-								<li>Added EnumItem Stuff.RightArms</li>
-								<li>Added EnumItem Stuff.LeftLegs</li>
-								<li>Added EnumItem Stuff.RightLegs</li>
-								<li>Added EnumItem Stuff.Bodies</li>
-								<li>Added EnumItem Stuff.Costumes</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum Style
-							<ul>
-								<li>Added EnumItem Style.AlternatingSupports</li>
-								<li>Added EnumItem Style.BridgeStyleSupports</li>
-								<li>Added EnumItem Style.NoSupports</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SurfaceConstraint
-							<ul>
-								<li>Added EnumItem SurfaceConstraint.None</li>
-								<li>Added EnumItem SurfaceConstraint.Hinge</li>
-								<li>Added EnumItem SurfaceConstraint.SteppingMotor</li>
-								<li>Added EnumItem SurfaceConstraint.Motor</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum SurfaceType
-							<ul>
-								<li>Added EnumItem SurfaceType.Smooth</li>
-								<li>Added EnumItem SurfaceType.Glue</li>
-								<li>Added EnumItem SurfaceType.Weld</li>
-								<li>Added EnumItem SurfaceType.Studs</li>
-								<li>Added EnumItem SurfaceType.Inlet</li>
-								<li>Added EnumItem SurfaceType.Universal</li>
-								<li>Added EnumItem SurfaceType.Hinge</li>
-								<li>Added EnumItem SurfaceType.Motor</li>
-								<li>Added EnumItem SurfaceType.SteppingMotor</li>
-								<li>Added EnumItem SurfaceType.Unjoinable</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum TextXAlignment
-							<ul>
-								<li>Added EnumItem TextXAlignment.Left</li>
-								<li>Added EnumItem TextXAlignment.Right</li>
-								<li>Added EnumItem TextXAlignment.Center</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum TextYAlignment
-							<ul>
-								<li>Added EnumItem TextYAlignment.Top</li>
-								<li>Added EnumItem TextYAlignment.Center</li>
-								<li>Added EnumItem TextYAlignment.Bottom</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum ThreadPoolConfig
-							<ul>
-								<li>Added EnumItem ThreadPoolConfig.Auto</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads1</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads2</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads3</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads4</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads8</li>
-								<li>Added EnumItem ThreadPoolConfig.Threads16</li>
-								<li>Added EnumItem ThreadPoolConfig.PerCore1</li>
-								<li>Added EnumItem ThreadPoolConfig.PerCore2</li>
-								<li>Added EnumItem ThreadPoolConfig.PerCore3</li>
-								<li>Added EnumItem ThreadPoolConfig.PerCore4</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum TickCountSampleMethod
-							<ul>
-								<li>Added EnumItem TickCountSampleMethod.Fast</li>
-								<li>Added EnumItem TickCountSampleMethod.Benchmark</li>
-								<li>Added EnumItem TickCountSampleMethod.Precise</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum TopBottom
-							<ul>
-								<li>Added EnumItem TopBottom.Top</li>
-								<li>Added EnumItem TopBottom.Center</li>
-								<li>Added EnumItem TopBottom.Bottom</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum TweenStatus
-							<ul>
-								<li>Added EnumItem TweenStatus.Canceled</li>
-								<li>Added EnumItem TweenStatus.Completed</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum UploadSetting
-							<ul>
-								<li>Added EnumItem UploadSetting.Never</li>
-								<li>Added EnumItem UploadSetting.Ask</li>
-								<li>Added EnumItem UploadSetting.Always</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum VideoQualitySettings
-							<ul>
-								<li>Added EnumItem VideoQualitySettings.LowResolution</li>
-								<li>Added EnumItem VideoQualitySettings.MediumResolution</li>
-								<li>Added EnumItem VideoQualitySettings.HighResolution</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum WaterDirection
-							<ul>
-								<li>Added EnumItem WaterDirection.NegX</li>
-								<li>Added EnumItem WaterDirection.X</li>
-								<li>Added EnumItem WaterDirection.NegY</li>
-								<li>Added EnumItem WaterDirection.Y</li>
-								<li>Added EnumItem WaterDirection.NegZ</li>
-								<li>Added EnumItem WaterDirection.Z</li>
-							</ul>
-						</li>
-						<li>
-							Added Enum WaterForce
-							<ul>
-								<li>Added EnumItem WaterForce.None</li>
-								<li>Added EnumItem WaterForce.Small</li>
-								<li>Added EnumItem WaterForce.Medium</li>
-								<li>Added EnumItem WaterForce.Strong</li>
-								<li>Added EnumItem WaterForce.Max</li>
-							</ul>
-						</li>
 					</ul>
-					<li><span class="diff-date">November 08, 2012</span> ( <span class="diff-version">0.78.1.702</span> → <span class="diff-version">0.79.0.708</span> )
+					<li><span class="diff-date">December 03, 2012</span> ( <span class="diff-version">0.78.1.702</span> → <span class="diff-version">0.79.0.713</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/TotalCountTimeIntervalItem.html">TotalCountTimeIntervalItem</a>
@@ -2453,783 +1703,6 @@
 						</li>
 						<li>
 							Added Event <a href="/api/class/ServerReplicator.html#memberTicketProcessed">ServerReplicator.TicketProcessed</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Accoutrement.html">Accoutrement</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/AdvancedDragger.html">AdvancedDragger</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Animation.html">Animation</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/AnimationTrack.html">AnimationTrack</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/AnimationTrackState.html">AnimationTrackState</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Animator.html">Animator</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ArcHandles.html">ArcHandles</a> from (none) to <a class="api-class-name" href="/api/class/HandlesBase.html">HandlesBase</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Backpack.html">Backpack</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BackpackItem.html">BackpackItem</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BadgeService.html">BadgeService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a> from (none) to <a class="api-class-name" href="/api/class/PVInstance.html">PVInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BasePlayerGui.html">BasePlayerGui</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BaseScript.html">BaseScript</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BevelMesh.html">BevelMesh</a> from (none) to <a class="api-class-name" href="/api/class/DataModelMesh.html">DataModelMesh</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BillboardGui.html">BillboardGui</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BindableEvent.html">BindableEvent</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BindableFunction.html">BindableFunction</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BlockMesh.html">BlockMesh</a> from (none) to <a class="api-class-name" href="/api/class/BevelMesh.html">BevelMesh</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyAngularVelocity.html">BodyAngularVelocity</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyColors.html">BodyColors</a> from (none) to <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyForce.html">BodyForce</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyGyro.html">BodyGyro</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyPosition.html">BodyPosition</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyThrust.html">BodyThrust</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BodyVelocity.html">BodyVelocity</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BoolValue.html">BoolValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/BrickColorValue.html">BrickColorValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Button.html">Button</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ButtonBindingWidget.html">ButtonBindingWidget</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CFrameValue.html">CFrameValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CacheableContentProvider.html">CacheableContentProvider</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Camera.html">Camera</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ChangeHistoryService.html">ChangeHistoryService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CharacterMesh.html">CharacterMesh</a> from (none) to <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Chat.html">Chat</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ClickDetector.html">ClickDetector</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Clothing.html">Clothing</a> from (none) to <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CollectionService.html">CollectionService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Color3Value.html">Color3Value</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Configuration.html">Configuration</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ContentFilter.html">ContentFilter</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ContentProvider.html">ContentProvider</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Controller.html">Controller</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ControllerService.html">ControllerService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CookiesService.html">CookiesService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CoreGui.html">CoreGui</a> from (none) to <a class="api-class-name" href="/api/class/BasePlayerGui.html">BasePlayerGui</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CoreScript.html">CoreScript</a> from (none) to <a class="api-class-name" href="/api/class/BaseScript.html">BaseScript</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CornerWedgePart.html">CornerWedgePart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CustomEvent.html">CustomEvent</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CustomEventReceiver.html">CustomEventReceiver</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/CylinderMesh.html">CylinderMesh</a> from (none) to <a class="api-class-name" href="/api/class/BevelMesh.html">BevelMesh</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DataModel.html">DataModel</a> from (none) to <a class="api-class-name" href="/api/class/ServiceProvider.html">ServiceProvider</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DataModelMesh.html">DataModelMesh</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Debris.html">Debris</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DebugSettings.html">DebugSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DebuggerBreakpoint.html">DebuggerBreakpoint</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DebuggerService.html">DebuggerService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DebuggerWatch.html">DebuggerWatch</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Decal.html">Decal</a> from (none) to <a class="api-class-name" href="/api/class/FaceInstance.html">FaceInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Dialog.html">Dialog</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DialogChoice.html">DialogChoice</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DoubleConstrainedValue.html">DoubleConstrainedValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Dragger.html">Dragger</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/DynamicRotate.html">DynamicRotate</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Explosion.html">Explosion</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FaceInstance.html">FaceInstance</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FastLogSettings.html">FastLogSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Feature.html">Feature</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FileMesh.html">FileMesh</a> from (none) to <a class="api-class-name" href="/api/class/DataModelMesh.html">DataModelMesh</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Fire.html">Fire</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Flag.html">Flag</a> from (none) to <a class="api-class-name" href="/api/class/Tool.html">Tool</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FlagStand.html">FlagStand</a> from (none) to <a class="api-class-name" href="/api/class/Part.html">Part</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FlagStandService.html">FlagStandService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FloorWire.html">FloorWire</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ForceField.html">ForceField</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FormFactorPart.html">FormFactorPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Frame.html">Frame</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FriendService.html">FriendService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/FunctionalTest.html">FunctionalTest</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GamePassService.html">GamePassService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GameSettings.html">GameSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GenericSettings.html">GenericSettings</a> from (none) to <a class="api-class-name" href="/api/class/ServiceProvider.html">ServiceProvider</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Geometry.html">Geometry</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GlobalSettings.html">GlobalSettings</a> from (none) to <a class="api-class-name" href="/api/class/GenericSettings.html">GenericSettings</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Glue.html">Glue</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiButton.html">GuiButton</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiLabel.html">GuiLabel</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiMain.html">GuiMain</a> from (none) to <a class="api-class-name" href="/api/class/ScreenGui.html">ScreenGui</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiRoot.html">GuiRoot</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuiService.html">GuiService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/GuidRegistryService.html">GuidRegistryService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Handles.html">Handles</a> from (none) to <a class="api-class-name" href="/api/class/HandlesBase.html">HandlesBase</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/HandlesBase.html">HandlesBase</a> from (none) to <a class="api-class-name" href="/api/class/PartAdornment.html">PartAdornment</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Hat.html">Hat</a> from (none) to <a class="api-class-name" href="/api/class/Accoutrement.html">Accoutrement</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Hint.html">Hint</a> from (none) to <a class="api-class-name" href="/api/class/Message.html">Message</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Hole.html">Hole</a> from (none) to <a class="api-class-name" href="/api/class/Feature.html">Feature</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Hopper.html">Hopper</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/HopperBin.html">HopperBin</a> from (none) to <a class="api-class-name" href="/api/class/BackpackItem.html">BackpackItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Humanoid.html">Humanoid</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/HumanoidController.html">HumanoidController</a> from (none) to <a class="api-class-name" href="/api/class/Controller.html">Controller</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ImageButton.html">ImageButton</a> from (none) to <a class="api-class-name" href="/api/class/GuiButton.html">GuiButton</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ImageLabel.html">ImageLabel</a> from (none) to <a class="api-class-name" href="/api/class/GuiLabel.html">GuiLabel</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/InsertService.html">InsertService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/InstancePacketCache.html">InstancePacketCache</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/IntConstrainedValue.html">IntConstrainedValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/IntValue.html">IntValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/JointsService.html">JointsService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Keyframe.html">Keyframe</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/KeyframeSequence.html">KeyframeSequence</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/KeyframeSequenceProvider.html">KeyframeSequenceProvider</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Lighting.html">Lighting</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/LocalBackpack.html">LocalBackpack</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/LocalScript.html">LocalScript</a> from (none) to <a class="api-class-name" href="/api/class/Script.html">Script</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/LocalWorkspace.html">LocalWorkspace</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/LuaSettings.html">LuaSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/LuaWebService.html">LuaWebService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ManualGlue.html">ManualGlue</a> from (none) to <a class="api-class-name" href="/api/class/ManualSurfaceJointInstance.html">ManualSurfaceJointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ManualSurfaceJointInstance.html">ManualSurfaceJointInstance</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ManualWeld.html">ManualWeld</a> from (none) to <a class="api-class-name" href="/api/class/ManualSurfaceJointInstance.html">ManualSurfaceJointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/MeshContentProvider.html">MeshContentProvider</a> from (none) to <a class="api-class-name" href="/api/class/CacheableContentProvider.html">CacheableContentProvider</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Message.html">Message</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Model.html">Model</a> from (none) to <a class="api-class-name" href="/api/class/PVInstance.html">PVInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Motor.html">Motor</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Motor6D.html">Motor6D</a> from (none) to <a class="api-class-name" href="/api/class/Motor.html">Motor</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/MotorFeature.html">MotorFeature</a> from (none) to <a class="api-class-name" href="/api/class/Feature.html">Feature</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Mouse.html">Mouse</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkClient.html">NetworkClient</a> from (none) to <a class="api-class-name" href="/api/class/NetworkPeer.html">NetworkPeer</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkMarker.html">NetworkMarker</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkPeer.html">NetworkPeer</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkReplicator.html">NetworkReplicator</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkServer.html">NetworkServer</a> from (none) to <a class="api-class-name" href="/api/class/NetworkPeer.html">NetworkPeer</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NetworkSettings.html">NetworkSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NotificationBox.html">NotificationBox</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NotificationObject.html">NotificationObject</a> from (none) to <a class="api-class-name" href="/api/class/Frame.html">Frame</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/NumberValue.html">NumberValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ObjectValue.html">ObjectValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PVAdornment.html">PVAdornment</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PVInstance.html">PVInstance</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Pants.html">Pants</a> from (none) to <a class="api-class-name" href="/api/class/Clothing.html">Clothing</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ParallelRampPart.html">ParallelRampPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Part.html">Part</a> from (none) to <a class="api-class-name" href="/api/class/FormFactorPart.html">FormFactorPart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PartAdornment.html">PartAdornment</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PersonalServerService.html">PersonalServerService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PhysicsPacketCache.html">PhysicsPacketCache</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PhysicsService.html">PhysicsService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PhysicsSettings.html">PhysicsSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Platform.html">Platform</a> from (none) to <a class="api-class-name" href="/api/class/Part.html">Part</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Player.html">Player</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PlayerGui.html">PlayerGui</a> from (none) to <a class="api-class-name" href="/api/class/BasePlayerGui.html">BasePlayerGui</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PlayerHUD.html">PlayerHUD</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PlayerMouse.html">PlayerMouse</a> from (none) to <a class="api-class-name" href="/api/class/Mouse.html">Mouse</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Players.html">Players</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Plugin.html">Plugin</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PluginManager.html">PluginManager</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PluginMouse.html">PluginMouse</a> from (none) to <a class="api-class-name" href="/api/class/Mouse.html">Mouse</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Pose.html">Pose</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PrismPart.html">PrismPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ProfilingItem.html">ProfilingItem</a> from (none) to <a class="api-class-name" href="/api/class/StatsItem.html">StatsItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/PyramidPart.html">PyramidPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RayValue.html">RayValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadata.html">ReflectionMetadata</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataCallbacks.html">ReflectionMetadataCallbacks</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataClass.html">ReflectionMetadataClass</a> from (none) to <a class="api-class-name" href="/api/class/ReflectionMetadataItem.html">ReflectionMetadataItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataClasses.html">ReflectionMetadataClasses</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataEvents.html">ReflectionMetadataEvents</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataFunctions.html">ReflectionMetadataFunctions</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataItem.html">ReflectionMetadataItem</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataMember.html">ReflectionMetadataMember</a> from (none) to <a class="api-class-name" href="/api/class/ReflectionMetadataItem.html">ReflectionMetadataItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataProperties.html">ReflectionMetadataProperties</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ReflectionMetadataYieldFunctions.html">ReflectionMetadataYieldFunctions</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RenderHooksService.html">RenderHooksService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RenderSettings.html">RenderSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RightAngleRampPart.html">RightAngleRampPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RocketPropulsion.html">RocketPropulsion</a> from (none) to <a class="api-class-name" href="/api/class/BodyMover.html">BodyMover</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RootInstance.html">RootInstance</a> from (none) to <a class="api-class-name" href="/api/class/Model.html">Model</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Rotate.html">Rotate</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RotateP.html">RotateP</a> from (none) to <a class="api-class-name" href="/api/class/DynamicRotate.html">DynamicRotate</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RotateV.html">RotateV</a> from (none) to <a class="api-class-name" href="/api/class/DynamicRotate.html">DynamicRotate</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RunService.html">RunService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RunningAverageItemDouble.html">RunningAverageItemDouble</a> from (none) to <a class="api-class-name" href="/api/class/StatsItem.html">StatsItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RunningAverageItemInt.html">RunningAverageItemInt</a> from (none) to <a class="api-class-name" href="/api/class/StatsItem.html">StatsItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/RuntimeScriptService.html">RuntimeScriptService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Scale9Frame.html">Scale9Frame</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ScreenGui.html">ScreenGui</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase.html">GuiBase</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Script.html">Script</a> from (none) to <a class="api-class-name" href="/api/class/BaseScript.html">BaseScript</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ScriptContext.html">ScriptContext</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ScriptDebugger.html">ScriptDebugger</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ScriptInformationProvider.html">ScriptInformationProvider</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Seat.html">Seat</a> from (none) to <a class="api-class-name" href="/api/class/Part.html">Part</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Selection.html">Selection</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SelectionBox.html">SelectionBox</a> from (none) to <a class="api-class-name" href="/api/class/PVAdornment.html">PVAdornment</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SelectionLasso.html">SelectionLasso</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SelectionPartLasso.html">SelectionPartLasso</a> from (none) to <a class="api-class-name" href="/api/class/SelectionLasso.html">SelectionLasso</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SelectionPointLasso.html">SelectionPointLasso</a> from (none) to <a class="api-class-name" href="/api/class/SelectionLasso.html">SelectionLasso</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ServerReplicator.html">ServerReplicator</a> from (none) to <a class="api-class-name" href="/api/class/NetworkReplicator.html">NetworkReplicator</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ServiceProvider.html">ServiceProvider</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Shirt.html">Shirt</a> from (none) to <a class="api-class-name" href="/api/class/Clothing.html">Clothing</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/ShirtGraphic.html">ShirtGraphic</a> from (none) to <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SkateboardController.html">SkateboardController</a> from (none) to <a class="api-class-name" href="/api/class/Controller.html">Controller</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SkateboardPlatform.html">SkateboardPlatform</a> from (none) to <a class="api-class-name" href="/api/class/Part.html">Part</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Skin.html">Skin</a> from (none) to <a class="api-class-name" href="/api/class/CharacterAppearance.html">CharacterAppearance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Sky.html">Sky</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Smoke.html">Smoke</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Snap.html">Snap</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SocialService.html">SocialService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Sound.html">Sound</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SoundService.html">SoundService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Sparkles.html">Sparkles</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SpawnLocation.html">SpawnLocation</a> from (none) to <a class="api-class-name" href="/api/class/Part.html">Part</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SpawnerService.html">SpawnerService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SpecialMesh.html">SpecialMesh</a> from (none) to <a class="api-class-name" href="/api/class/FileMesh.html">FileMesh</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StarterGear.html">StarterGear</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StarterGui.html">StarterGui</a> from (none) to <a class="api-class-name" href="/api/class/BasePlayerGui.html">BasePlayerGui</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StarterPack.html">StarterPack</a> from (none) to <a class="api-class-name" href="/api/class/GuiItem.html">GuiItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StarterScript.html">StarterScript</a> from (none) to <a class="api-class-name" href="/api/class/CoreScript.html">CoreScript</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Stats.html">Stats</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StatsItem.html">StatsItem</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Status.html">Status</a> from (none) to <a class="api-class-name" href="/api/class/Model.html">Model</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StockSound.html">StockSound</a> from (none) to <a class="api-class-name" href="/api/class/Sound.html">Sound</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StringValue.html">StringValue</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/StudioTool.html">StudioTool</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/SurfaceSelection.html">SurfaceSelection</a> from (none) to <a class="api-class-name" href="/api/class/PartAdornment.html">PartAdornment</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TaskScheduler.html">TaskScheduler</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Team.html">Team</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Teams.html">Teams</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TeleportService.html">TeleportService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Terrain.html">Terrain</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TestService.html">TestService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextBox.html">TextBox</a> from (none) to <a class="api-class-name" href="/api/class/GuiObject.html">GuiObject</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextButton.html">TextButton</a> from (none) to <a class="api-class-name" href="/api/class/GuiButton.html">GuiButton</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextLabel.html">TextLabel</a> from (none) to <a class="api-class-name" href="/api/class/GuiLabel.html">GuiLabel</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextService.html">TextService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Texture.html">Texture</a> from (none) to <a class="api-class-name" href="/api/class/Decal.html">Decal</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextureContentProvider.html">TextureContentProvider</a> from (none) to <a class="api-class-name" href="/api/class/CacheableContentProvider.html">CacheableContentProvider</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TextureTrail.html">TextureTrail</a> from (none) to <a class="api-class-name" href="/api/class/GuiBase3d.html">GuiBase3d</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TimerService.html">TimerService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Tool.html">Tool</a> from (none) to <a class="api-class-name" href="/api/class/BackpackItem.html">BackpackItem</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Toolbar.html">Toolbar</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TouchTransmitter.html">TouchTransmitter</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TrussPart.html">TrussPart</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/TweenService.html">TweenService</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/UserGameSettings.html">UserGameSettings</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/UserSettings.html">UserSettings</a> from (none) to <a class="api-class-name" href="/api/class/GenericSettings.html">GenericSettings</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Vector3Value.html">Vector3Value</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/VehicleController.html">VehicleController</a> from (none) to <a class="api-class-name" href="/api/class/Controller.html">Controller</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/VehicleSeat.html">VehicleSeat</a> from (none) to <a class="api-class-name" href="/api/class/BasePart.html">BasePart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/VelocityMotor.html">VelocityMotor</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/VirtualUser.html">VirtualUser</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Visit.html">Visit</a> from (none) to <a class="api-class-name" href="/api/class/Instance.html">Instance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/WedgePart.html">WedgePart</a> from (none) to <a class="api-class-name" href="/api/class/FormFactorPart.html">FormFactorPart</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Weld.html">Weld</a> from (none) to <a class="api-class-name" href="/api/class/JointInstance.html">JointInstance</a>
-						</li>
-						<li>
-							Changed superclass of <a class="api-class-name" href="/api/class/Workspace.html">Workspace</a> from (none) to <a class="api-class-name" href="/api/class/RootInstance.html">RootInstance</a>
 						</li>
 						<li>
 							Removed Class <a class="api-class-name" href="/api/class/<<<ROOT>>>.html"><<<ROOT>>></a>
@@ -3374,15 +1847,8 @@
 							Removed preliminary tag from Callback <a href="/api/class/ServerReplicator.html#memberPropertyFilter">ServerReplicator.PropertyFilter</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">October 11, 2012</span> ( <span class="diff-version">0.71.0.665</span> → <span class="diff-version">0.77.0.696</span> )
+					<li><span class="diff-date">October 11, 2012</span> ( <span class="diff-version">0.75.0.691</span> → <span class="diff-version">0.76.0.695</span> )
 					<ul class="diff-list">
-						<li>
-							Added Class <a class="api-class-name" href="/api/class/GamePassService.html">GamePassService</a>
-							<ul>
-								<li>Added Function <a href="/api/class/GamePassService.html#memberSetPlayerHasPassUrl">GamePassService.SetPlayerHasPassUrl</a></li>
-								<li>Added YieldFunction <a href="/api/class/GamePassService.html#memberPlayerHasPass">GamePassService.PlayerHasPass</a></li>
-							</ul>
-						</li>
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/RuntimeScriptService.html">RuntimeScriptService</a>
 							<ul>
@@ -3395,13 +1861,26 @@
 							Added Function <a href="/api/class/RunService.html#memberStop">RunService.Stop</a>
 						</li>
 						<li>
-							Removed Property <a href="/api/class/PhysicsSettings.html#memberWaterViscosity">PhysicsSettings.WaterViscosity</a>
-						</li>
-						<li>
 							Removed Event <a href="/api/class/ScriptContext.html#memberNonScriptableAccess">ScriptContext.NonScriptableAccess</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">September 13, 2012</span> ( <span class="diff-version">0.69.0.646</span> → <span class="diff-version">0.71.0.665</span> )
+					<li><span class="diff-date">September 21, 2012</span> ( <span class="diff-version">0.72.0.676</span> → <span class="diff-version">0.73.0.683</span> )
+					<ul class="diff-list">
+						<li>
+							Removed Property <a href="/api/class/PhysicsSettings.html#memberWaterViscosity">PhysicsSettings.WaterViscosity</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">September 13, 2012</span> ( <span class="diff-version">0.71.0.669</span> → <span class="diff-version">0.72.0.676</span> )
+					<ul class="diff-list">
+						<li>
+							Added Class <a class="api-class-name" href="/api/class/GamePassService.html">GamePassService</a>
+							<ul>
+								<li>Added Function <a href="/api/class/GamePassService.html#memberSetPlayerHasPassUrl">GamePassService.SetPlayerHasPassUrl</a></li>
+								<li>Added YieldFunction <a href="/api/class/GamePassService.html#memberPlayerHasPass">GamePassService.PlayerHasPass</a></li>
+							</ul>
+						</li>
+					</ul>
+					<li><span class="diff-date">September 08, 2012</span> ( <span class="diff-version">0.70.0.651</span> → <span class="diff-version">0.71.0.669</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/PlayerMouse.html">PlayerMouse</a>
@@ -3536,7 +2015,7 @@
 							</ul>
 						</li>
 					</ul>
-					<li><span class="diff-date">August 25, 2012</span> ( <span class="diff-version">0.68.0.640</span> → <span class="diff-version">0.69.0.646</span> )
+					<li><span class="diff-date">August 24, 2012</span> ( <span class="diff-version">0.68.0.640</span> → <span class="diff-version">0.69.0.646</span> )
 					<ul class="diff-list">
 						<li>
 							Added notbrowsable tag to Class <a class="api-class-name" href="/api/class/ParallelRampPart.html">ParallelRampPart</a>
@@ -3699,7 +2178,7 @@
 							</ol>
 						</li>
 					</ul>
-					<li><span class="diff-date">July 23, 2012</span> ( <span class="diff-version">0.66.0.601</span> → <span class="diff-version">0.67.0.614</span> )
+					<li><span class="diff-date">August 09, 2012</span> ( <span class="diff-version">0.66.0.601</span> → <span class="diff-version">0.67.2.628</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/GuiService.html#memberIsWindows">GuiService.IsWindows</a>
@@ -3783,7 +2262,16 @@
 							Removed Function <a href="/api/class/Terrain.html#memberresize">Terrain.resize</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">July 12, 2012</span> ( <span class="diff-version">0.63.0.591</span> → <span class="diff-version">0.66.0.601</span> )
+					<li><span class="diff-date">July 10, 2012</span> ( <span class="diff-version">0.65.0.596</span> → <span class="diff-version">0.66.0.601</span> )
+					<ul class="diff-list">
+						<li>
+							Removed Function <a href="/api/class/ContentProvider.html#memberGetRequestQueue">ContentProvider.GetRequestQueue</a>
+						</li>
+						<li>
+							Removed Function <a href="/api/class/ContentProvider.html#memberGetRequestedUrls">ContentProvider.GetRequestedUrls</a>
+						</li>
+					</ul>
+					<li><span class="diff-date">June 21, 2012</span> ( <span class="diff-version">0.63.0.591</span> → <span class="diff-version">0.64.0.594</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/NetworkSettings.html#memberDataSendPriority">NetworkSettings.DataSendPriority</a>
@@ -3794,14 +2282,8 @@
 						<li>
 							Added Property <a href="/api/class/Player.html#memberMaxSimulationRadius">Player.MaxSimulationRadius</a>
 						</li>
-						<li>
-							Removed Function <a href="/api/class/ContentProvider.html#memberGetRequestQueue">ContentProvider.GetRequestQueue</a>
-						</li>
-						<li>
-							Removed Function <a href="/api/class/ContentProvider.html#memberGetRequestedUrls">ContentProvider.GetRequestedUrls</a>
-						</li>
 					</ul>
-					<li><span class="diff-date">June 18, 2012</span> ( <span class="diff-version">0.62.0.584</span> → <span class="diff-version">0.63.0.591</span> )
+					<li><span class="diff-date">June 14, 2012</span> ( <span class="diff-version">0.62.0.584</span> → <span class="diff-version">0.63.0.591</span> )
 					<ul class="diff-list">
 						<li>
 							Added Function <a href="/api/class/VirtualUser.html#memberCaptureController">VirtualUser.CaptureController</a>
@@ -4265,7 +2747,7 @@
 							Removed Property <a href="/api/class/Terrain.html#memberDebugAnimation">Terrain.DebugAnimation</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">March 12, 2012</span> ( <span class="diff-version">0.51.0.523</span> → <span class="diff-version">0.52.0.533</span> )
+					<li><span class="diff-date">March 09, 2012</span> ( <span class="diff-version">0.51.0.523</span> → <span class="diff-version">0.52.0.533</span> )
 					<ul class="diff-list">
 						<li>
 							Added Property <a href="/api/class/TestService.html#memberAutoRuns">TestService.AutoRuns</a>
@@ -4360,7 +2842,7 @@
 							Removed Event <a href="/api/class/FunctionalTest.html#memberEnded">FunctionalTest.Ended</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">February 17, 2012</span> ( <span class="diff-version">0.50.0.505</span> → <span class="diff-version">0.51.0.521</span> )
+					<li><span class="diff-date">February 23, 2012</span> ( <span class="diff-version">0.50.0.505</span> → <span class="diff-version">0.51.0.523</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/BindableEvent.html">BindableEvent</a>
@@ -4464,7 +2946,7 @@
 							Removed Function <a href="/api/class/TextureContentProvider.html#memberSetCacheSize">TextureContentProvider.SetCacheSize</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">February 01, 2012</span> ( <span class="diff-version">0.49.1.477</span> → <span class="diff-version">0.50.0.505</span> )
+					<li><span class="diff-date">February 02, 2012</span> ( <span class="diff-version">0.49.1.477</span> → <span class="diff-version">0.50.0.505</span> )
 					<ul class="diff-list">
 						<li>
 							Added Class <a class="api-class-name" href="/api/class/LoadingGui.html">LoadingGui</a>
@@ -4615,7 +3097,7 @@
 							Changed security of Function <a href="/api/class/ScriptContext.html#memberSetCollectScriptStats">ScriptContext.SetCollectScriptStats</a> from LocalUser to RobloxScript
 						</li>
 					</ul>
-					<li><span class="diff-date">December 08, 2011</span> ( <span class="diff-version">0.48.0.419</span> → <span class="diff-version">0.49.0.444</span> )
+					<li><span class="diff-date">January 12, 2012</span> ( <span class="diff-version">0.48.0.419</span> → <span class="diff-version">0.49.1.477</span> )
 					<ul class="diff-list">
 						<li>
 							Added notCreatable tag to Class <a class="api-class-name" href="/api/class/Lighting.html">Lighting</a>
@@ -4738,7 +3220,7 @@
 							Removed Property <a href="/api/class/Workspace.html#memberIsMouseCursorShown">Workspace.IsMouseCursorShown</a>
 						</li>
 					</ul>
-					<li><span class="diff-date">November 15, 2011</span> ( <span class="diff-version">0.47.0.391</span> → <span class="diff-version">0.48.0.416</span> )
+					<li><span class="diff-date">November 18, 2011</span> ( <span class="diff-version">0.47.0.391</span> → <span class="diff-version">0.48.0.419</span> )
 					<ul class="diff-list">
 						<li>
 							Added deprecated tag to Property <a href="/api/class/DataModel.html#memberShowMouse">DataModel.ShowMouse</a>
