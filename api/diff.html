@@ -25,6 +25,32 @@
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
 					<li id="latest">
+						<span class="diff-date">January 23, 2014</span> ( <span class="diff-version">0.134.1.42400</span> → <span class="diff-version">0.135.0.42435</span> )
+						<ul class="diff-list">
+							<li>
+								Added Property <a href="/api/class/UserGameSettings.html#memberImageUploadPromptBehavior">UserGameSettings.ImageUploadPromptBehavior</a>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/DataModel.html#memberHttpPost">DataModel.HttpPost</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">url</span></span>, <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">data</span></span>, <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">synchronous</span> = <span class="api-value">false</span></span> )</span>
+								<ol class="diff-arg-list">
+									<li>Inserted <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">contentType</span> = <span class="api-value">*/*</span></span> as 4th argument</li>
+								</ol>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/DataModel.html#memberHttpPostAsync">DataModel.HttpPostAsync</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">url</span></span>, <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">data</span></span> )</span>
+								<ol class="diff-arg-list">
+									<li>Inserted <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">contentType</span> = <span class="api-value">*/*</span></span> as 3rd argument</li>
+								</ol>
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/ScriptContext.html#memberError">ScriptContext.Error</a> from RobloxPlace to None
+							</li>
+							<li>
+								Removed Property <a href="/api/class/GameSettings.html#memberImageUploadPromptBehavior">GameSettings.ImageUploadPromptBehavior</a>
+							</li>
+						</ul>
+					</li>
+					<li>
 						<span class="diff-date">January 21, 2014</span> ( <span class="diff-version">0.133.0.41991</span> → <span class="diff-version">0.134.1.42400</span> )
 						<ul class="diff-list">
 							<li>
