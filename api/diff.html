@@ -25,6 +25,126 @@
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
 					<li>
+						<a class="anchor" id="v0.138"></a>
+						<span class="diff-date">February 20, 2014</span> ( <span class="diff-version">0.137.0.43210</span> → <span class="diff-version">0.138.0.43576</span> )<a class="permalink" href="#v0.138"></a>
+						<ul class="diff-list">
+							<li>
+								Added Class <a class="api-class-name" href="/api/class/OrderedDataStore.html">OrderedDataStore</a>
+								<ul>
+									<li>Added YieldFunction <a href="/api/class/OrderedDataStore.html#memberGetSortedAsync">OrderedDataStore.GetSortedAsync</a></li>
+								</ul>
+							</li>
+							<li>
+								Added Class <a class="api-class-name" href="/api/class/Pages.html">Pages</a>
+								<ul>
+									<li>Added Property <a href="/api/class/Pages.html#memberIsFinished">Pages.IsFinished</a></li>
+									<li>Added Function <a href="/api/class/Pages.html#memberGetCurrentPage">Pages.GetCurrentPage</a></li>
+									<li>Added YieldFunction <a href="/api/class/Pages.html#memberAdvanceToNextPageAsync">Pages.AdvanceToNextPageAsync</a></li>
+								</ul>
+							</li>
+							<li>
+								Added Function <a href="/api/class/DataStoreService.html#memberGetOrderedDataStore">DataStoreService.GetOrderedDataStore</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/HttpService.html#memberGenerateGUID">HttpService.GenerateGUID</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/MarketplaceService.html#memberSignalServerLuaDialogClosed">MarketplaceService.SignalServerLuaDialogClosed</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/NetworkServer.html#memberSetGameId">NetworkServer.SetGameId</a>
+							</li>
+							<li>
+								Added YieldFunction <a href="/api/class/AssetService.html#memberCreatePlaceAsync">AssetService.CreatePlaceAsync</a>
+							</li>
+							<li>
+								Added YieldFunction <a href="/api/class/AssetService.html#memberCreatePlaceInPlayerInventoryAsync">AssetService.CreatePlaceInPlayerInventoryAsync</a>
+							</li>
+							<li>
+								Added YieldFunction <a href="/api/class/AssetService.html#memberSavePlaceAsync">AssetService.SavePlaceAsync</a>
+							</li>
+							<li>
+								Added Event <a href="/api/class/MarketplaceService.html#memberClientLuaDialogRequested">MarketplaceService.ClientLuaDialogRequested</a>
+							</li>
+							<li>
+								Added Event <a href="/api/class/Player.html#memberSimulationRadiusChanged">Player.SimulationRadiusChanged</a>
+							</li>
+							<li>
+								Added Callback <a href="/api/class/MarketplaceService.html#memberProcessReceipt">MarketplaceService.ProcessReceipt</a>
+							</li>
+							<li>
+								Added Enum ProductPurchaseDecision
+								<ul>
+									<li>Added EnumItem ProductPurchaseDecision.NotProcessedYet</li>
+									<li>Added EnumItem ProductPurchaseDecision.PurchaseGranted</li>
+								</ul>
+							</li>
+							<li>
+								Changed return type of <a href="/api/class/DataModel.html#memberSavePlace">DataModel.SavePlace</a> from <a class="api-value-type" href="#typeTuple">Tuple</a> to <a class="api-value-type" href="#typebool">bool</a>
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberInputBegan">GuiObject.InputBegan</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberInputChanged">GuiObject.InputChanged</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberInputEnded">GuiObject.InputEnded</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberTouchLongPress">GuiObject.TouchLongPress</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberTouchPan">GuiObject.TouchPan</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberTouchPinch">GuiObject.TouchPinch</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberTouchRotate">GuiObject.TouchRotate</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/GuiObject.html#memberTouchSwipe">GuiObject.TouchSwipe</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberInputBegan">UserInputService.InputBegan</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberInputChanged">UserInputService.InputChanged</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberInputEnded">UserInputService.InputEnded</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchEnded">UserInputService.TouchEnded</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchLongPress">UserInputService.TouchLongPress</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchMoved">UserInputService.TouchMoved</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchPan">UserInputService.TouchPan</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchPinch">UserInputService.TouchPinch</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchRotate">UserInputService.TouchRotate</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchStarted">UserInputService.TouchStarted</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchSwipe">UserInputService.TouchSwipe</a> from RobloxScript to None
+							</li>
+							<li>
+								Changed security of Event <a href="/api/class/UserInputService.html#memberTouchTap">UserInputService.TouchTap</a> from RobloxScript to None
+							</li>
+						</ul>
+					</li>
+					<li>
 						<a class="anchor" id="v0.137"></a>
 						<span class="diff-date">February 13, 2014</span> ( <span class="diff-version">0.136.0.43052</span> → <span class="diff-version">0.137.0.43210</span> )<a class="permalink" href="#v0.137"></a>
 						<ul class="diff-list">
