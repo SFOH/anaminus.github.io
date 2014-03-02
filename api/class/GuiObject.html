@@ -443,12 +443,83 @@
 						<h2>Function Descriptions</h2>
 						<div id="memberTweenPosition">
 							<h3><a class="api-value-type" href="#typebool">bool</a><span class="api-member-icon" style="background-position:-64px"></span>GuiObject.TweenPosition <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeUDim2">UDim2</a> <span class="api-argument-name">endPosition</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingDirection">EasingDirection</a> <span class="api-argument-name">easingDirection</span> = <span class="api-value">Out</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingStyle">EasingStyle</a> <span class="api-argument-name">easingStyle</span> = <span class="api-value">Quad</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">time</span> = <span class="api-value">1</span></span>, <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">override</span> = <span class="api-value">false</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeFunction">Function</a> <span class="api-argument-name">callback</span> = <span class="api-value">nil</span></span> )</span></h3>
+							<p>Interpolates the <a href="#memberPosition">Position</a> property from its current value
+							to <em>endPosition</em>, for the duration of <em>time</em> seconds.</p>
+							
+							<p><em>easingDirection</em> indicates the timing function to be used, while
+							<em>easingStyle</em> indicates the interpolation function to be used.</p>
+							
+							<p><em>override</em> indicates whether the tween can be overridden by another tween
+							function. This only applies to functions that modify the Position.</p>
+							
+							<p>If <em>callback</em> is specified, then it will be called after the tween finishes.
+							It receives a TweenStatus enum as its only argument. If the tween successfully
+							finished, then this will be <code>TweenStatus.Completed</code>. If it was overridden,
+							then this will be <code>TweenStatus.Canceled</code>.</p>
+							
+							<p>This function returns whether it was able to begin tweening. If there is
+							another tweening function currently modifying the Position, and it cannot be
+							overridden, then this will return false.</p>
+							
+							<p>If the GuiObject is not the descendant of a <a href="DataModel.html">DataModel</a>, then
+							this function will throw the following error:</p>
+							
+							<pre><code>Can only tween objects in the workspace
+							</code></pre>
 						</div>
 						<div id="memberTweenSize">
 							<h3><a class="api-value-type" href="#typebool">bool</a><span class="api-member-icon" style="background-position:-64px"></span>GuiObject.TweenSize <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeUDim2">UDim2</a> <span class="api-argument-name">endSize</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingDirection">EasingDirection</a> <span class="api-argument-name">easingDirection</span> = <span class="api-value">Out</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingStyle">EasingStyle</a> <span class="api-argument-name">easingStyle</span> = <span class="api-value">Quad</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">time</span> = <span class="api-value">1</span></span>, <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">override</span> = <span class="api-value">false</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeFunction">Function</a> <span class="api-argument-name">callback</span> = <span class="api-value">nil</span></span> )</span></h3>
+							<p>Interpolates the <a href="#memberSize">Size</a> property from its current value to
+							<em>endSize</em>, for the duration of <em>time</em> seconds.</p>
+							
+							<p><em>easingDirection</em> indicates the timing function to be used, while
+							<em>easingStyle</em> indicates the interpolation function to be used.</p>
+							
+							<p><em>override</em> indicates whether the tween can be overridden by another tween
+							function. This only applies to functions that modify the Size.</p>
+							
+							<p>If <em>callback</em> is specified, then it will be called after the tween finishes.
+							It receives a TweenStatus enum as its only argument. If the tween successfully
+							finished, then this will be <code>TweenStatus.Completed</code>. If it was overridden,
+							then this will be <code>TweenStatus.Canceled</code>.</p>
+							
+							<p>This function returns whether it was able to begin tweening. If there is
+							another tweening function currently modifying the Size, and it cannot be
+							overridden, then this will return false.</p>
+							
+							<p>If the GuiObject is not the descendant of a <a href="DataModel.html">DataModel</a>, then
+							this function will throw the following error:</p>
+							
+							<pre><code>Can only tween objects in the workspace
+							</code></pre>
 						</div>
 						<div id="memberTweenSizeAndPosition">
 							<h3><a class="api-value-type" href="#typebool">bool</a><span class="api-member-icon" style="background-position:-64px"></span>GuiObject.TweenSizeAndPosition <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typeUDim2">UDim2</a> <span class="api-argument-name">endSize</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeUDim2">UDim2</a> <span class="api-argument-name">endPosition</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingDirection">EasingDirection</a> <span class="api-argument-name">easingDirection</span> = <span class="api-value">Out</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeEasingStyle">EasingStyle</a> <span class="api-argument-name">easingStyle</span> = <span class="api-value">Quad</span></span>, <span class="api-argument"><a class="api-value-type" href="#typefloat">float</a> <span class="api-argument-name">time</span> = <span class="api-value">1</span></span>, <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">override</span> = <span class="api-value">false</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeFunction">Function</a> <span class="api-argument-name">callback</span> = <span class="api-value">nil</span></span> )</span></h3>
+							<p>Interpolates both the <a href="#memberSize">Size</a> and <a href="#memberPosition">Position</a>
+							properties from their current values to <em>endSize</em> and <em>endPosition</em>,
+							respectively, for the duration of <em>time</em> seconds.</p>
+							
+							<p><em>easingDirection</em> indicates the timing function to be used, while
+							<em>easingStyle</em> indicates the interpolation function to be used.</p>
+							
+							<p><em>override</em> indicates whether the tween can be overridden by another tween
+							function. This applies to functions that modify either the Position or the
+							Size.</p>
+							
+							<p>If <em>callback</em> is specified, then it will be called after the tween finishes.
+							It receives a TweenStatus enum as its only argument. If the tween successfully
+							finished, then this will be <code>TweenStatus.Completed</code>. If it was overridden,
+							then this will be <code>TweenStatus.Canceled</code>.</p>
+							
+							<p>This function returns whether it was able to begin tweening. If there is
+							another tweening function currently modifying the Size or Position, and it
+							cannot be overridden, then this will return false.</p>
+							
+							<p>If the GuiObject is not the descendant of a <a href="DataModel.html">DataModel</a>, then
+							this function will throw the following error:</p>
+							
+							<pre><code>Can only tween objects in the workspace
+							</code></pre>
 						</div>
 						<h2>Event Descriptions</h2>
 						<div id="memberDragBegin">
