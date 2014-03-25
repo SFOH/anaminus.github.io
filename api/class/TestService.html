@@ -23,8 +23,10 @@
 			<div id="box-content">
 				<div id="info">
 					<div id="summary">
-						<p>The <strong>TestService</strong> can be used for performing unit tests, as well as testing
-						a place with various settings.</p>
+						<div class="markdown">
+<p>The <strong>TestService</strong> can be used for performing unit tests, as well as testing
+a place with various settings.</p>
+						</div>
 					</div>
 					<div id="members">
 						<h2>Members</h2>
@@ -216,35 +218,37 @@
 					</div>
 					<div id="details">
 						<h2>Detailed Description</h2>
-						<p>Each method used for testing may emit a message to the output. This message
-						begins with "TestService", indicating that it was emitted by a TestService
-						method. A message may be an error (in red), a warning (in yellow), or a
-						regular message (in blue).</p>
-						
-						<p>Each test method also allows a <em>source</em> and a <em>line</em> to be optionally supplied
-						as arguments. If they are given, then they are displayed in the message.</p>
-						
-						<p>The <em>source</em> argument indicates a <a href="BaseScript.html">script</a> object
-						related to the message (such as the script where an error occurred). The
-						script's <a href="Instance.html#memberName">Name</a> is displayed before the
-						main description or text of the message. Note that <em>source</em> may be any
-						instance, not just a script.</p>
-						
-						<p><em>line</em> indicates an exact line in the script related to the message. If
-						<em>source</em> is given, then the line is displayed after the source name. If not,
-						then the line is not displayed.</p>
-						
-						<p>Example messages:</p>
-						
-						<p><em>Without source:</em></p>
-						
-						<pre><code>TestService: message
-						</code></pre>
-						
-						<p><em>With source (SourceName) and line (123):</em></p>
-						
-						<pre><code>TestService.SourceName(123): message
-						</code></pre>
+						<div class="markdown">
+<p>Each method used for testing may emit a message to the output. This message
+begins with "TestService", indicating that it was emitted by a TestService
+method. A message may be an error (in red), a warning (in yellow), or a
+regular message (in blue).</p>
+
+<p>Each test method also allows a <em>source</em> and a <em>line</em> to be optionally supplied
+as arguments. If they are given, then they are displayed in the message.</p>
+
+<p>The <em>source</em> argument indicates a <a href="BaseScript.html">script</a> object
+related to the message (such as the script where an error occurred). The
+script's <a href="Instance.html#memberName">Name</a> is displayed before the
+main description or text of the message. Note that <em>source</em> may be any
+instance, not just a script.</p>
+
+<p><em>line</em> indicates an exact line in the script related to the message. If
+<em>source</em> is given, then the line is displayed after the source name. If not,
+then the line is not displayed.</p>
+
+<p>Example messages:</p>
+
+<p><em>Without source:</em></p>
+
+<pre><code>TestService: message
+</code></pre>
+
+<p><em>With source (SourceName) and line (123):</em></p>
+
+<pre><code>TestService.SourceName(123): message
+</code></pre>
+						</div>
 					</div>
 					<div id="member-descriptions">
 						<h2>Property Descriptions</h2>
@@ -257,8 +261,10 @@
 						<div id="memberErrorCount">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> TestService.ErrorCount</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>Indicates the number of errors and fatal errors that have occurred during a
-							test.</p>
+							<div class="markdown">
+<p>Indicates the number of errors and fatal errors that have occurred during a
+test.</p>
+							</div>
 						</div>
 						<div id="memberIs30FpsThrottleEnabled">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typebool">bool</a> TestService.Is30FpsThrottleEnabled</h3>
@@ -275,29 +281,39 @@
 						<div id="memberTestCount">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> TestService.TestCount</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>Indicates the number of assertions that have been made during a test.</p>
+							<div class="markdown">
+<p>Indicates the number of assertions that have been made during a test.</p>
+							</div>
 						</div>
 						<div id="memberTimeout">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typedouble">double</a> TestService.Timeout</h3>
-							<p>The amount of time, in seconds, in which a test must be completed.</p>
+							<div class="markdown">
+<p>The amount of time, in seconds, in which a test must be completed.</p>
+							</div>
 						</div>
 						<div id="memberWarnCount">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> TestService.WarnCount</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>Indicates the number of warnings that have occurred during a test.</p>
+							<div class="markdown">
+<p>Indicates the number of warnings that have occurred during a test.</p>
+							</div>
 						</div>
 						<h2>Function Descriptions</h2>
 						<div id="memberCheck">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Check <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">condition</span></span>, <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">description</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as an
-							error message in the output, and the <a href="#memberErrorCount">ErrorCount</a> property
-							is incremented.</p>
-							
-							<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							<div class="markdown">
+<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as an
+error message in the output, and the <a href="#memberErrorCount">ErrorCount</a> property
+is incremented.</p>
+
+<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							</div>
 						</div>
 						<div id="memberCheckpoint">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Checkpoint <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">text</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Displays <em>text</em> as a checkpoint message in the output.</p>
+							<div class="markdown">
+<p>Displays <em>text</em> as a checkpoint message in the output.</p>
+							</div>
 						</div>
 						<div id="memberDoCommand">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-80px"></span>TestService.DoCommand <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">name</span></span> )</span></h3>
@@ -305,22 +321,28 @@
 						</div>
 						<div id="memberDone">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Done <span class="api-arguments">( )</span></h3>
-							<p>When performing a test with <a href="#memberRun">Run</a>, the test can be completed by
-							calling this method.</p>
+							<div class="markdown">
+<p>When performing a test with <a href="#memberRun">Run</a>, the test can be completed by
+calling this method.</p>
+							</div>
 						</div>
 						<div id="memberError">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Error <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">description</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Unconditionally displays <em>description</em> as an error message in the output, and
-							increments the <a href="#memberErrorCount">ErrorCount</a> property.</p>
-							
-							<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							<div class="markdown">
+<p>Unconditionally displays <em>description</em> as an error message in the output, and
+increments the <a href="#memberErrorCount">ErrorCount</a> property.</p>
+
+<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							</div>
 						</div>
 						<div id="memberFail">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Fail <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">description</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Unconditionally displays <em>description</em> as a fatal error message in the output,
-							and increments the <a href="#memberErrorCount">ErrorCount</a> property.</p>
-							
-							<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							<div class="markdown">
+<p>Unconditionally displays <em>description</em> as a fatal error message in the output,
+and increments the <a href="#memberErrorCount">ErrorCount</a> property.</p>
+
+<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							</div>
 						</div>
 						<div id="memberGetCommandNames">
 							<h3><a class="api-value-type" href="#typeArray">Array</a><span class="api-member-icon" style="background-position:-80px"></span>TestService.GetCommandNames <span class="api-arguments">( )</span></h3>
@@ -336,38 +358,46 @@
 						</div>
 						<div id="memberMessage">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Message <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">text</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Displays <em>text</em> as a regular message in the output.</p>
+							<div class="markdown">
+<p>Displays <em>text</em> as a regular message in the output.</p>
+							</div>
 						</div>
 						<div id="memberRequire">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Require <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">condition</span></span>, <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">description</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as a
-							fatal error message in the output, and the <a href="#memberErrorCount">ErrorCount</a>
-							property is incremented.</p>
-							
-							<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							<div class="markdown">
+<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as a
+fatal error message in the output, and the <a href="#memberErrorCount">ErrorCount</a>
+property is incremented.</p>
+
+<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							</div>
 						</div>
 						<div id="memberWarn">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-64px"></span>TestService.Warn <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="#typebool">bool</a> <span class="api-argument-name">condition</span></span>, <span class="api-argument"><a class="api-value-type" href="#typestring">string</a> <span class="api-argument-name">description</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeInstance">Instance</a> <span class="api-argument-name">source</span> = <span class="api-value">nil</span></span>, <span class="api-argument"><a class="api-value-type" href="#typeint">int</a> <span class="api-argument-name">line</span> = <span class="api-value">0</span></span> )</span></h3>
-							<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as a
-							warning message in the output, and the <a href="#memberWarnCount">WarnCount</a> property
-							is incremented.</p>
-							
-							<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							<div class="markdown">
+<p>Tests <em>condition</em>. If the condition is false, <em>description</em> is displayed as a
+warning message in the output, and the <a href="#memberWarnCount">WarnCount</a> property
+is incremented.</p>
+
+<p>Calling this method increments the <a href="#memberTestCount">TestCount</a> property.</p>
+							</div>
 						</div>
 						<h2>YieldFunction Descriptions</h2>
 						<div id="memberRun">
 							<h3><a class="api-value-type" href="#typevoid">void</a><span class="api-member-icon" style="background-position:-80px"></span>TestService.Run <span class="api-arguments">( )</span></h3>
 							<p><b>Tags: </b><span class="api-tag">LocalUserSecurity</span></p>
-							<p>Used to begin a test. When called, all counters are reset, and the current
-							thread is yielded until <a href="#memberDone">Done</a> is called, or Timeout is reached.</p>
-							
-							<p>If the test is completed, a regular message displays the number of tests,
-							warnings, and errors that occurred during the test. If no assertions were made
-							(i.e. if test count is 0), then a message indicating such will be displayed
-							instead.</p>
-							
-							<p>If <a href="#memberDone">Done</a> is not called within the time limit, then an error
-							message indicating such will be displayed.</p>
+							<div class="markdown">
+<p>Used to begin a test. When called, all counters are reset, and the current
+thread is yielded until <a href="#memberDone">Done</a> is called, or Timeout is reached.</p>
+
+<p>If the test is completed, a regular message displays the number of tests,
+warnings, and errors that occurred during the test. If no assertions were made
+(i.e. if test count is 0), then a message indicating such will be displayed
+instead.</p>
+
+<p>If <a href="#memberDone">Done</a> is not called within the time limit, then an error
+message indicating such will be displayed.</p>
+							</div>
 						</div>
 						<h2>Event Descriptions</h2>
 						<div id="memberServerCollectConditionalResult">

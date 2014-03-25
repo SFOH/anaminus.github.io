@@ -23,7 +23,9 @@
 			<div id="box-content">
 				<div id="info">
 					<div id="summary">
-						<p>The <strong>DataModel</strong> class represents the root of the game hierarchy and the game itself. It contains all the game services and is a service provider because of this.</p>
+						<div class="markdown">
+<p>The <strong>DataModel</strong> class represents the root of the game hierarchy and the game itself. It contains all the game services and is a service provider because of this.</p>
+						</div>
 					</div>
 					<div id="members">
 						<h2>Members</h2>
@@ -647,39 +649,53 @@
 					</div>
 					<div id="details">
 						<h2>Detailed Description</h2>
-						<p>All instances of ROBLOX games contain a <a href="https://en.wikipedia.org/wiki/Singleton_pattern">singleton</a> DataModel object which does not replicate and gives access to all the game services. The DataModel object can be accessed by scripts with the <code>game</code> variable or with the <code>Game</code> variable. These two variables are part of the global environment. The DataModel object provides many members related to the game itself. Those are particularly useful to get information about the game; examples of such members are the <a href="#memberPlaceId">PlaceId</a> and <a href="#memberCreatorId">CreatorId</a> properties.</p>
+						<div class="markdown">
+<p>All instances of ROBLOX games contain a <a href="https://en.wikipedia.org/wiki/Singleton_pattern">singleton</a> DataModel object which does not replicate and gives access to all the game services. The DataModel object can be accessed by scripts with the <code>game</code> variable or with the <code>Game</code> variable. These two variables are part of the global environment. The DataModel object provides many members related to the game itself. Those are particularly useful to get information about the game; examples of such members are the <a href="#memberPlaceId">PlaceId</a> and <a href="#memberCreatorId">CreatorId</a> properties.</p>
+						</div>
 					</div>
 					<div id="member-descriptions">
 						<h2>Property Descriptions</h2>
 						<div id="memberCreatorId">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> DataModel.CreatorId</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is the identifier of the user who owns the place. In offline games, this property has the value 0.</p>
+							<div class="markdown">
+<p>This is the identifier of the user who owns the place. In offline games, this property has the value 0.</p>
+							</div>
 						</div>
 						<div id="memberCreatorType">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeCreatorType">CreatorType</a> DataModel.CreatorType</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This indicates whether the place belongs to a user or to a group. Group places are not used anymore and this property is not very useful anymore, although group places still exist. They are now difficult to find and cannot be used.</p>
+							<div class="markdown">
+<p>This indicates whether the place belongs to a user or to a group. Group places are not used anymore and this property is not very useful anymore, although group places still exist. They are now difficult to find and cannot be used.</p>
+							</div>
 						</div>
 						<div id="memberGearGenreSetting">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeGearGenreSetting">GearGenreSetting</a> DataModel.GearGenreSetting</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This indicates whether gear that can be used in the game is restricted to gear that match the game's genre or not.</p>
+							<div class="markdown">
+<p>This indicates whether gear that can be used in the game is restricted to gear that match the game's genre or not.</p>
+							</div>
 						</div>
 						<div id="memberGenre">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeGenre">Genre</a> DataModel.Genre</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is the genre of the place.</p>
+							<div class="markdown">
+<p>This is the genre of the place.</p>
+							</div>
 						</div>
 						<div id="memberIsPersonalServer">
 							<h3><span class="api-member-icon" style="background-position:-112px"></span><a class="api-value-type" href="#typebool">bool</a> DataModel.IsPersonalServer</h3>
 							<p><b>Tags: </b><span class="api-tag">RobloxScriptSecurity</span></p>
-							<p>This indicates whether the game is a personal server.</p>
+							<div class="markdown">
+<p>This indicates whether the game is a personal server.</p>
+							</div>
 						</div>
 						<div id="memberJobId">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typestring">string</a> DataModel.JobId</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is an identifier unique to the current game server. It can be used to identify the game server externally, for example when servers are communicating with a web server using <a href="HttpService.html">HttpService</a>. Example: <code>74829c09-ef44-483b-bdda-138bbd704f4b</code>.</p>
+							<div class="markdown">
+<p>This is an identifier unique to the current game server. It can be used to identify the game server externally, for example when servers are communicating with a web server using <a href="HttpService.html">HttpService</a>. Example: <code>74829c09-ef44-483b-bdda-138bbd704f4b</code>.</p>
+							</div>
 						</div>
 						<div id="memberLocalSaveEnabled">
 							<h3><span class="api-member-icon" style="background-position:-112px"></span><a class="api-value-type" href="#typebool">bool</a> DataModel.LocalSaveEnabled</h3>
@@ -688,17 +704,23 @@
 						<div id="memberPlaceId">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> DataModel.PlaceId</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is the identifier of the place to which the game server belongs. It is 0 in offline games.</p>
+							<div class="markdown">
+<p>This is the identifier of the place to which the game server belongs. It is 0 in offline games.</p>
+							</div>
 						</div>
 						<div id="memberPlaceVersion">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeint">int</a> DataModel.PlaceVersion</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is the version of the current place. It corresponds to the version number given in the version history configuration page of the place, and is incremented of 1 each time the game is updated. It can be used to compare the recency of servers that need to communicate with a web server using <a href="HttpService.html">HttpService</a>.</p>
+							<div class="markdown">
+<p>This is the version of the current place. It corresponds to the version number given in the version history configuration page of the place, and is incremented of 1 each time the game is updated. It can be used to compare the recency of servers that need to communicate with a web server using <a href="HttpService.html">HttpService</a>.</p>
+							</div>
 						</div>
 						<div id="memberWorkspace">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeObject">Object</a> DataModel.Workspace</h3>
 							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
-							<p>This is a reference to the <a href="Workspace.html">Workspace</a> service.</p>
+							<div class="markdown">
+<p>This is a reference to the <a href="Workspace.html">Workspace</a> service.</p>
+							</div>
 						</div>
 						<div id="memberlighting">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="#typeObject">Object</a> DataModel.lighting</h3>
