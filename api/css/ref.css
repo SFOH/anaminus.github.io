@@ -42,6 +42,10 @@ table {
 	border-radius    : 7px;
 }
 
+table th {
+    background-color : rgb(230, 230, 230);
+}
+
 table td,
 table th {
 	vertical-align : top;
@@ -72,7 +76,8 @@ table th {
 	border-top-left-radius  : 10px;
 }
 
-#header .api-class-icon {
+#header .api-class-icon,
+#header .api-enum-icon {
 	vertical-align : baseline;
 	margin         : 0px 8px 0px 2px;
 }
@@ -118,7 +123,8 @@ table .api-enum-item-icon {
 	list-style-type : disc;
 }
 
-#hierarchy-list ul {
+#hierarchy-list ul,
+#member-usage-list ul {
 	list-style-type : disc;
 }
 
@@ -163,23 +169,6 @@ table.member-list .col-return-type {
 	text-align : right;
 }
 
-.enum-list {
-	display : inline-block;
-}
-
-.enum-item-list {
-	float  : left;
-	margin : 1em;
-}
-
-.enum-item-list th.col-name {
-	text-align : left;
-}
-
-.api-enum-item-value:after {
-	content : ' : ';
-}
-
 #summary img,
 #details img,
 #member-descriptions img {
@@ -212,12 +201,13 @@ table.member-list .col-return-type {
 	font-family : Consolas, "Lucida Console", monospace;
 }
 
-.version-list {
-	margin-left: 0.5em;
+.history-list {
+	margin-left : 0.5em;
 	font-family : Consolas, "Lucida Console", monospace;
+	white-space : nowrap;
 }
 
-td .version-list {
+td .history-list {
 	margin-left: 0;
 }
 
