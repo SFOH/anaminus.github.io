@@ -194,7 +194,7 @@ InvokeClient will throw the following error:</p>
 <pre><code>Player &lt;player name&gt; disconnected during remote call to &lt;RemoteFunction name&gt;
 </code></pre>
 
-<p>An orphaned error (error without a location) will also be thrown, displaying
+<p>Right after this error, another sourceless error will be thrown, displaying
 the the last extra argument passed to InvokeClient. If no extra arguments were
 given, then an unspecified error message will be displayed instead. This is
 likely a bug.</p>
