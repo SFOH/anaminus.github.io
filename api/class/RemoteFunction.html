@@ -180,9 +180,24 @@ client.</p>
 passed to OnClientInvoke. The values returned by OnClientInvoke will be
 replicated back to the server, and then returned by InvokeClient.</p>
 
-<p>InvokeClient will yield until OnClientInvoke returns. If OnClientInvoke was
+<p>InvokeClient will yield until OnClientInvoke returns. <s>If OnClientInvoke was
 not defined after InvokeClient was called, then the RemoteFunction will wait
-until it is defined, and then call it as usual.</p>
+until it is defined, and then call it as usual.</s> This only works when the
+current peer is also the recipient peer (e.g. the Studio's Play Solo mode acts
+as both a server and a client). If onClientInvoke was not defined on the
+target client, then InvokeClient will yield forever (or rather, until the
+client disconnects, which throws an error). This is likely a bug.</p>
+
+<p>If the target client disconnects before the call could be completed,
+InvokeClient will throw the following error:</p>
+
+<pre><code>Player &lt;player name&gt; disconnected during remote call to &lt;RemoteFunction name&gt;
+</code></pre>
+
+<p>An orphaned error (error without a location) will also be thrown, displaying
+the the last extra argument passed to InvokeClient. If no extra arguments were
+given, then an unspecified error message will be displayed instead. This is
+likely a bug.</p>
 
 <p>If OnClientInvoke throws an error, that error will be replicated back, and
 thrown by InvokeClient. Note that this includes the entire error message, with
@@ -240,7 +255,7 @@ InvokeClient to target the server.</p>
 							<h3><a class="api-value-type" href="/api/type/Tuple.html">Tuple</a><span class="api-member-icon" style="background-position:-256px"></span>RemoteFunction.OnServerInvoke <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">player</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/Tuple.html">Tuple</a> <span class="api-argument-name">arguments</span></span> )</span></h3>
 							<div class="markdown">
 <p>OnServerInvoke is called after <a href="#memberInvokeServer">InvokeServer</a> is called
-from a client. <strong>player</strong> indicates a <a href="Player.html">Player</a> object that
+from a client. <em>player</em> indicates a <a href="Player.html">Player</a> object that
 corresponds to the client.</p>
 
 <p><em>arguments</em> are the values that were passed to InvokeServer, and then
