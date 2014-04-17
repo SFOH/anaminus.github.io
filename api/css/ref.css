@@ -25,12 +25,12 @@ h3 {
 	font-weight : bold;
 }
 
-ul {
+#ref-container ul {
 	margin-left  : 0;
 	padding-left : 40px;
 }
 
-ul li {
+#ref-container ul li {
 	padding-top : 6px;
 	font-size   : 12px;
 }
@@ -55,6 +55,15 @@ table td,
 table th {
 	vertical-align : top;
 	padding        : 3px;
+}
+
+dt {
+    font-size : 117%;
+    font-weight : bold;
+}
+
+dd {
+    margin: 1em;
 }
 
 #ref-container {
@@ -87,29 +96,18 @@ table th {
 	margin         : 0px 8px 0px 2px;
 }
 
+#header-items {
+	float : right;
+}
+
 #header-items > * {
-	float  : right;
-	margin : 4px 0px 0px 8px;
+	display : inline-block;
+	margin  : 4px 0px 0px 8px;
 }
 
 #return-link .api-member-icon {
 	margin-right : 0px;
 	margin-left  : 4px;
-}
-
-#footer {
-	width            : 900px;
-	margin           : 8px auto;
-	padding          : 1em 0;
-	background-color : rgb(255,255,255);
-	color            : rgb(65,85,65);
-	text-align       : left;
-	border           : 1px solid rgb(218,218,218);
-	border-radius    : 10px;
-}
-
-#footer > * {
-	margin : 0 1em;
 }
 
 #searchMessage {
@@ -266,4 +264,114 @@ pre {
 
 code {
 	font-family : Consolas, monospace;
+}
+
+/* Styling of API data elements */
+
+.api-preliminary {
+	font-style : italic;
+}
+
+.api-deprecated {
+	text-decoration : line-through;
+}
+
+.api-value-type {
+	color : rgb(110, 165, 10);
+}
+
+.api-member-name,
+.api-enum-name {
+	font-weight : bold;
+	color       : rgb(65,85,65);
+}
+
+.api-class-icon,
+.api-member-icon,
+.api-enum-icon,
+.api-enum-item-icon {
+	display        : inline-block;
+	vertical-align : middle;
+	height         : 16px;
+	width          : 16px;
+	margin-right   : 4px;
+}
+
+.api-class-icon {
+	background-image : url('/api/img/icon-explorer.png');
+}
+/* background-position sets icon offset */
+
+.api-member-icon {
+	background-image : url('/api/img/icon-objectbrowser.png');
+}
+/* background-position sets icon offset */
+
+.api-enum-icon {
+	background-image    : url('/api/img/icon-objectbrowser.png');
+	background-position : -144px;
+}
+
+.api-enum-item-icon {
+	background-image    : url('/api/img/icon-objectbrowser.png');
+	background-position : -160px;
+}
+
+.api-argument {
+	white-space : nowrap;
+}
+
+/* footer */
+#footer {
+	width            : 900px;
+	margin           : 8px auto;
+	background-color : rgb(255,255,255);
+	color            : rgb(65,85,65);
+	text-align       : left;
+	border           : 1px solid rgb(218,218,218);
+	border-radius    : 10px;
+    display          : table;
+    border-spacing   : 1em;
+}
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li {
+    display     : inline-block;
+    margin-left : 20px;
+    padding     : 0;
+}
+
+#footer ul li:first-child {
+    margin-left: 0;
+}
+
+#footer > * {
+    display     : table-cell;
+    white-space : nowrap;
+}
+
+#footer > *:first-child {
+    width:100%;
+}
+
+/* about page */
+#about {
+	display       : table-cell;
+	padding-right : 1em;
+}
+
+#who {
+	display     : table-cell;
+	padding     : 0 1em;
+	border-left : 1px solid rgb(222,222,222);
+}
+
+#who ul {
+	margin-left  : 0;
+	padding-left : 20px;
+    white-space  : nowrap;
 }
