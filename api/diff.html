@@ -24,6 +24,104 @@
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
 					<li>
+						<a class="anchor" id="v0.152"></a>
+						<span class="diff-date">May 29, 2014</span> ( <span class="api-version">0.151.0.46786</span> → <span class="api-version">0.152.0.46962</span> )<a class="permalink" href="/api/diff.html#v0.152"></a>
+						<ul class="diff-list">
+							<li>
+								Added Class <a class="api-class-name" href="/api/class/NotificationService.html">NotificationService</a>
+								<ul>
+									<li>Added Function <a href="/api/class/NotificationService.html#memberCancelAllNotification">NotificationService.CancelAllNotification</a></li>
+									<li>Added Function <a href="/api/class/NotificationService.html#memberCancelNotification">NotificationService.CancelNotification</a></li>
+									<li>Added Function <a href="/api/class/NotificationService.html#memberScheduleNotification">NotificationService.ScheduleNotification</a></li>
+									<li>Added YieldFunction <a href="/api/class/NotificationService.html#memberGetScheduledNotifications">NotificationService.GetScheduledNotifications</a></li>
+								</ul>
+							</li>
+							<li>
+								Added Property <a href="/api/class/Humanoid.html#memberCameraOffset">Humanoid.CameraOffset</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/SurfaceGui.html#memberToolPunchThroughDistance">SurfaceGui.ToolPunchThroughDistance</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/Model.html#memberGetExtentsSize">Model.GetExtentsSize</a>
+							</li>
+							<li>
+								Added deprecated tag to Function <a href="/api/class/Model.html#memberGetModelCFrame">Model.GetModelCFrame</a>
+							</li>
+							<li>
+								Added deprecated tag to Function <a href="/api/class/Model.html#memberGetModelSize">Model.GetModelSize</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/Model.html#memberGetPrimaryPartCFrame">Model.GetPrimaryPartCFrame</a>
+							</li>
+							<li>
+								Added deprecated tag to Function <a href="/api/class/Model.html#memberResetOrientationToIdentity">Model.ResetOrientationToIdentity</a>
+							</li>
+							<li>
+								Added deprecated tag to Function <a href="/api/class/Model.html#memberSetIdentityOrientation">Model.SetIdentityOrientation</a>
+							</li>
+							<li>
+								Added Function <a href="/api/class/Model.html#memberSetPrimaryPartCFrame">Model.SetPrimaryPartCFrame</a>
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/NetworkSettings.html#memberFreeMemoryMBytes">NetworkSettings.FreeMemoryMBytes</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/NetworkSettings.html#memberFreeMemoryPoolMBytes">NetworkSettings.FreeMemoryPoolMBytes</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/DataModel.html#memberGetJobIntervalPeakFraction">DataModel.GetJobIntervalPeakFraction</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/DataModel.html#memberGetJobTimePeakFraction">DataModel.GetJobTimePeakFraction</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/DataModel.html#memberGetJobsExtendedStats">DataModel.GetJobsExtendedStats</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/DataModel.html#memberGetJobsInfo">DataModel.GetJobsInfo</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/DataModel.html#memberGetObjects">DataModel.GetObjects</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/Instance.html#memberGetDebugId">Instance.GetDebugId</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/Model.html#memberMoveTo">Model.MoveTo</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">location</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">position</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/Model.html#memberTranslateBy">Model.TranslateBy</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">offset</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">delta</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/NetworkPeer.html#memberSetOutgoingKBPSLimit">NetworkPeer.SetOutgoingKBPSLimit</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/NetworkReplicator.html#memberGetRakStatsString">NetworkReplicator.GetRakStatsString</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/ProfilingItem.html#memberGetTimes">ProfilingItem.GetTimes</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/ProfilingItem.html#memberGetTimesForFrames">ProfilingItem.GetTimesForFrames</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/StatsItem.html#memberGetValue">StatsItem.GetValue</a> from LocalUserSecurity to PluginSecurity
+							</li>
+							<li>
+								Changed security of Function <a href="/api/class/StatsItem.html#memberGetValueString">StatsItem.GetValueString</a> from LocalUserSecurity to PluginSecurity
+							</li>
+						</ul>
+					</li>
+					<li>
 						<a class="anchor" id="v0.151"></a>
 						<span class="diff-date">May 22, 2014</span> ( <span class="api-version">0.150.1.46627</span> → <span class="api-version">0.151.0.46786</span> )<a class="permalink" href="/api/diff.html#v0.151"></a>
 						<ul class="diff-list">

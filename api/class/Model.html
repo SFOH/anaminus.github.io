@@ -58,16 +58,16 @@
 									<td class="col-history"></td>
 								</tr>
 								<tr>
-									<td class="col-return-type"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a></td>
-									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberGetModelCFrame">GetModelCFrame</a> <span class="api-arguments">( )</span></td>
-									<td class="col-history"></td>
-								</tr>
-								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a></td>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberGetModelSize">GetModelSize</a> <span class="api-arguments">( )</span></td>
-									<td class="col-history"></td>
+									<td class="col-name"><a class="api-member-name" href="#memberGetExtentsSize">GetExtentsSize</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberGetPrimaryPartCFrame">GetPrimaryPartCFrame</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></td>
 								</tr>
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
@@ -78,26 +78,44 @@
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberMoveTo">MoveTo</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">location</span></span> )</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberMoveTo">MoveTo</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">position</span></span> )</span></td>
 									<td class="col-history"></td>
 								</tr>
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberResetOrientationToIdentity">ResetOrientationToIdentity</a> <span class="api-arguments">( )</span></td>
-									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberSetPrimaryPartCFrame">SetPrimaryPartCFrame</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a> <span class="api-argument-name">cframe</span></span> )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></td>
 								</tr>
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberSetIdentityOrientation">SetIdentityOrientation</a> <span class="api-arguments">( )</span></td>
-									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></td>
-								</tr>
-								<tr>
-									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
-									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
-									<td class="col-name"><a class="api-member-name" href="#memberTranslateBy">TranslateBy</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">offset</span></span> )</span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberTranslateBy">TranslateBy</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">delta</span></span> )</span></td>
 									<td class="col-history"></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" href="#memberGetModelCFrame">GetModelCFrame</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" href="#memberGetModelSize">GetModelSize</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" href="#memberResetOrientationToIdentity">ResetOrientationToIdentity</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name api-deprecated" href="#memberSetIdentityOrientation">SetIdentityOrientation</a> <span class="api-arguments">( )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></td>
 								</tr>
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
@@ -150,28 +168,44 @@
 						<div id="memberBreakJoints">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.BreakJoints <span class="api-arguments">( )</span><a class="permalink" href="#memberBreakJoints"></a></h3>
 						</div>
-						<div id="memberGetModelCFrame">
-							<h3><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetModelCFrame <span class="api-arguments">( )</span><a class="permalink" href="#memberGetModelCFrame"></a></h3>
+						<div id="memberGetExtentsSize">
+							<h3><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetExtentsSize <span class="api-arguments">( )</span><a class="permalink" href="#memberGetExtentsSize"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></p>
 						</div>
-						<div id="memberGetModelSize">
-							<h3><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetModelSize <span class="api-arguments">( )</span><a class="permalink" href="#memberGetModelSize"></a></h3>
+						<div id="memberGetPrimaryPartCFrame">
+							<h3><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetPrimaryPartCFrame <span class="api-arguments">( )</span><a class="permalink" href="#memberGetPrimaryPartCFrame"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></p>
 						</div>
 						<div id="memberMakeJoints">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.MakeJoints <span class="api-arguments">( )</span><a class="permalink" href="#memberMakeJoints"></a></h3>
 						</div>
 						<div id="memberMoveTo">
-							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.MoveTo <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">location</span></span> )</span><a class="permalink" href="#memberMoveTo"></a></h3>
+							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.MoveTo <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">position</span></span> )</span><a class="permalink" href="#memberMoveTo"></a></h3>
+						</div>
+						<div id="memberSetPrimaryPartCFrame">
+							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.SetPrimaryPartCFrame <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a> <span class="api-argument-name">cframe</span></span> )</span><a class="permalink" href="#memberSetPrimaryPartCFrame"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.152">+0.152</a>)</span></p>
+						</div>
+						<div id="memberTranslateBy">
+							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.TranslateBy <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">delta</span></span> )</span><a class="permalink" href="#memberTranslateBy"></a></h3>
+						</div>
+						<div id="memberGetModelCFrame">
+							<h3><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetModelCFrame <span class="api-arguments">( )</span><a class="permalink" href="#memberGetModelCFrame"></a></h3>
+							<p><b>Deprecated:</b> This member is deprecated.</p>
+						</div>
+						<div id="memberGetModelSize">
+							<h3><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a><span class="api-member-icon" style="background-position:-64px"></span>Model.GetModelSize <span class="api-arguments">( )</span><a class="permalink" href="#memberGetModelSize"></a></h3>
+							<p><b>Deprecated:</b> This member is deprecated.</p>
 						</div>
 						<div id="memberResetOrientationToIdentity">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.ResetOrientationToIdentity <span class="api-arguments">( )</span><a class="permalink" href="#memberResetOrientationToIdentity"></a></h3>
 							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></p>
+							<p><b>Deprecated:</b> This member is deprecated.</p>
 						</div>
 						<div id="memberSetIdentityOrientation">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.SetIdentityOrientation <span class="api-arguments">( )</span><a class="permalink" href="#memberSetIdentityOrientation"></a></h3>
 							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.51">+0.51</a>)</span></p>
-						</div>
-						<div id="memberTranslateBy">
-							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.TranslateBy <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">offset</span></span> )</span><a class="permalink" href="#memberTranslateBy"></a></h3>
+							<p><b>Deprecated:</b> This member is deprecated.</p>
 						</div>
 						<div id="memberbreakJoints">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Model.breakJoints <span class="api-arguments">( )</span><a class="permalink" href="#memberbreakJoints"></a></h3>
