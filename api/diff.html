@@ -24,6 +24,108 @@
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
 					<li>
+						<a class="anchor" id="v0.161"></a>
+						<span class="diff-date">July 31, 2014</span> ( <span class="api-version">0.160.0.49182</span> → <span class="api-version">0.161.0.49421</span> )<a class="permalink" href="/api/diff.html#v0.161"></a>
+						<ul class="diff-list">
+							<li>
+								Added Function <a href="/api/class/LogService.html#memberExecuteScript">LogService.ExecuteScript</a>
+							</li>
+							<li>
+								Added Event <a href="/api/class/UserInputService.html#memberTextBoxFocusReleased">UserInputService.TextBoxFocusReleased</a>
+							</li>
+							<li>
+								Added Event <a href="/api/class/UserInputService.html#memberTextBoxFocused">UserInputService.TextBoxFocused</a>
+							</li>
+							<li>
+								Added EnumItem MouseBehavior.LockCurrentPosition
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberInputBegan">UserInputService.InputBegan</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberInputChanged">UserInputService.InputChanged</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberInputEnded">UserInputService.InputEnded</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">input</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchEnded">UserInputService.TouchEnded</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchLongPress">UserInputService.TouchLongPress</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchMoved">UserInputService.TouchMoved</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchPan">UserInputService.TouchPan</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a> <span class="api-argument-name">totalTranslation</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a> <span class="api-argument-name">totalTranslation</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchPinch">UserInputService.TouchPinch</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">scale</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchRotate">UserInputService.TouchRotate</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">rotation</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">velocity</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/UserInputState.html">UserInputState</a> <span class="api-argument-name">state</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchStarted">UserInputService.TouchStarted</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Instance.html">Instance</a> <span class="api-argument-name">touch</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchSwipe">UserInputService.TouchSwipe</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/SwipeDirection.html">SwipeDirection</a> <span class="api-argument-name">swipeDirection</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/int.html">int</a> <span class="api-argument-name">numberOfTouches</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/SwipeDirection.html">SwipeDirection</a> <span class="api-argument-name">swipeDirection</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/int.html">int</a> <span class="api-argument-name">numberOfTouches</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+							<li>
+								Changed arguments of <a href="/api/class/UserInputService.html#memberTouchTap">UserInputService.TouchTap</a>
+								<div class="diff-arg-list">
+									<div><span>from</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span> )</span></span></div>
+									<div><span>to</span><span><span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Array.html">Array</a> <span class="api-argument-name">touchPositions</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/bool.html">bool</a> <span class="api-argument-name">gameProcessedEvent</span></span> )</span></span></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
 						<a class="anchor" id="v0.160"></a>
 						<span class="diff-date">July 24, 2014</span> ( <span class="api-version">0.159.0.48929</span> → <span class="api-version">0.160.0.49182</span> )<a class="permalink" href="/api/diff.html#v0.160"></a>
 						<ul class="diff-list">
