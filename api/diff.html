@@ -23,6 +23,152 @@
 				This page lists the differences between versions of the ROBLOX Lua API.
 				<ul id="diff-versions">
 					<li>
+						<a class="anchor" id="v0.176"></a>
+						<span class="diff-date">November 13, 2014</span> ( <span class="api-version">0.175.0.53496</span> → <span class="api-version">0.176.0.53771</span> )<a class="permalink" href="/api/diff.html#v0.176"></a>
+						<ul class="diff-list">
+							<li>
+								Added Class <a class="api-class-name" href="/api/class/Folder.html">Folder</a>
+							</li>
+							<li>
+								Added Class <a class="api-class-name" href="/api/class/PlayerScripts.html">PlayerScripts</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/Sound.html#memberTimeLength">Sound.TimeLength</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/Sound.html#memberTimePosition">Sound.TimePosition</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberDevCameraOcclusionMode">StarterPlayer.DevCameraOcclusionMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberDevComputerCameraMovementMode">StarterPlayer.DevComputerCameraMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberDevComputerMovementMode">StarterPlayer.DevComputerMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberDevTouchCameraMovementMode">StarterPlayer.DevTouchCameraMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberDevTouchMovementMode">StarterPlayer.DevTouchMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/StarterPlayer.html#memberEnableMouseLockOption">StarterPlayer.EnableMouseLockOption</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/UserGameSettings.html#memberComputerCameraMovementMode">UserGameSettings.ComputerCameraMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/UserGameSettings.html#memberComputerMovementMode">UserGameSettings.ComputerMovementMode</a>
+							</li>
+							<li>
+								Added Property <a href="/api/class/UserGameSettings.html#memberTouchCameraMovementMode">UserGameSettings.TouchCameraMovementMode</a>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/ComputerCameraMovementMode.html">ComputerCameraMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/ComputerCameraMovementMode.html">ComputerCameraMovementMode</a>.Default</li>
+									<li>Added EnumItem <a href="/api/type/ComputerCameraMovementMode.html">ComputerCameraMovementMode</a>.Classic</li>
+									<li>Added EnumItem <a href="/api/type/ComputerCameraMovementMode.html">ComputerCameraMovementMode</a>.Follow</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/ComputerMovementMode.html">ComputerMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/ComputerMovementMode.html">ComputerMovementMode</a>.Default</li>
+									<li>Added EnumItem <a href="/api/type/ComputerMovementMode.html">ComputerMovementMode</a>.KeyboardMouse</li>
+									<li>Added EnumItem <a href="/api/type/ComputerMovementMode.html">ComputerMovementMode</a>.ClickToMove</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/DevCameraOcclusionMode.html">DevCameraOcclusionMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/DevCameraOcclusionMode.html">DevCameraOcclusionMode</a>.Zoom</li>
+									<li>Added EnumItem <a href="/api/type/DevCameraOcclusionMode.html">DevCameraOcclusionMode</a>.Invisicam</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/DevComputerCameraMovementMode.html">DevComputerCameraMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/DevComputerCameraMovementMode.html">DevComputerCameraMovementMode</a>.UserChoice</li>
+									<li>Added EnumItem <a href="/api/type/DevComputerCameraMovementMode.html">DevComputerCameraMovementMode</a>.Classic</li>
+									<li>Added EnumItem <a href="/api/type/DevComputerCameraMovementMode.html">DevComputerCameraMovementMode</a>.Follow</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/DevComputerMovementMode.html">DevComputerMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/DevComputerMovementMode.html">DevComputerMovementMode</a>.UserChoice</li>
+									<li>Added EnumItem <a href="/api/type/DevComputerMovementMode.html">DevComputerMovementMode</a>.KeyboardMouse</li>
+									<li>Added EnumItem <a href="/api/type/DevComputerMovementMode.html">DevComputerMovementMode</a>.ClickToMove</li>
+									<li>Added EnumItem <a href="/api/type/DevComputerMovementMode.html">DevComputerMovementMode</a>.Scriptable</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/DevTouchCameraMovementMode.html">DevTouchCameraMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/DevTouchCameraMovementMode.html">DevTouchCameraMovementMode</a>.UserChoice</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchCameraMovementMode.html">DevTouchCameraMovementMode</a>.Classic</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchCameraMovementMode.html">DevTouchCameraMovementMode</a>.Follow</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.UserChoice</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.Thumbstick</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.DPad</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.Thumbpad</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.ClickToMove</li>
+									<li>Added EnumItem <a href="/api/type/DevTouchMovementMode.html">DevTouchMovementMode</a>.Scriptable</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/PlayerActions.html">PlayerActions</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/PlayerActions.html">PlayerActions</a>.CharacterForward</li>
+									<li>Added EnumItem <a href="/api/type/PlayerActions.html">PlayerActions</a>.CharacterBackward</li>
+									<li>Added EnumItem <a href="/api/type/PlayerActions.html">PlayerActions</a>.CharacterLeft</li>
+									<li>Added EnumItem <a href="/api/type/PlayerActions.html">PlayerActions</a>.CharacterRight</li>
+									<li>Added EnumItem <a href="/api/type/PlayerActions.html">PlayerActions</a>.CharacterJump</li>
+								</ul>
+							</li>
+							<li>
+								Added Enum <a href="/api/type/TouchCameraMovementMode.html">TouchCameraMovementMode</a>
+								<ul>
+									<li>Added EnumItem <a href="/api/type/TouchCameraMovementMode.html">TouchCameraMovementMode</a>.Default</li>
+									<li>Added EnumItem <a href="/api/type/TouchCameraMovementMode.html">TouchCameraMovementMode</a>.Classic</li>
+									<li>Added EnumItem <a href="/api/type/TouchCameraMovementMode.html">TouchCameraMovementMode</a>.Follow</li>
+								</ul>
+							</li>
+							<li>
+								Added EnumItem <a href="/api/type/TouchMovementMode.html">TouchMovementMode</a>.ClickToMove
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberAllTutorialsDisabled">UserGameSettings.AllTutorialsDisabled</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberCameraMode">UserGameSettings.CameraMode</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberControlMode">UserGameSettings.ControlMode</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberFullscreen">UserGameSettings.Fullscreen</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberImageUploadPromptBehavior">UserGameSettings.ImageUploadPromptBehavior</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberSavedQualityLevel">UserGameSettings.SavedQualityLevel</a> from None to RobloxScriptSecurity
+							</li>
+							<li>
+								Changed security of Property <a href="/api/class/UserGameSettings.html#memberVideoUploadPromptBehavior">UserGameSettings.VideoUploadPromptBehavior</a> from None to RobloxScriptSecurity
+							</li>
+						</ul>
+					</li>
+					<li>
 						<a class="anchor" id="v0.174"></a>
 						<span class="diff-date">October 31, 2014</span> ( <span class="api-version">0.173.1.53125</span> → <span class="api-version">0.174.0.53367</span> )<a class="permalink" href="/api/diff.html#v0.174"></a>
 						<ul class="diff-list">
