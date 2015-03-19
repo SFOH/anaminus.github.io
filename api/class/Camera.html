@@ -63,6 +63,12 @@
 								</tr>
 								<tr>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberViewportSize">ViewportSize</a></td>
+									<td class="col-value-type"><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></td>
+								</tr>
+								<tr>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-96px"></span></td>
 									<td class="col-name"><a class="api-member-name api-deprecated" href="#memberfocus">focus</a></td>
 									<td class="col-value-type"><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a></td>
 									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.57">+0.57</a>)</span></td>
@@ -112,6 +118,12 @@
 									<td class="col-history"></td>
 								</tr>
 								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/Ray.html">Ray</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberScreenPointToRay">ScreenPointToRay</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">x</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">y</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">depth</span> = <span class="api-value">0</span></span> )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></td>
+								</tr>
+								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/void.html">void</a></td>
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-208px"></span></td>
 									<td class="col-name"><a class="api-member-name" href="#memberSetCameraInputMode">SetCameraInputMode</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/CameraInputMode.html">CameraInputMode</a> <span class="api-argument-name">mode</span> = <span class="api-value">Classic</span></span> )</span></td>
@@ -134,6 +146,12 @@
 									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
 									<td class="col-name"><a class="api-member-name" href="#memberTiltUnits">TiltUnits</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/int.html">int</a> <span class="api-argument-name">units</span></span> )</span></td>
 									<td class="col-history"></td>
+								</tr>
+								<tr>
+									<td class="col-return-type"><a class="api-value-type" href="/api/type/Tuple.html">Tuple</a></td>
+									<td class="col-icon"><span class="api-member-icon" style="background-position:-64px"></span></td>
+									<td class="col-name"><a class="api-member-name" href="#memberWorldToScreenPoint">WorldToScreenPoint</a> <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">worldPoint</span></span> )</span></td>
+									<td class="col-history"><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></td>
 								</tr>
 								<tr>
 									<td class="col-return-type"><a class="api-value-type" href="/api/type/bool.html">bool</a></td>
@@ -219,6 +237,11 @@
 						<div id="memberFocus">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a> Camera.Focus<a class="permalink" href="#memberFocus"></a></h3>
 						</div>
+						<div id="memberViewportSize">
+							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="/api/type/Vector2.html">Vector2</a> Camera.ViewportSize<a class="permalink" href="#memberViewportSize"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></p>
+							<p><b>Tags: </b><span class="api-tag">readonly</span></p>
+						</div>
 						<div id="memberfocus">
 							<h3><span class="api-member-icon" style="background-position:-96px"></span><a class="api-value-type" href="/api/type/CoordinateFrame.html">CoordinateFrame</a> Camera.focus<a class="permalink" href="#memberfocus"></a></h3>
 							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.57">+0.57</a>)</span></p>
@@ -244,6 +267,10 @@
 						<div id="memberPanUnits">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-64px"></span>Camera.PanUnits <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/int.html">int</a> <span class="api-argument-name">units</span></span> )</span><a class="permalink" href="#memberPanUnits"></a></h3>
 						</div>
+						<div id="memberScreenPointToRay">
+							<h3><a class="api-value-type" href="/api/type/Ray.html">Ray</a><span class="api-member-icon" style="background-position:-64px"></span>Camera.ScreenPointToRay <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">x</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">y</span></span>, <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">depth</span> = <span class="api-value">0</span></span> )</span><a class="permalink" href="#memberScreenPointToRay"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></p>
+						</div>
 						<div id="memberSetCameraInputMode">
 							<h3><a class="api-value-type" href="/api/type/void.html">void</a><span class="api-member-icon" style="background-position:-208px"></span>Camera.SetCameraInputMode <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/CameraInputMode.html">CameraInputMode</a> <span class="api-argument-name">mode</span> = <span class="api-value">Classic</span></span> )</span><a class="permalink" href="#memberSetCameraInputMode"></a></h3>
 							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.113">+0.113</a>, <a class="api-version version-removed" href="/api/diff.html#v0.118">−0.118</a>)</span></p>
@@ -259,6 +286,10 @@
 						</div>
 						<div id="memberTiltUnits">
 							<h3><a class="api-value-type" href="/api/type/bool.html">bool</a><span class="api-member-icon" style="background-position:-64px"></span>Camera.TiltUnits <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/int.html">int</a> <span class="api-argument-name">units</span></span> )</span><a class="permalink" href="#memberTiltUnits"></a></h3>
+						</div>
+						<div id="memberWorldToScreenPoint">
+							<h3><a class="api-value-type" href="/api/type/Tuple.html">Tuple</a><span class="api-member-icon" style="background-position:-64px"></span>Camera.WorldToScreenPoint <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/Vector3.html">Vector3</a> <span class="api-argument-name">worldPoint</span></span> )</span><a class="permalink" href="#memberWorldToScreenPoint"></a></h3>
+							<p><b>Version History:</b><span class="history-list">(<a class="api-version version-added" href="/api/diff.html#v0.189">+0.189</a>)</span></p>
 						</div>
 						<div id="memberZoom">
 							<h3><a class="api-value-type" href="/api/type/bool.html">bool</a><span class="api-member-icon" style="background-position:-80px"></span>Camera.Zoom <span class="api-arguments">( <span class="api-argument"><a class="api-value-type" href="/api/type/float.html">float</a> <span class="api-argument-name">distance</span></span> )</span><a class="permalink" href="#memberZoom"></a></h3>
