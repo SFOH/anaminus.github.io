@@ -182,7 +182,9 @@ Class Camera : Instance
 	Function void Camera:SetCameraPanMode(CameraPanMode mode = Classic)
 	Function void Camera:SetRoll(float rollAngle)
 	Function bool Camera:TiltUnits(int units)
+	Function Ray Camera:ViewportPointToRay(float x, float y, float depth = 0)
 	Function Tuple Camera:WorldToScreenPoint(Vector3 worldPoint)
+	Function Tuple Camera:WorldToViewportPoint(Vector3 worldPoint)
 	Function bool Camera:Zoom(float distance) [RobloxScriptSecurity]
 	Event Camera.FirstPersonTransition(bool entering) [RobloxPlaceSecurity]
 	Event Camera.InterpolationFinished()
@@ -547,7 +549,6 @@ Class GuiObject : GuiBase2d [notbrowsable]
 	Event GuiObject.TouchTap(Array touchPositions)
 Class Frame : GuiObject
 	Property FrameStyle Frame.Style
-Class NotificationObject : Frame [notbrowsable]
 Class GuiButton : GuiObject [notbrowsable]
 	Property bool GuiButton.AutoButtonColor
 	Property bool GuiButton.Modal
@@ -605,7 +606,6 @@ Class TextLabel : GuiLabel
 	Property bool TextLabel.TextWrapped
 	Property TextXAlignment TextLabel.TextXAlignment
 	Property TextYAlignment TextLabel.TextYAlignment
-Class NotificationBox : GuiObject [notbrowsable]
 Class Scale9Frame : GuiObject
 	Property Vector2int16 Scale9Frame.ScaleEdgeSize
 	Property string Scale9Frame.SlicePrefix
@@ -638,6 +638,7 @@ Class TextBox : GuiObject
 	Property TextYAlignment TextBox.TextYAlignment
 	Function void TextBox:CaptureFocus()
 	Event TextBox.FocusLost(bool enterPressed)
+	Event TextBox.Focused()
 Class LayerCollector : GuiBase2d
 Class BillboardGui : LayerCollector
 	Property bool BillboardGui.Active
@@ -763,7 +764,6 @@ Class GuiService : Instance [notCreatable]
 	Function void GuiService:RemoveCenterDialog(Instance dialog) [RobloxScriptSecurity]
 	Function void GuiService:RemoveKey(string key) [RobloxScriptSecurity]
 	Function void GuiService:RemoveSpecialKey(SpecialKey key) [RobloxScriptSecurity]
-	Function void GuiService:SendNotification(string title, string text, string image, int duration, Function callback) [RobloxScriptSecurity]
 	Function void GuiService:SetErrorMessage(string errorMessage) [deprecated] [LocalUserSecurity]
 	Function void GuiService:SetGlobalGuiInset(int x1, int y1, int x2, int y2) [RobloxScriptSecurity]
 	Function void GuiService:SetUiMessage(UiMessageType msgType, string uiMessage) [LocalUserSecurity]
@@ -1543,9 +1543,12 @@ Class Plugin : Instance
 	Function Instance Plugin:GetMouse() [PluginSecurity]
 	Function Variant Plugin:GetSetting(string key) [PluginSecurity]
 	Function int Plugin:GetStudioUserId() [PluginSecurity]
+	Function Objects Plugin:Negate(Objects objects) [PluginSecurity]
 	Function void Plugin:OpenScript(Instance script, int lineNumber = 0) [PluginSecurity]
 	Function void Plugin:SaveSelectedToRoblox() [PluginSecurity]
+	Function Objects Plugin:Separate(Objects objects) [PluginSecurity]
 	Function void Plugin:SetSetting(string key, Variant value) [PluginSecurity]
+	Function Instance Plugin:Union(Objects objects) [PluginSecurity]
 	Event Plugin.Deactivation() [PluginSecurity]
 Class PluginManager : Instance
 	Function Instance PluginManager:CreatePlugin() [PluginSecurity]
