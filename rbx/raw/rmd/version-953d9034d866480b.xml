@@ -3691,14 +3691,6 @@
     </Item>
     <Item class="ReflectionMetadataClass">
       <Properties>
-        <string name="Name">SelectionSphere</string>
-        <string name="summary">A 3D GUI object to represent the visible selection around an object</string>
-        <string name="ExplorerOrder">21</string>
-        <string name="ExplorerImageIndex">54</string>
-      </Properties>
-    </Item>
-    <Item class="ReflectionMetadataClass">
-      <Properties>
         <string name="Name">SurfaceSelection</string>
         <string name="summary">A 3D GUI object to represent the visible selection around a face of an object</string>
         <string name="ExplorerOrder">21</string>

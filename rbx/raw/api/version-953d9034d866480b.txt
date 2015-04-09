@@ -678,11 +678,6 @@ Class FloorWire : GuiBase3d
 Class PVAdornment : GuiBase3d
 	Property Object PVAdornment.Adornee
 Class SelectionBox : PVAdornment
-	Property BrickColor SelectionBox.SurfaceColor
-	Property float SelectionBox.SurfaceTransparency
-Class SelectionSphere : PVAdornment
-	Property BrickColor SelectionSphere.SurfaceColor
-	Property float SelectionSphere.SurfaceTransparency
 Class PartAdornment : GuiBase3d
 	Property Object PartAdornment.Adornee
 Class HandlesBase : PartAdornment
